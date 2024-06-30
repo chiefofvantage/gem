@@ -46,20 +46,29 @@ export default async function Home() {
   const activityData: ActivityType[] = await getActivity();
   return (
     <>
-      {/* <NavbarSection style="" logo="images/logo.png" /> */}
+      <NavbarSection style="" logo="images/logo.png" />
       <BannerSection />
-      {/* {categoryData && <CategorySection categoryData={categoryData}/>}
+      {categoryData && <CategorySection categoryData={categoryData} />}
       <AboutSection />
-      {eventData && <EventSection section="tf__event mt_95" startIndex={0} endIndex={4} eventData={eventData}/>}
-      {faqData && <FaqSection img="images/faq_img.jpg" faqData={faqData}/>}
-      {workData && <WorkSection workData={workData}/>}
-      {testimonialData && <TestimonialSection testimonialData={testimonialData}/>}
-      {activityData &&<ActivitySection activityData={activityData}/>}
+      {eventData && (
+        <EventSection
+          section="tf__event mt_95"
+          startIndex={0}
+          endIndex={4}
+          eventData={eventData}
+        />
+      )}
+      {faqData && <FaqSection img="images/faq_img.jpg" faqData={faqData} />}
+      {workData && <WorkSection workData={workData} />}
+      {testimonialData && (
+        <TestimonialSection testimonialData={testimonialData} />
+      )}
+      {activityData && <ActivitySection activityData={activityData} />}
       <VideoSection />
-      {blogData && <BlogSection blogData={blogData}/>}
+      {blogData && <BlogSection blogData={blogData} />}
       <FooterSection />
       <VideoModal />
-      <ScrollToTopButton style="" /> */}
+      <ScrollToTopButton style="" />
     </>
   );
 }

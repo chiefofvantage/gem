@@ -17,8 +17,11 @@ const BannerSection = () => {
             <div className="tf__banner_text wow fadeInUp">
               {/* <h5></h5> */}
               <h1>
-                Welcome to <span>Grey Matter Solutions</span> Website Launching
-                Soon!
+                Welcome to <br />
+                <span style={{ fontSize: "50px !important" }}>
+                  Grey Matter Solutions <hr />
+                </span>
+                Launching Soon!
               </h1>
               <p>The place where eduction become adventure</p>
               {/* <ul className="d-flex flex-wrap align-items-center">

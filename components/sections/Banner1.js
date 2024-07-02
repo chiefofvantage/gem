@@ -10,11 +10,11 @@ export default function Banner1() {
                             <div className="banner__content">
                                 <img src="/assets/img/banner/bshape_01.png" alt="shape" className="shape alltuchtopdown" />
                                 <img src="/assets/img/banner/bshape_02.png" alt="shape" className="shape" />
-                                <span className="sub-title" data-aos="fade-right" data-aos-delay={200}>Shapping the future of Education</span>
-                                <h3 className="title tg-svg" data-aos="fade-right" data-aos-delay={400}>Empowering <span className="position-relative"><span className="svg-icon" id="svg-2" data-svg-icon="assets/img/icons/title_shape.svg" />Young Minds</span> with Excellence in Educational Upliftment</h3>
-                                <p data-aos="fade-right" data-aos-delay={600}>Unlock Your Potential with GREY MATTER: Leading the Way in empowering students lifes
+                                <span className="sub-title" >Shapping the future of Education</span>
+                                <h3 className="title tg-svg">Empowering <span className="position-relative"><span className="svg-icon" id="svg-2" data-svg-icon="assets/img/icons/title_shape.svg" />Young Minds</span> with Excellence in Educational Upliftment</h3>
+                                <p>Unlock Your Potential with GREY MATTER: Leading the Way in empowering students lifes
                                 </p>
-                                <div className="banner__btn-wrap" data-aos="fade-right" data-aos-delay={800}>
+                                <div className="banner__btn-wrap" >
                                     <div className="tg-button-wrap">
                                         <Link href="#services" className="btn tg-svg"><span className="text">Explore Services</span>
                                             <span className="svg-icon" id="svg-1" data-svg-icon="assets/img/icons/btn-arrow.svg" /></Link>

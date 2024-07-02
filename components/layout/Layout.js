@@ -46,7 +46,7 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
     return (
         <>
             <PageHead headTitle={headTitle} />
-            <div style={chipStyle} onClick={() => window.open('https://api.whatsapp.com/send?phone=919840457400&text=Hello%2C%20I%20was%20exploring%20your%20website%20and%20am%20interested%20in%20learning%20more%20about%20your%20services.', '_blank')}>
+            <div style={chipStyle} onClick={() => window.open('https://api.whatsapp.com/send?phone=919500498547&text=Hello%2C%20I%20was%20exploring%20your%20website%20and%20am%20interested%20in%20learning%20more%20about%20your%20services.', '_blank')}>
                 Chat on Whatsapp
             </div>
             {!headerStyle && <Header1 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} />}

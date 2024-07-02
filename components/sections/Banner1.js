@@ -12,7 +12,7 @@ export default function Banner1() {
                                 <img src="/assets/img/banner/bshape_02.png" alt="shape" className="shape" />
                                 <span className="sub-title" >Shaping the future of Education</span>
                                 <h3 className="title tg-svg">Empowering <span className="position-relative"><span className="svg-icon" id="svg-2" data-svg-icon="assets/img/icons/title_shape.svg" />Young Minds</span> with Excellence in Educational Upliftment</h3>
-                                <p>Unlock Your Potential with GREY MATTER: Leading the Way in empowering students lifes
+                                <p>Unlock Your Potential with GREY MATTER: Leading the Way in empowering students lives
                                 </p>
                                 <div className="banner__btn-wrap" >
                                     <div className="tg-button-wrap">
@@ -23,7 +23,7 @@ export default function Banner1() {
                                         <i className="flaticon-phone-call" />
                                         <div className="number-info">
                                             <span>Have any Question?</span>
-                                            <h6 className="number"><Link href="tel:98404-57400">98404-57400</Link></h6>
+                                            <h6 className="number"><Link href="tel:95004-98547">95004-98547</Link></h6>
                                         </div>
                                     </div>
                                 </div>

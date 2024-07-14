@@ -2,6 +2,9 @@
 // sec: #082a5e
 // text: #39557e
 
+import Banner1 from "@/components/sections/Banner1";
+import Banner2 from "@/components/sections/Banner2";
+import Brand1 from "@/components/sections/Brand1";
 import Cta1 from "@/components/sections/Cta1";
 import Link from "next/link";
 const SpellBee = () => {
@@ -9,13 +12,13 @@ const SpellBee = () => {
     <main className="">
       {/* hero section */}
       <section
-        className="banner-area-two banner-bg-two h-[95vh]"
+        className="banner-area-two banner-bg-two"
         data-background="/assets/img/banner/banner_bg02.jpg"
       >
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
-              <div className="banner__content-two">
+              <div className="banner__content-two flex flex-col items-center lg:items-start">
                 <img
                   src="/assets/img/banner/banner_shape02.png"
                   alt="shape"
@@ -35,13 +38,15 @@ const SpellBee = () => {
                   Unleash Your <br /> Word <span>Power</span>
                 </h3>
 
-                <p className="">
+                <p className="max-w-md text-center md:text-left">
                   A Spelling Bee is a competition where contestants spell
                   various words. It enhances language skills, boosts confidence,
                   and promotes self-motivated learning.
                 </p>
 
-                <button className="btn btn-primary">Register Now</button>
+                <button className="btn btn-primary w-full max-w-sm">
+                  Register Now
+                </button>
               </div>
             </div>
             <div className="col-lg-6">

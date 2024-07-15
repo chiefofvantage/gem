@@ -1,33 +1,114 @@
 import Layout from "@/components/layout/Layout";
-import Blog3 from "@/components/sections/Blog3";
-import Brand2 from "@/components/sections/Brand2";
-import Categories3 from "@/components/sections/Categories3";
-import Course3 from "@/components/sections/Course3";
-import Cta2 from "@/components/sections/Cta2";
-import Cta4 from "@/components/sections/Cta4";
-import Events1 from "@/components/sections/Events1";
-import Fact2 from "@/components/sections/Fact2";
-import QuickAction1 from "@/components/sections/QuickAction1";
-import Slider1 from "@/components/sections/Slider1";
-import Testimonial3 from "@/components/sections/Testimonial3";
+import About1 from "@/components/sections/About1";
+import Banner1 from "@/components/sections/Banner1";
+import Blog1 from "@/components/sections/Blog1";
+import Brand1 from "@/components/sections/Brand1";
+import Categories1 from "@/components/sections/Categories1";
+import Course1 from "@/components/sections/Course1";
+import Cta1 from "@/components/sections/Cta1";
+import Instructor1 from "@/components/sections/Instructor1";
+import Newsletter1 from "@/components/sections/Newsletter1";
+import Testimonial1 from "@/components/sections/Testimonial1";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
-export default function Home3() {
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// import required modules
+import { Pagination, Navigation } from "swiper/modules";
+
+export default function Home1() {
   return (
     <>
-      <Layout headerStyle={3} footerStyle={1}>
-        <Slider1 />
-        <QuickAction1 />
-        <Course3 />
-        <Fact2 />
-        <Categories3 />
-        <Cta2 />
-        <Events1 />
-        <div className="area-bg" data-background="/assets/img/bg/area_bg.jpg">
-          <Testimonial3 />
-          <Brand2 />
+      <Layout headerStyle={1} footerStyle={1}>
+        <Banner1 />
+        {/* <Brand1 /> */}
+        <About1 />
+        {/* <Course1 /> */}
+
+        <div>
+          <Swiper
+            pagination={{
+              type: "fraction",
+            }}
+            navigation={true}
+            modules={[Pagination, Navigation]}
+            // className=""
+            style={{ height: "500px" }}
+          >
+            {/* <SwiperSlide><img src="/assets/img/custom/slide-1.jpg" /></SwiperSlide> */}
+            <SwiperSlide>
+              <div
+                style={{
+                  width: "100%",
+                  height: "500px", // Set your desired height
+                  backgroundImage: 'url("/assets/img/custom/slide-1.jpg")', // Replace with your image URL
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                }}
+              ></div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div
+                style={{
+                  width: "100%",
+                  height: "500px", // Set your desired height
+                  backgroundImage: 'url("/assets/img/custom/slide-2.jpg")', // Replace with your image URL
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                }}
+              ></div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div
+                style={{
+                  width: "100%",
+                  height: "500px", // Set your desired height
+                  backgroundImage: 'url("/assets/img/custom/slide-3.jpg")', // Replace with your image URL
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                }}
+              ></div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div
+                style={{
+                  width: "100%",
+                  height: "500px", // Set your desired height
+                  backgroundImage: 'url("/assets/img/custom/slide-4.jpg")', // Replace with your image URL
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                }}
+              ></div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div
+                style={{
+                  width: "100%",
+                  height: "500px", // Set your desired height
+                  backgroundImage: 'url("/assets/img/custom/slide-5.jpg")', // Replace with your image URL
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                }}
+              ></div>
+            </SwiperSlide>
+          </Swiper>
         </div>
-        <Blog3 />
-        <Cta4 />
+        <Categories1 />
+        {/* <Testimonial1 /> */}
+        {/* <Instructor1 /> */}
+        {/* <Blog1 /> */}
+
+        <Cta1 />
+        <div className="m-12" style={{ height: "120px" }}></div>
+        {/* <Newsletter1 /> */}
       </Layout>
     </>
   );

@@ -387,9 +387,9 @@ const SpellBee = () => {
                   <i className="flaticon-webinar" />
                 </div>
                 <div className="fact__content-two">
-                  <h3 className="count">School level</h3>
-                  <p className="text-sm">Location: Held at your school</p>
-                  <p className="text-sm">Schedule: Aug to Oct</p>
+                  <h3>School level</h3>
+                  <p className="text-xs">Location: Held at your school</p>
+                  <p className="text-xs">Schedule: Aug to Oct</p>
                 </div>
               </div>
             </div>
@@ -399,9 +399,9 @@ const SpellBee = () => {
                   <i className="flaticon-graduates" />
                 </div>
                 <div className="fact__content-two">
-                  <h3 className="count">District level</h3>
-                  <p className="text-sm">Location: Held at your school</p>
-                  <p className="text-sm">Schedule: Nov to Dec</p>
+                  <h3>District level</h3>
+                  <p className="text-xs">Location: Held at your school</p>
+                  <p className="text-xs">Schedule: Nov to Dec</p>
                 </div>
               </div>
             </div>
@@ -411,11 +411,9 @@ const SpellBee = () => {
                   <i className="flaticon-countries" />
                 </div>
                 <div className="fact__content-two">
-                  <h3 className="count">State Level</h3>
-                  <p className="text-sm">
-                    Venue and date communicated in advance
-                  </p>
-                  <p className="text-sm">Schedule: Jan/Feb</p>
+                  <h3>State Level</h3>
+                  <p className="text-xs">Venue and date provided in advance</p>
+                  <p className="text-xs">Schedule: Jan/Feb</p>
                 </div>
               </div>
             </div>
@@ -425,11 +423,9 @@ const SpellBee = () => {
                   <i className="flaticon-trophy" />
                 </div>
                 <div className="fact__content-two">
-                  <h3 className="count">National Level</h3>
-                  <p className="text-sm">Schedule: April/May</p>
-                  <p className="text-sm">
-                    Venue and date communicated in advance
-                  </p>
+                  <h3>National Level</h3>
+                  <p className="text-xs">Venue and date provided in advance </p>
+                  <p className="text-xs">Schedule: April/May</p>
                 </div>
               </div>
             </div>

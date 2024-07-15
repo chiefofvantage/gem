@@ -2,11 +2,17 @@
 // sec: #082a5e
 // text: #39557e
 
-import Banner1 from "@/components/sections/Banner1";
-import Banner2 from "@/components/sections/Banner2";
-import Brand1 from "@/components/sections/Brand1";
 import Cta1 from "@/components/sections/Cta1";
 import Link from "next/link";
+import {
+  RiNumber1,
+  RiNumber2,
+  RiNumber3,
+  RiNumber4,
+  RiNumber5,
+  RiNumber6,
+} from "react-icons/ri";
+
 const SpellBee = () => {
   return (
     <main className="">
@@ -38,7 +44,7 @@ const SpellBee = () => {
                   Unleash Your <br /> Word <span>Power</span>
                 </h3>
 
-                <p className="max-w-md text-center md:text-left">
+                <p className="max-w-md md:text-left text-center lg:text-left">
                   A Spelling Bee is a competition where contestants spell
                   various words. It enhances language skills, boosts confidence,
                   and promotes self-motivated learning.
@@ -232,8 +238,206 @@ const SpellBee = () => {
           </div>
         </div>
       </section>
+
+      {/* Categories */}
+      <section className="categories-area mb-60">
+        <div className="container">
+          <div className="row align-items-center justify-content-center mb-55">
+            <div className="col-xl-7 col-lg-8 col-md-10">
+              <div className="categories__title-wrap text-center text-lg-start m-0">
+                <div className="section__title mb-0">
+                  <span className="sub-title">Categories</span>
+                  <h2 className="title tg-svg">
+                    Spell Bee{" "}
+                    <span className="position-relative">
+                      <span
+                        className="svg-icon"
+                        id="svg-5"
+                        data-svg-icon="assets/img/icons/title_shape.svg"
+                      />
+                      Categories
+                    </span>
+                  </h2>
+                </div>
+                <p className="mb-0">
+                  There are 6 categories based on the standard of the student.
+                </p>
+              </div>
+            </div>
+            <div className="col-xl-5 col-lg-4 col-md-6"></div>
+          </div>
+          <div className="row justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-3">
+            <div className="col">
+              <div className="categories__item-two tg-svg">
+                <Link href="/courses">
+                  <div className="icon">
+                    <RiNumber1 />
+                  </div>
+                  <div className="info">
+                    <span className="name">CATEGORY 1</span>
+                    <span className="courses">Class 1</span>
+                  </div>
+                </Link>
+              </div>
+            </div>
+            <div className="col">
+              <div className="categories__item-two tg-svg">
+                <Link href="/courses">
+                  <div className="icon">
+                    <RiNumber2 />
+                  </div>
+                  <div className="info">
+                    <span className="name">CATEGORY 2</span>
+                    <span className="courses">Class 2</span>
+                  </div>
+                </Link>
+              </div>
+            </div>
+            <div className="col">
+              <div className="categories__item-two tg-svg">
+                <Link href="/courses">
+                  <div className="icon">
+                    <RiNumber3 />
+                  </div>
+                  <div className="info">
+                    <span className="name">CATEGORY 3</span>
+                    <span className="courses">Class 3 & 4</span>
+                  </div>
+                </Link>
+              </div>
+            </div>
+            <div className="col">
+              <div className="categories__item-two tg-svg">
+                <Link href="/courses">
+                  <div className="icon">
+                    <RiNumber4 />
+                  </div>
+                  <div className="info">
+                    <span className="name">CATEGORY 4</span>
+                    <span className="courses">Class 5 & 6</span>
+                  </div>
+                </Link>
+              </div>
+            </div>
+            <div className="col">
+              <div className="categories__item-two tg-svg">
+                <Link href="/courses">
+                  <div className="icon">
+                    <RiNumber5 />
+                  </div>
+                  <div className="info">
+                    <span className="name">CATEGORY 5</span>
+                    <span className="courses">Class 7 & 8</span>
+                  </div>
+                </Link>
+              </div>
+            </div>
+            <div className="col">
+              <div className="categories__item-two tg-svg">
+                <Link href="/courses">
+                  <div className="icon">
+                    <RiNumber6 />
+                  </div>
+                  <div className="info">
+                    <span className="name">CATEGORY 6</span>
+                    <span className="courses">Class 9 & 10</span>
+                  </div>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="categories__shapes-two">
+          <div className="categories__shapes-item-two rotateme">
+            <img src="/assets/img/objects/categories_shape05.png" alt="shape" />
+          </div>
+          <div className="categories__shapes-item-two" data-aos="fade-up">
+            <img src="/assets/img/objects/categories_shape02.png" alt="shape" />
+          </div>
+        </div>
+      </section>
+
+      {/* Location */}
+      <section className="mb-60" data-background="/assets/img/bg/fact_bg.jpg">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-xl-5 col-lg-7 col-md-9">
+              <div className="section__title text-center mb-50">
+                <span className="sub-title">Exam Schedule</span>
+                <h2 className="title tg-svg">
+                  Levels of the Competition{" "}
+                  <span className="position-relative">
+                    <span
+                      className="svg-icon"
+                      id="fact-title"
+                      data-svg-icon="assets/img/icons/title_shape.svg"
+                    />
+                    &
+                  </span>{" "}
+                  <br />
+                  It's Schedule
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div className="row justify-content-center">
+            <div className="col-lg-3 col-md-4 col-sm-6">
+              <div className="fact__item-two text-center">
+                <div className="fact__icon-two">
+                  <i className="flaticon-webinar" />
+                </div>
+                <div className="fact__content-two">
+                  <h3 className="count">School level</h3>
+                  <p className="text-sm">Location: Held at your school</p>
+                  <p className="text-sm">Schedule: Aug to Oct</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-4 col-sm-6">
+              <div className="fact__item-two text-center">
+                <div className="fact__icon-two">
+                  <i className="flaticon-graduates" />
+                </div>
+                <div className="fact__content-two">
+                  <h3 className="count">District level</h3>
+                  <p className="text-sm">Location: Held at your school</p>
+                  <p className="text-sm">Schedule: Nov to Dec</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-4 col-sm-6">
+              <div className="fact__item-two text-center">
+                <div className="fact__icon-two">
+                  <i className="flaticon-countries" />
+                </div>
+                <div className="fact__content-two">
+                  <h3 className="count">State Level</h3>
+                  <p className="text-sm">
+                    Venue and date communicated in advance
+                  </p>
+                  <p className="text-sm">Schedule: Jan/Feb</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-4 col-sm-6">
+              <div className="fact__item-two text-center">
+                <div className="fact__icon-two">
+                  <i className="flaticon-trophy" />
+                </div>
+                <div className="fact__content-two">
+                  <h3 className="count">National Level</h3>
+                  <p className="text-sm">Schedule: April/May</p>
+                  <p className="text-sm">
+                    Venue and date communicated in advance
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* contact section */}
-      <Cta1 />.{/* <Blog1 /> */}
+      <Cta1 />
     </main>
   );
 };

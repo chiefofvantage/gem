@@ -55,7 +55,7 @@ export default function Categories1() {
                 <div className="row justify-content-center row-cols-2 row-cols-md-3">
                   <div className="col">
                     <div className="categories__item">
-                      <Link href="/services/spell-bee">
+                      <Link href="/spell-bee">
                         <div
                           className="categories__item_img"
                           style={{ overflow: "hidden" }}
@@ -111,7 +111,7 @@ export default function Categories1() {
                   </div>
                   <div className="col">
                     <div className="categories__item">
-                      <Link href="#services">
+                      <Link href="/farm-guru">
                         <div
                           className="categories__item_img"
                           style={{ overflow: "hidden" }}

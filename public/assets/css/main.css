@@ -84,6 +84,13 @@
   --tg-fw-light: 300;
 }
 
+.swiper-button-next, .swiper-button-prev {
+  background-color: white;
+  padding: 30px;
+  border-radius: 50%;
+  color: red!;
+}
+
 /*=============================
 	Typography css start
 ===============================*/

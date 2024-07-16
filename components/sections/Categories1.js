@@ -72,7 +72,7 @@ export default function Categories1() {
                   </div>
                   <div className="col">
                     <div className="categories__item">
-                      <Link href="#services">
+                      <Link href="/mbbs">
                         <div
                           className="categories__item_img"
                           style={{ overflow: "hidden" }}
@@ -93,7 +93,7 @@ export default function Categories1() {
                 <div className="row justify-content-center row-cols-2 row-cols-sm-3">
                   <div className="col">
                     <div className="categories__item">
-                      <Link href="#services">
+                      <Link href="/talent-exam">
                         <div
                           className="categories__item_img"
                           style={{ overflow: "hidden" }}
@@ -101,7 +101,7 @@ export default function Categories1() {
                           <img
                             style={{ padding: "20px" }}
                             src="/assets/img/custom/exam.png"
-                            alt="Talen tExam"
+                            alt="Talent Exam"
                           />
                         </div>
                         <span className="name">Talent Exam</span>

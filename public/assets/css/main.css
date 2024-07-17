@@ -84,11 +84,18 @@
   --tg-fw-light: 300;
 }
 
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
   background-color: white;
   padding: 30px;
   border-radius: 50%;
   color: red!;
+}
+.action-bg-1 {
+  background-image: url("/public/quick_action01.jpg") !;
+}
+.action-bg-2 {
+  background-image: url("/public/quick_action02.jpg");
 }
 
 /*=============================

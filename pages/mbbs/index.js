@@ -200,7 +200,7 @@ const DavaoMedicalSchoolHomepage = () => {
                 <div className="section__title mb-0">
                   <span className="sub-title">What we do</span>
                   <h2 className="title tg-svg">
-                    Why Study MBBS in
+                    Why Study MBBS in{" "}
                     <span className="position-relative">
                       <span
                         className="svg-icon"

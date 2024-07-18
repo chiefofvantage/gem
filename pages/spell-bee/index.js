@@ -19,7 +19,7 @@ const SpellBee = () => {
   return (
     <>
       <Header1 />
-      <main className="">
+      <main className="w-full overflow-hidden">
         {/* hero section */}
         <section
           className="banner-area-two banner-bg-two"
@@ -175,7 +175,7 @@ const SpellBee = () => {
           </div>
         </section>
         {/* Benifits of spell bee */}
-        <section className="flex flex-col gap-5 p-5 py-10 relative">
+        <section className="flex flex-col gap-5 px-2 py-10 relative items-center w-full mx-auto">
           {/* section heading */}
           <h2 className="text-4xl font-semibold">
             <span className="text-[#1363df]">Benifits of</span> Spell bee

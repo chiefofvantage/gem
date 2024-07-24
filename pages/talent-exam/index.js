@@ -274,7 +274,7 @@ const TalentExamWebpage = () => {
               </div>
               <div className="col-xl-7 col-lg-6 col-md-11">
                 <div className="about__images-wrap">
-                  <div className="flex gap-5">
+                  <div className="flex flex-col sm:flex-row gap-5">
                     <img
                       src="/exam/2.jpeg"
                       alt="img"

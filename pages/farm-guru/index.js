@@ -44,17 +44,17 @@ const brandImg = [
   "/brand-5.png",
 ];
 
-const SpellBee = () => {
+const FarmGuru = () => {
   return (
     <>
       <Header1 />
       <main className="">
         {/* hero section */}
         <div
-          className="slider__item d-flex mt-16"
+          className="slider__item d-flex mt-16 relative"
           data-background={sliderImageArr[0]}
         >
-          <div className="container">
+          <div className="container ">
             <div className="row">
               <div className="col-xl-6 col-lg-8">
                 <div className="slider__content">
@@ -120,6 +120,12 @@ const SpellBee = () => {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="absolute right-0 top-0 w-1/2 h-full">
+            <img
+              src="/farm-guru/farm-guru-hero-img.png"
+              className="rounded object-cover object-center -z-40"
+            />
           </div>
           <img
             src="/assets/img/objects/categories_shape02.png"
@@ -391,9 +397,10 @@ const SpellBee = () => {
                         Gallery
                       </span>
                     </h2>
-                    <p className="mb-0 max-w-md">
-                      This Gallery has all the images of childern enjoying the
-                      field trip{" "}
+                    <p className="mb-0 max-w-xl">
+                      Discover the joy of children engaging with nature through
+                      our vibrant collection of field trip photos. Each image
+                      captures the essence of learning and fun at Farm Guru.
                     </p>
                   </div>
                 </div>
@@ -401,7 +408,7 @@ const SpellBee = () => {
               <div className="col-xl-5 col-lg-4 col-md-6"></div>
             </div>
 
-            <div className=" rounded mb-16">
+            <div className=" rounded mb-16 mt-14">
               <Swiper
                 pagination={{
                   type: "fraction",
@@ -416,8 +423,9 @@ const SpellBee = () => {
                   <div
                     style={{
                       width: "100%",
-                      height: "500px", // Set your desired height
-                      backgroundImage: 'url("/assets/img/custom/slide-1.jpg")', // Replace with your image URL
+                      height: "500px",
+                      backgroundImage:
+                        'url("/assets/img/custom/farm-guru-1.png")', // Replace with your image URL
                       backgroundSize: "cover",
                       backgroundPosition: "center",
                       backgroundRepeat: "no-repeat",
@@ -429,7 +437,8 @@ const SpellBee = () => {
                     style={{
                       width: "100%",
                       height: "500px", // Set your desired height
-                      backgroundImage: 'url("/assets/img/custom/slide-2.jpg")', // Replace with your image URL
+                      backgroundImage:
+                        'url("/assets/img/custom/farm-guru-2.png")', // Replace with your image URL
                       backgroundSize: "cover",
                       backgroundPosition: "center",
                       backgroundRepeat: "no-repeat",
@@ -441,7 +450,8 @@ const SpellBee = () => {
                     style={{
                       width: "100%",
                       height: "500px", // Set your desired height
-                      backgroundImage: 'url("/assets/img/custom/slide-3.jpg")', // Replace with your image URL
+                      backgroundImage:
+                        'url("/assets/img/custom/farm-guru-3.png")', // Replace with your image URL
                       backgroundSize: "cover",
                       backgroundPosition: "center",
                       backgroundRepeat: "no-repeat",
@@ -453,7 +463,8 @@ const SpellBee = () => {
                     style={{
                       width: "100%",
                       height: "500px", // Set your desired height
-                      backgroundImage: 'url("/assets/img/custom/slide-4.jpg")', // Replace with your image URL
+                      backgroundImage:
+                        'url("/assets/img/custom/farm-guru-4.png")', // Replace with your image URL
                       backgroundSize: "cover",
                       backgroundPosition: "center",
                       backgroundRepeat: "no-repeat",
@@ -465,7 +476,8 @@ const SpellBee = () => {
                     style={{
                       width: "100%",
                       height: "500px", // Set your desired height
-                      backgroundImage: 'url("/assets/img/custom/slide-5.jpg")', // Replace with your image URL
+                      backgroundImage:
+                        'url("/assets/img/custom/farm-guru-5.png")', // Replace with your image URL
                       backgroundSize: "cover",
                       backgroundPosition: "center",
                       backgroundRepeat: "no-repeat",
@@ -478,7 +490,12 @@ const SpellBee = () => {
         </section>
 
         {/* contact section */}
-        <Cta1 />
+        <Cta1
+          primaryHeading={"Join Us at Farm Guru!"}
+          description={
+            "Embark on a unique, educational adventure with your students. Witness the wonders of sustainable farming and nurture a love for nature in the young minds."
+          }
+        />
       </main>
       <div className="bg-[#061e43]">
         <Footer1 />
@@ -486,4 +503,4 @@ const SpellBee = () => {
     </>
   );
 };
-export default SpellBee;
+export default FarmGuru;

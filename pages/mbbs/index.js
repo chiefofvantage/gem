@@ -13,6 +13,12 @@ import {
   FaGraduationCap,
   FaTrophy,
   FaUserGraduate,
+  FaRegCheckCircle,
+  FaHome,
+  FaUtensils,
+  FaMoneyBillWave,
+  FaBriefcaseMedical,
+  FaLanguage,
 } from "react-icons/fa";
 import {
   RiNumber1,
@@ -22,6 +28,7 @@ import {
   RiNumber5,
   RiNumber6,
 } from "react-icons/ri";
+import { MdMoneyOff, MdLocalHospital, MdAttachMoney } from "react-icons/md";
 
 const DavaoMedicalSchoolHomepage = () => {
   return (
@@ -95,17 +102,23 @@ const DavaoMedicalSchoolHomepage = () => {
                     data-aos="fade-up"
                     data-aos-delay={200}
                   >
-                    <img src="/assets/img/banner/banner_img01.png" alt="img" />
+                    <img
+                      src="/mbbs/2.jpeg"
+                      alt="img"
+                      className="rounded-md h-96 w-full sm:w-60 object-cover object-top"
+                    />
                   </div>
                   <div className="banner__images-col">
                     <img
-                      src="/assets/img/banner/banner_img02.png"
+                      src="/mbbs/1.jpeg"
+                      className="rounded-md h-1/2 w-full"
                       alt="img"
                       data-aos="fade-left"
                       data-aos-delay={300}
                     />
                     <img
-                      src="/assets/img/banner/banner_img03.png"
+                      src="/mbbs/3.jpeg"
+                      className="rounded-md w-full h-1/2 object-cover object-center"
                       alt="img"
                       data-aos="fade-left"
                       data-aos-delay={400}
@@ -198,7 +211,7 @@ const DavaoMedicalSchoolHomepage = () => {
             <div className="col-xl-7 col-lg-8 col-md-10">
               <div className="categories__title-wrap text-center text-lg-start m-0">
                 <div className="section__title mb-0">
-                  <span className="sub-title">What we do</span>
+                  <span className="sub-title">MBBS in Philippines</span>
                   <h2 className="title tg-svg">
                     Why Study MBBS in{" "}
                     <span className="position-relative">
@@ -211,24 +224,28 @@ const DavaoMedicalSchoolHomepage = () => {
                     </span>
                   </h2>
                 </div>
-                <p className="mb-0 max-w-md">
-                  Why we have to study MBBS in Philippines, what is the
-                  difference between studing in india and Philippines.
+                <p className="mb-0">
+                  Studying MBBS in the Philippines offers numerous advantages,
+                  including global recognition of education, English-medium
+                  instruction, affordable costs, and extensive clinical
+                  exposure, all of which enhance career opportunities.
                 </p>
               </div>
             </div>
             <div className="col-xl-5 col-lg-4 col-md-6"></div>
           </div>
-          <div className="row justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-3">
+          <div className="row justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-2">
             <div className="col">
               <div className="categories__item-two tg-svg">
-                <Link href="/courses">
+                <Link href="/">
                   <div className="icon">
-                    <RiNumber1 />
+                    <FaGlobe />
                   </div>
-                  <div className="">
-                    <span className="text-xs text-[#5a7093]">
-                      Global Recognition of Education
+                  <div className="flex flex-col gap-2.5">
+                    <h3 className="text-xl">Global Recognition of Education</h3>
+                    <span className="text-sm text-[#5a7093]">
+                      Degrees from the Philippines are recognized worldwide,
+                      providing graduates with global career opportunities.
                     </span>
                   </div>
                 </Link>
@@ -236,13 +253,15 @@ const DavaoMedicalSchoolHomepage = () => {
             </div>
             <div className="col">
               <div className="categories__item-two tg-svg">
-                <Link href="/courses">
+                <Link href="/">
                   <div className="icon">
-                    <RiNumber2 />
+                    <FaLanguage />
                   </div>
-                  <div className="">
-                    <span className="text-xs text-[#5a7093]">
-                      English-Medium Instruction
+                  <div className="flex flex-col gap-2.5">
+                    <h3 className="text-xl">English-Medium Instruction</h3>
+                    <span className="text-sm text-[#5a7093]">
+                      Courses are taught in English, making it easier for
+                      international students to adapt and excel.
                     </span>
                   </div>
                 </Link>
@@ -250,13 +269,17 @@ const DavaoMedicalSchoolHomepage = () => {
             </div>
             <div className="col">
               <div className="categories__item-two tg-svg">
-                <Link href="/courses">
+                <Link href="/">
                   <div className="icon">
-                    <RiNumber3 />
+                    <MdAttachMoney />
                   </div>
-                  <div className="">
-                    <span className="text-xs text-[#5a7093]">
-                      Low-cost & High-quality Education{" "}
+                  <div className="flex flex-col gap-2.5">
+                    <h3 className="text-xl">
+                      Low-Cost & High-Quality Education
+                    </h3>
+                    <span className="text-sm text-[#5a7093]">
+                      Enjoy a high standard of education at a fraction of the
+                      cost compared to other countries.
                     </span>
                   </div>
                 </Link>
@@ -264,13 +287,15 @@ const DavaoMedicalSchoolHomepage = () => {
             </div>
             <div className="col">
               <div className="categories__item-two tg-svg">
-                <Link href="/courses">
+                <Link href="/">
                   <div className="icon">
-                    <RiNumber4 />
+                    <FaMoneyBillWave />
                   </div>
-                  <div className="">
-                    <span className="text-xs text-[#5a7093] leading-none">
-                      Affordable Cost of Living
+                  <div className="flex flex-col gap-2.5">
+                    <h3 className="text-xl">Affordable Cost of Living</h3>
+                    <span className="text-sm text-[#5a7093]">
+                      Living expenses in the Philippines are relatively low,
+                      making it a cost-effective choice for students.
                     </span>
                   </div>
                 </Link>
@@ -278,13 +303,15 @@ const DavaoMedicalSchoolHomepage = () => {
             </div>
             <div className="col">
               <div className="categories__item-two tg-svg">
-                <Link href="/courses">
+                <Link href="/">
                   <div className="icon">
-                    <RiNumber5 />
+                    <MdLocalHospital />
                   </div>
-                  <div className="">
-                    <span className="text-xs text-[#5a7093]">
-                      Extensive Clinical Exposure
+                  <div className="flex flex-col gap-2.5">
+                    <h3 className="text-xl">Extensive Clinical Exposure</h3>
+                    <span className="text-sm text-[#5a7093]">
+                      Gain hands-on experience with extensive clinical exposure
+                      in diverse healthcare settings.
                     </span>
                   </div>
                 </Link>
@@ -292,13 +319,15 @@ const DavaoMedicalSchoolHomepage = () => {
             </div>
             <div className="col ">
               <div className="categories__item-two tg-svg">
-                <Link href="/courses">
+                <Link href="/">
                   <div className="icon">
-                    <RiNumber6 />
+                    <FaBriefcaseMedical />
                   </div>
-                  <div className="">
-                    <span className="text-xs text-[#5a7093]">
-                      Enhanced Career Opportunities
+                  <div className="flex flex-col gap-2.5">
+                    <h3 className="text-xl">Enhanced Career Opportunities</h3>
+                    <span className="text-sm text-[#5a7093]">
+                      A medical degree from the Philippines opens up enhanced
+                      career opportunities around the globe.
                     </span>
                   </div>
                 </Link>
@@ -322,26 +351,30 @@ const DavaoMedicalSchoolHomepage = () => {
           <h3 className="text-3xl font-bold text-center mb-12">
             Top Class Features
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             <FacilityCard
               icon={<FaChalkboardTeacher size={40} />}
               title="Classrooms"
               imageSrc="/mbbs-1.png"
+              description="Our state-of-the-art classrooms are equipped with the latest technology to enhance your learning experience, ensuring an interactive and engaging educational environment."
             />
             <FacilityCard
               icon={<FaBed size={40} />}
               title="Hostel"
               imageSrc="/mbbs-2.png"
+              description="Comfortable and secure hostel accommodations provide a home away from home, with amenities that cater to the needs of international students."
             />
             <FacilityCard
               icon={<FaFlask size={40} />}
               title="VR Anatomy"
               imageSrc="/mbbs-3.png"
+              description="Experience cutting-edge learning with our VR Anatomy labs, offering immersive 3D simulations for a deeper understanding of human anatomy."
             />
             <FacilityCard
               icon={<FaGlobe size={40} />}
               title="3D Anatomage"
               imageSrc="/mbbs-4.png"
+              description="Our 3D Anatomage tables allow for detailed, interactive anatomical studies, making complex medical concepts easier to grasp."
             />
           </div>
         </div>
@@ -354,10 +387,26 @@ const DavaoMedicalSchoolHomepage = () => {
             Additional Features
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <FeatureListItem text="No Donation or Capitation Fee" />
-            <FeatureListItem text="Accredited by NMC & WHO" />
-            <FeatureListItem text="Excellent Accommodation Facilities" />
-            <FeatureListItem text="Indian Food Available for Students" />
+            <FeatureListItem
+              icon={<MdMoneyOff size={45} />}
+              title="No Donation or Capitation Fee"
+              description="Our transparent and affordable fee structure ensures that there are no hidden charges or extra payments, making quality education accessible to all."
+            />
+            <FeatureListItem
+              icon={<FaRegCheckCircle size={45} />}
+              title="Accredited by NMC & WHO"
+              description="Our institution is recognized by both the National Medical Commission (NMC) and the World Health Organization (WHO), guaranteeing the global acceptance and credibility of your medical degree."
+            />
+            <FeatureListItem
+              icon={<FaHome size={45} />}
+              title="Excellent Accommodation Facilities"
+              description="We offer well-maintained, secure, and comfortable living spaces with all necessary amenities, ensuring that students can focus on their studies without any worries."
+            />
+            <FeatureListItem
+              icon={<FaUtensils size={45} />}
+              title="Indian Food Available for Students"
+              description="Our campus provides a variety of nutritious and delicious Indian meals, helping students feel at home while they pursue their studies abroad."
+            />
           </div>
         </div>
       </section>
@@ -378,24 +427,22 @@ const FeatureCard = ({ icon, title, description }) => (
   </div>
 );
 
-const FacilityCard = ({ icon, title, imageSrc }) => (
+const FacilityCard = ({ icon, title, imageSrc, description }) => (
   <div className="bg-white p-6 rounded-lg shadow-md text-center">
     <div className="text-blue-500 mb-4 flex justify-center">{icon}</div>
     <h4 className="text-xl font-semibold mb-2">{title}</h4>
-    <img
-      src={imageSrc}
-      alt={title}
-      className="w-full h-40 object-cover rounded"
-    />
+    <p className="text-left">{description}</p>
+    <img src={imageSrc} alt={title} className="h-96 object-cover rounded" />
   </div>
 );
 
-const FeatureListItem = ({ text }) => (
-  <div className="flex items-center bg-white p-4 rounded-lg shadow-md">
-    <div className="bg-blue-500 text-white p-2 rounded-full mr-4">
-      <FaGraduationCap size={20} />
+const FeatureListItem = ({ icon, title, description }) => (
+  <div className="flex flex-col bg-white p-4 rounded-lg shadow-md gap-3">
+    <div className="bg-blue-500 text-white p-2 rounded-full mr-4 max-w-fit">
+      {icon}
     </div>
-    <p className="font-semibold">{text}</p>
+    <h4 className="font-semibold">{title}</h4>
+    <p> {description} </p>
   </div>
 );
 

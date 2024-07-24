@@ -1,6 +1,11 @@
 import Link from "next/link";
 
-export default function Cta1() {
+export default function Cta1({
+  primaryHeading,
+  description,
+  buttonText,
+  buttonLink,
+}) {
   return (
     <>
       <section className="cta-area">
@@ -9,24 +14,10 @@ export default function Cta1() {
             <div className="col-12">
               <div className="cta__wrapper m-0">
                 <div className="section__title white-title">
-                  <h2 className="title tg-svg">
-                    Empower Students
-                    <span className="position-relative">
-                      <span
-                        className="svg-icon"
-                        id="svg-9"
-                        data-svg-icon="assets/img/icons/title_shape.svg"
-                      />{" "}
-                      Achieve
-                    </span>
-                    Success.
-                  </h2>
+                  <h2 className="title tg-svg"> {primaryHeading} </h2>
                 </div>
                 <div className="cta__desc">
-                  <p>
-                    Unlock your potential with our expert educational services
-                    designed to help students succeed!
-                  </p>
+                  <p>{description}</p>
                 </div>
                 <div className="tg-button-wrap justify-content-center justify-content-md-end">
                   <Link

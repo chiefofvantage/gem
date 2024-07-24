@@ -38,6 +38,7 @@ import {
   SlideFromBottomAndFadeIn,
 } from "@/components/animation/animation";
 import Head from "next/head";
+import Layout from "@/components/layout/Layout";
 
 const sliderImageArr = [img1, img2, img3];
 const brandImg = [
@@ -54,8 +55,8 @@ const brandImg = [
 
 const FarmGuru = () => {
   return (
-    <>
-      <Header1 />
+    <Layout headerStyle={1} footerStyle={1}>
+      {/* <Header1 /> */}
 
       <Head>
         <title>Farm Guru | Grey Matter solutions</title>
@@ -533,10 +534,7 @@ const FarmGuru = () => {
           }
         />
       </main>
-      <div className="bg-[#061e43]">
-        <Footer1 />
-      </div>
-    </>
+    </Layout>
   );
 };
 export default FarmGuru;

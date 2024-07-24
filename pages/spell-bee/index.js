@@ -10,6 +10,7 @@ import {
 } from "@/components/animation/animation";
 import Footer1 from "@/components/layout/footer/Footer1";
 import Header1 from "@/components/layout/header/Header1";
+import Layout from "@/components/layout/Layout";
 import Cta1 from "@/components/sections/Cta1";
 import Head from "next/head";
 import Link from "next/link";
@@ -24,8 +25,7 @@ import {
 
 const SpellBee = () => {
   return (
-    <>
-      <Header1 />
+    <Layout headerStyle={1} footerStyle={1} isbgBlue>
       <Head>
         <title>Spell Bee | Grey Matter solutions</title>
         <meta property="og:title" content="Spell Bee" key="title" />
@@ -49,7 +49,7 @@ const SpellBee = () => {
                       data-aos="zoom-in-right"
                       data-aos-delay={1200}
                     />
-                    <h3 className="title tg-svg text-black">
+                    <h3 className="title tg-svg">
                       <span className="position-relative">
                         <span
                           className="svg-icon"
@@ -61,7 +61,7 @@ const SpellBee = () => {
                       Unleash Your <br /> Word <span>Power</span>
                     </h3>
 
-                    <p className="max-w-md md:text-left text-center lg:text-left">
+                    <p className="max-w-md md:text-left text-center lg:text-left text-white/80">
                       A Spelling Bee is a competition where contestants spell
                       various words. It enhances language skills, boosts
                       confidence, and promotes self-motivated learning.
@@ -492,10 +492,7 @@ const SpellBee = () => {
           }
         />
       </main>
-      <div className="bg-[#061e43]">
-        <Footer1 />
-      </div>
-    </>
+    </Layout>
   );
 };
 export default SpellBee;

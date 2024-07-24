@@ -14,6 +14,7 @@ export default function Layout({
   headTitle,
   breadcrumbTitle,
   children,
+  isbgBlue = false,
 }) {
   const [scroll, setScroll] = useState(0);
   // Moblile Menu
@@ -69,6 +70,7 @@ export default function Layout({
           scroll={scroll}
           isMobileMenu={isMobileMenu}
           handleMobileMenu={handleMobileMenu}
+          isbgBlue={isbgBlue}
         />
       )}
       {headerStyle == 1 ? (
@@ -76,6 +78,7 @@ export default function Layout({
           scroll={scroll}
           isMobileMenu={isMobileMenu}
           handleMobileMenu={handleMobileMenu}
+          isbgBlue={isbgBlue}
         />
       ) : null}
       {headerStyle == 2 ? (

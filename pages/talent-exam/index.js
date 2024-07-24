@@ -33,6 +33,7 @@ import {
   SlideFromBottomAndFadeIn,
 } from "@/components/animation/animation";
 import Head from "next/head";
+import Layout from "@/components/layout/Layout";
 
 const FeatureCard = ({ icon, title, description }) => (
   <div className="bg-white p-6 rounded-lg shadow-md text-center">
@@ -47,8 +48,8 @@ const FeatureCard = ({ icon, title, description }) => (
 const TalentExamWebpage = () => {
   const sliderImageArr = [img1, img2, img3];
   return (
-    <>
-      <Header1 />
+    <Layout headerStyle={1} footerStyle={1}>
+      {/* <Header1 /> */}
       <Head>
         <title>Talent Exam | Grey Matter solutions</title>
         <meta property="og:title" content="Talent Exam" key="title" />
@@ -529,12 +530,8 @@ const TalentExamWebpage = () => {
           description="Unlock their potential and set them on the path to success with the Future Kids Talent Test. Don't miss this chance to discover and nurture their unique talents."
           buttonText="Register Now"
         />
-
-        <div className="bg-[#061e43]">
-          <Footer1 />
-        </div>
       </main>
-    </>
+    </Layout>
   );
 };
 

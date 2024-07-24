@@ -6,6 +6,7 @@ import {
 import Breadcrumb from "@/components/layout/Breadcrumb";
 import Footer1 from "@/components/layout/footer/Footer1";
 import Header1 from "@/components/layout/header/Header1";
+import Head from "next/head";
 import Link from "next/link";
 import {
   FaGraduationCap,
@@ -128,6 +129,10 @@ export default function AboutUs() {
   return (
     <>
       <Header1 />
+      <Head>
+        <title>About Us | Grey Matter solutions</title>
+        <meta property="og:title" content="About Us" key="title" />
+      </Head>
       <div className="mt-24 overflow-hidden">
         <Breadcrumb breadcrumbTitle={"About Us"} />
 

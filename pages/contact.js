@@ -1,12 +1,17 @@
 import Breadcrumb from "@/components/layout/Breadcrumb";
 import Footer1 from "@/components/layout/footer/Footer1";
 import Header1 from "@/components/layout/header/Header1";
+import Head from "next/head";
 import Link from "next/link";
 
 export default function Contact() {
   return (
     <>
       <Header1 />
+      <Head>
+        <title>Contact Us | Grey Matter solutions</title>
+        <meta property="og:title" content="Contact Us" key="title" />
+      </Head>
 
       <div className="mt-24">
         <Breadcrumb breadcrumbTitle={"Contact"} />

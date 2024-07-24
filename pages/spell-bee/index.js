@@ -11,6 +11,7 @@ import {
 import Footer1 from "@/components/layout/footer/Footer1";
 import Header1 from "@/components/layout/header/Header1";
 import Cta1 from "@/components/sections/Cta1";
+import Head from "next/head";
 import Link from "next/link";
 import {
   RiNumber1,
@@ -25,6 +26,10 @@ const SpellBee = () => {
   return (
     <>
       <Header1 />
+      <Head>
+        <title>Spell Bee | Grey Matter solutions</title>
+        <meta property="og:title" content="Spell Bee" key="title" />
+      </Head>
       {/* 1200px */}
       <main className="overflow-hidden">
         {/* hero section */}

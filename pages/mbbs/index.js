@@ -8,6 +8,7 @@ import {
 } from "@/components/animation/animation";
 import Footer1 from "@/components/layout/footer/Footer1";
 import Header1 from "@/components/layout/header/Header1";
+import Head from "next/head";
 import Link from "next/link";
 import {
   FaBed,
@@ -31,6 +32,11 @@ const DavaoMedicalSchoolHomepage = () => {
   return (
     <div className="min-h-screen bg-gray-100">
       <Header1 isbgBlue />
+
+      <Head>
+        <title> | Grey Matter solutions</title>
+        <meta property="og:title" content="Spell Bee" key="title" />
+      </Head>
 
       {/* Hero Section */}
       <section

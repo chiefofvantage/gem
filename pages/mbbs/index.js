@@ -449,11 +449,6 @@ const DavaoMedicalSchoolHomepage = () => {
             </div>
           </div>
         </section>
-
-        {/* Footer */}
-        <div className="bg-[#061e43]">
-          <Footer1 />
-        </div>
       </div>
     </Layout>
   );

@@ -17,7 +17,9 @@ export default function Header1({
           <div className="container custom-container">
             <div className="row">
               <div className="col-12">
-                {/* <div className="mobile-nav-toggler" onClick={handleMobileMenu}><i className="tg-flaticon-menu-1" /></div> */}
+                <div className="mobile-nav-toggler" onClick={handleMobileMenu}>
+                  <i className="tg-flaticon-menu-1" />
+                </div>
                 <div className="tgmenu__wrap">
                   <nav className="tgmenu__nav">
                     <div className="logo">
@@ -154,21 +156,21 @@ export default function Header1({
                     </div>
                     <div className="nav-logo">
                       <Link href="/">
-                        <img src="/assets/img/logo/logo.png" alt="Logo" />
+                        <img src="/assets/img/custom/logo.png" alt="Logo" />
                       </Link>
                     </div>
-                    <div className="tgmobile__search">
+                    {/* <div className="tgmobile__search">
                       <form action="#">
                         <input type="text" placeholder="Search here..." />
                         <button>
                           <i className="fas fa-search" />
                         </button>
                       </form>
-                    </div>
+                    </div> */}
                     <div className="tgmobile__menu-outer">
-                      <MobileMenu />
+                      <MobileMenu isbgBlue={isbgBlue} />
                     </div>
-                    <div className="tgmenu__action">
+                    {/* <div className="tgmenu__action">
                       <ul className="list-wrap">
                         <li className="header-btn login-btn">
                           <Link href="#" className="btn">
@@ -181,7 +183,7 @@ export default function Header1({
                           </Link>
                         </li>
                       </ul>
-                    </div>
+                    </div> */}
                     <div className="social-links">
                       <ul className="list-wrap">
                         <li>

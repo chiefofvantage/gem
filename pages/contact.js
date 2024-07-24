@@ -17,8 +17,8 @@ export default function Contact() {
                 <div className="contact-info-wrap">
                   <h2 className="title">Keep In Touch With Us</h2>
                   <p>
-                    Neque convallis cras semper auctor. Libero id faucibus
-                    getnvallis.id faucibus nisl tincidunt egetnvallis.
+                    Alternatively, you can use the form below to send us a
+                    message directly. We'll get back to you as soon as possible.
                   </p>
                   <ul className="list-wrap">
                     <li>
@@ -27,7 +27,8 @@ export default function Contact() {
                       </div>
                       <div className="content">
                         <p>
-                          68 Street Holakt Street world <br /> 10002 New York
+                          15, 22ND STREET, NANGANALLUR, <br /> CHENNAI - 600
+                          061.
                         </p>
                       </div>
                     </li>
@@ -36,8 +37,8 @@ export default function Contact() {
                         <i className="flaticon-phone-call" />
                       </div>
                       <div className="content">
-                        <Link href="tel:0123456789">+123 555 69090</Link>
-                        <Link href="tel:0123456789">+123 555 69090</Link>
+                        <Link href="tel:0123456789">+91 90875-57766</Link>
+                        <Link href="tel:0123456789">+91 98404-57400 </Link>
                       </div>
                     </li>
                     <li>
@@ -45,8 +46,12 @@ export default function Contact() {
                         <i className="flaticon-email" />
                       </div>
                       <div className="content">
-                        <Link href="mailto:info@gmail.com">info@gmail.com</Link>
-                        <Link href="mailto:info@gmail.com">info@gmail.com</Link>
+                        <Link
+                          href="mailto:GREYMATTEREDUSOLUTIONS@GMAIL.Com"
+                          className="lowercase"
+                        >
+                          GREYMATTEREDUSOLUTIONS@GMAIL.Com
+                        </Link>
                       </div>
                     </li>
                   </ul>

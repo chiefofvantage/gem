@@ -31,6 +31,13 @@ import img1 from "@/public/farm-guru-1.png";
 import img2 from "@/public/farm-guru-2.png";
 import img3 from "@/public/farm-guru-3.png";
 
+import {
+  SlideFromRightAndFadeIn,
+  SlideFromLeftAndFadeIn,
+  FadeIn,
+  SlideFromBottomAndFadeIn,
+} from "@/components/animation/animation";
+
 const sliderImageArr = [img1, img2, img3];
 const brandImg = [
   "/brand-1.png",
@@ -56,71 +63,75 @@ const FarmGuru = () => {
           data-background={sliderImageArr[0]}
         >
           <div className="flex flex-col lg:flex-row container justify-between gap-5 items-center overflow-hidden">
-            <div className="">
-              <div className="slider__content ">
-                <span
-                  className="sub-title text-sm sm:text-base"
-                  data-delay-in=".2"
-                  data-duration-in="1.5"
-                >
-                  Experience the Joy of Farming with Farm Guru
-                </span>
-                <h2
-                  className="text-2xl sm:text-[2.8rem] leading-tight tg-svg mb-2"
-                  data-delay-in=".4"
-                  data-duration-in="1.5"
-                >
-                  Connecting{" "}
-                  <span className="position-relative">
-                    <span
-                      className="svg-icon"
-                      id="slider-svg02"
-                      data-svg-icon="assets/img/icons/title_shape.svg"
-                    />
-                    Children{" "}
-                  </span>
-                  with Nature and{" "}
-                  <span className="position-relative">
-                    <span
-                      className="svg-icon"
-                      id="slider-svg02"
-                      data-svg-icon="assets/img/icons/title_shape.svg"
-                    />
-                    Agriculture{" "}
-                  </span>
-                </h2>
-                <ul
-                  className="list-wrap"
-                  data-delay-in=".6"
-                  data-duration-in="1.5"
-                >
-                  <li>
-                    <i className="fas fa-check-circle" />
-                    Hands-On Learning in Nature{" "}
-                  </li>
-                  <li>
-                    <i className="fas fa-check-circle" />
-                    Fun and Educational Field Trips
-                  </li>
-                </ul>
-                <div
-                  className="tg-button-wrap"
-                  data-delay-in=".8"
-                  data-duration-in="1.5"
-                >
-                  <Link
-                    href="/"
-                    className="btn tg-svg w-full lg:max-w-fit justify-center"
+            <SlideFromLeftAndFadeIn>
+              <div className="">
+                <div className="slider__content ">
+                  <span
+                    className="sub-title text-sm sm:text-base"
+                    data-delay-in=".2"
+                    data-duration-in="1.5"
                   >
-                    <span className="text">Book Your Visit Today</span>{" "}
-                  </Link>
+                    Experience the Joy of Farming with Farm Guru
+                  </span>
+                  <h2
+                    className="text-2xl sm:text-[2.8rem] leading-tight tg-svg mb-2"
+                    data-delay-in=".4"
+                    data-duration-in="1.5"
+                  >
+                    Connecting{" "}
+                    <span className="position-relative">
+                      <span
+                        className="svg-icon"
+                        id="slider-svg02"
+                        data-svg-icon="assets/img/icons/title_shape.svg"
+                      />
+                      Children{" "}
+                    </span>
+                    with <br /> Nature and{" "}
+                    <span className="position-relative">
+                      <span
+                        className="svg-icon"
+                        id="slider-svg02"
+                        data-svg-icon="assets/img/icons/title_shape.svg"
+                      />
+                      Agriculture{" "}
+                    </span>
+                  </h2>
+                  <ul
+                    className="list-wrap"
+                    data-delay-in=".6"
+                    data-duration-in="1.5"
+                  >
+                    <li>
+                      <i className="fas fa-check-circle" />
+                      Hands-On Learning in Nature{" "}
+                    </li>
+                    <li>
+                      <i className="fas fa-check-circle" />
+                      Fun and Educational Field Trips
+                    </li>
+                  </ul>
+                  <div
+                    className="tg-button-wrap"
+                    data-delay-in=".8"
+                    data-duration-in="1.5"
+                  >
+                    <Link
+                      href="/"
+                      className="btn tg-svg w-full lg:max-w-fit justify-center"
+                    >
+                      <span className="text">Book Your Visit Today</span>{" "}
+                    </Link>
+                  </div>
                 </div>
               </div>
-            </div>
-            <img
-              src="/farm-guru/farm-guru-hero-img.png"
-              className="rounded object-cover object-center h-96 animate-fadein"
-            />
+            </SlideFromLeftAndFadeIn>
+            <SlideFromBottomAndFadeIn delay={0.25}>
+              <img
+                src="/farm-guru/farm-guru-hero-img.png"
+                className="rounded object-cover object-center h-96 animate-fadein"
+              />
+            </SlideFromBottomAndFadeIn>
           </div>
 
           <img
@@ -150,55 +161,63 @@ const FarmGuru = () => {
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-xl-5 col-lg-6">
-                <div className="about__title-wrap">
-                  <div className="section__title">
-                    <span className="sub-title">About Us</span>
-                    <h2 className="title tg-svg text-xl">
-                      Connecting Generations Through Sustainable{" "}
-                      <span className="position-relative">
-                        <span
-                          className="svg-icon"
-                          id="about-svg"
-                          data-svg-icon="assets/img/icons/title_shape.svg"
-                        />
-                        Farming
-                      </span>{" "}
-                    </h2>
+                <SlideFromLeftAndFadeIn>
+                  <div className="about__title-wrap">
+                    <div className="section__title">
+                      <span className="sub-title">About Us</span>
+                      <h2 className="title tg-svg text-xl">
+                        Connecting Generations Through Sustainable{" "}
+                        <span className="position-relative">
+                          <span
+                            className="svg-icon"
+                            id="about-svg"
+                            data-svg-icon="assets/img/icons/title_shape.svg"
+                          />
+                          Farming
+                        </span>{" "}
+                      </h2>
+                    </div>
+                    <p className="">
+                      Farm Guru was established in October 2016 by a group of
+                      professionals, agriculturalists, educationalists, and
+                      entrepreneurs. Our mission is to bring children and farms
+                      together, providing hands-on experience in organic farming
+                      and sustainable practices.{" "}
+                    </p>
+                    <p>
+                      Located just 25 km from Chennai, Farm Guru offers a unique
+                      opportunity for students to learn about farming in a
+                      serene, green environment.{" "}
+                    </p>
                   </div>
-                  <p className="">
-                    Farm Guru was established in October 2016 by a group of
-                    professionals, agriculturalists, educationalists, and
-                    entrepreneurs. Our mission is to bring children and farms
-                    together, providing hands-on experience in organic farming
-                    and sustainable practices.{" "}
-                  </p>
-                  <p>
-                    Located just 25 km from Chennai, Farm Guru offers a unique
-                    opportunity for students to learn about farming in a serene,
-                    green environment.{" "}
-                  </p>
-                </div>
+                </SlideFromLeftAndFadeIn>
               </div>
               <div className="col-xl-7 col-lg-6 col-md-11">
                 <div className="about__images-wrap">
                   <div className="column">
-                    <img
-                      src="/about-3.png"
-                      alt="img"
-                      className="h-[25rem] object-cover object-center"
-                    />
+                    <SlideFromRightAndFadeIn>
+                      <img
+                        src="/about-3.png"
+                        alt="img"
+                        className="h-[25rem] object-cover object-center"
+                      />
+                    </SlideFromRightAndFadeIn>
                   </div>
                   <div className="column">
-                    <img
-                      src="/about-2.png"
-                      alt="img"
-                      className="h-[12.5rem] object-cover object-center"
-                    />
-                    <img
-                      src="/about-1.png"
-                      alt="img"
-                      className="h-[12.5rem] object-cover object-center"
-                    />
+                    <SlideFromRightAndFadeIn delay={0.1}>
+                      <img
+                        src="/about-2.png"
+                        alt="img"
+                        className="h-[12.5rem] object-cover object-center"
+                      />
+                    </SlideFromRightAndFadeIn>
+                    <SlideFromRightAndFadeIn delay={0.2}>
+                      <img
+                        src="/about-1.png"
+                        alt="img"
+                        className="h-[12.5rem] object-cover object-center"
+                      />
+                    </SlideFromRightAndFadeIn>
                   </div>
                   <div className="about__shapes">
                     <img
@@ -230,132 +249,146 @@ const FarmGuru = () => {
           <div className="container">
             <div className="row align-items-center justify-content-center mb-55">
               <div className="col-xl-7 col-lg-8 col-md-10">
-                <div className="categories__title-wrap text-center text-lg-start m-0">
-                  <div className="section__title mb-0">
-                    <span className="sub-title">What we do</span>
-                    <h2 className="title tg-svg">
-                      A Day at our{" "}
-                      <span className="position-relative">
-                        <span
-                          className="svg-icon"
-                          id="svg-5"
-                          data-svg-icon="assets/img/icons/title_shape.svg"
-                        />
-                        Farm
-                      </span>
-                    </h2>
+                <SlideFromLeftAndFadeIn>
+                  <div className="categories__title-wrap text-center text-lg-start m-0">
+                    <div className="section__title mb-0">
+                      <span className="sub-title">What we do</span>
+                      <h2 className="title tg-svg">
+                        A Day at our{" "}
+                        <span className="position-relative">
+                          <span
+                            className="svg-icon"
+                            id="svg-5"
+                            data-svg-icon="assets/img/icons/title_shape.svg"
+                          />
+                          Farm
+                        </span>
+                      </h2>
+                    </div>
+                    <p className="mb-0 max-w-md">
+                      The day starts early at the farm.The best time to reach
+                      here is before the sun clears the tree line to come out
+                      into the open.{" "}
+                    </p>
                   </div>
-                  <p className="mb-0 max-w-md">
-                    The day starts early at the farm.The best time to reach here
-                    is before the sun clears the tree line to come out into the
-                    open.{" "}
-                  </p>
-                </div>
+                </SlideFromLeftAndFadeIn>
               </div>
               <div className="col-xl-5 col-lg-4 col-md-6"></div>
             </div>
             <div className="row justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-3">
-              <div className="col">
-                <div className="categories__item-two tg-svg">
-                  <Link href="/courses">
-                    <div className="icon">
-                      <RiNumber1 />
-                    </div>
-                    <div className="">
-                      <div className="text-[#082a5e] text-xl hover:text-[]">
-                        Welcome Drink
+              <SlideFromBottomAndFadeIn>
+                <div className="col">
+                  <div className="categories__item-two tg-svg">
+                    <Link href="/courses">
+                      <div className="icon">
+                        <RiNumber1 />
                       </div>
-                      <span className="text-sm text-[#5a7093]">
-                        Refreshing fresh coconut water
-                      </span>
-                    </div>
-                  </Link>
+                      <div className="">
+                        <div className="text-[#082a5e] text-xl hover:text-[]">
+                          Welcome Drink
+                        </div>
+                        <span className="text-sm text-[#5a7093]">
+                          Refreshing fresh coconut water
+                        </span>
+                      </div>
+                    </Link>
+                  </div>
                 </div>
+              </SlideFromBottomAndFadeIn>
+              <div className="col">
+                <SlideFromBottomAndFadeIn>
+                  <div className="categories__item-two tg-svg">
+                    <Link href="/courses">
+                      <div className="icon">
+                        <RiNumber2 />
+                      </div>
+                      <div className="">
+                        <div className="text-[#082a5e] text-xl hover:text-[]">
+                          Learning Tour
+                        </div>
+                        <span className="text-sm text-[#5a7093]">
+                          Discover transplanting and crop rotation.{" "}
+                        </span>
+                      </div>
+                    </Link>
+                  </div>
+                </SlideFromBottomAndFadeIn>
               </div>
               <div className="col">
-                <div className="categories__item-two tg-svg">
-                  <Link href="/courses">
-                    <div className="icon">
-                      <RiNumber2 />
-                    </div>
-                    <div className="">
-                      <div className="text-[#082a5e] text-xl hover:text-[]">
-                        Learning Tour
+                <SlideFromBottomAndFadeIn>
+                  <div className="categories__item-two tg-svg">
+                    <Link href="/courses">
+                      <div className="icon">
+                        <RiNumber3 />
                       </div>
-                      <span className="text-sm text-[#5a7093]">
-                        Discover transplanting and crop rotation.{" "}
-                      </span>
-                    </div>
-                  </Link>
-                </div>
+                      <div className="">
+                        <div className="text-[#082a5e] text-xl hover:text-[]">
+                          Farm to Fork
+                        </div>
+                        <span className="text-sm text-[#5a7093]">
+                          Enjoy farm-fresh, healthy meals.
+                        </span>
+                      </div>
+                    </Link>
+                  </div>
+                </SlideFromBottomAndFadeIn>
               </div>
               <div className="col">
-                <div className="categories__item-two tg-svg">
-                  <Link href="/courses">
-                    <div className="icon">
-                      <RiNumber3 />
-                    </div>
-                    <div className="">
-                      <div className="text-[#082a5e] text-xl hover:text-[]">
-                        Farm to Fork
+                <SlideFromBottomAndFadeIn>
+                  <div className="categories__item-two tg-svg">
+                    <Link href="/courses">
+                      <div className="icon">
+                        <RiNumber4 />
                       </div>
-                      <span className="text-sm text-[#5a7093]">
-                        Enjoy farm-fresh, healthy meals.
-                      </span>
-                    </div>
-                  </Link>
-                </div>
+                      <div className="">
+                        <div className="text-[#082a5e] text-xl hover:text-[]">
+                          Digging Knowledge
+                        </div>
+                        <span className="text-sm text-[#5a7093] leading-none">
+                          Stories and yoga under the mango tree.{" "}
+                        </span>
+                      </div>
+                    </Link>
+                  </div>
+                </SlideFromBottomAndFadeIn>
               </div>
               <div className="col">
-                <div className="categories__item-two tg-svg">
-                  <Link href="/courses">
-                    <div className="icon">
-                      <RiNumber4 />
-                    </div>
-                    <div className="">
-                      <div className="text-[#082a5e] text-xl hover:text-[]">
-                        Digging Knowledge
+                <SlideFromBottomAndFadeIn>
+                  <div className="categories__item-two tg-svg">
+                    <Link href="/courses">
+                      <div className="icon">
+                        <RiNumber5 />
                       </div>
-                      <span className="text-sm text-[#5a7093] leading-none">
-                        Stories and yoga under the mango tree.{" "}
-                      </span>
-                    </div>
-                  </Link>
-                </div>
+                      <div className="">
+                        <div className="text-[#082a5e] text-xl hover:text-[]">
+                          Time to Leave
+                        </div>
+                        <span className="text-sm text-[#5a7093]">
+                          Take home memories and awareness.
+                        </span>
+                      </div>
+                    </Link>
+                  </div>
+                </SlideFromBottomAndFadeIn>
               </div>
               <div className="col">
-                <div className="categories__item-two tg-svg">
-                  <Link href="/courses">
-                    <div className="icon">
-                      <RiNumber5 />
-                    </div>
-                    <div className="">
-                      <div className="text-[#082a5e] text-xl hover:text-[]">
-                        Time to Leave
+                <SlideFromBottomAndFadeIn>
+                  <div className="categories__item-two tg-svg">
+                    <Link href="/courses">
+                      <div className="icon">
+                        <RiNumber6 />
                       </div>
-                      <span className="text-sm text-[#5a7093]">
-                        Take home memories and awareness.
-                      </span>
-                    </div>
-                  </Link>
-                </div>
-              </div>
-              <div className="col">
-                <div className="categories__item-two tg-svg">
-                  <Link href="/courses">
-                    <div className="icon">
-                      <RiNumber6 />
-                    </div>
-                    <div className="">
-                      <div className="text-[#082a5e] text-xl hover:text-[]">
-                        Sowing and Reaping
+                      <div className="">
+                        <div className="text-[#082a5e] text-xl hover:text-[]">
+                          Sowing and Reaping
+                        </div>
+                        <span className="text-sm text-[#5a7093]">
+                          Understand the true cost of farming.
+                        </span>
                       </div>
-                      <span className="text-sm text-[#5a7093]">
-                        Understand the true cost of farming.
-                      </span>
-                    </div>
-                  </Link>
-                </div>
+                    </Link>
+                  </div>
+                </SlideFromBottomAndFadeIn>
               </div>
             </div>
           </div>

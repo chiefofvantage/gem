@@ -35,9 +35,11 @@ import {
 
 const FeatureCard = ({ icon, title, description }) => (
   <div className="bg-white p-6 rounded-lg shadow-md text-center">
-    <div className="text-blue-500 mb-4 flex justify-center">{icon}</div>
-    <h4 className="text-xl font-semibold mb-2">{title}</h4>
-    <p className="text-left mx-auto">{description}</p>
+    <SlideFromBottomAndFadeIn>
+      <div className="text-blue-500 mb-4 flex justify-center">{icon}</div>
+      <h4 className="text-xl font-semibold mb-2">{title}</h4>
+      <p className="text-left mx-auto">{description}</p>
+    </SlideFromBottomAndFadeIn>
   </div>
 );
 
@@ -283,215 +285,238 @@ const TalentExamWebpage = () => {
         </section>
 
         {/* Features Section */}
-        <section className="categories-area py-10 bg-white">
-          <div className="container">
-            <div className="row align-items-center justify-content-center mb-55">
-              <div className="col-xl-7 col-lg-8 col-md-10">
-                <div className="categories__title-wrap text-center text-lg-start m-0">
-                  <div className="section__title mb-0">
-                    <span className="sub-title">Benefits</span>
-                    <h2 className="title tg-svg">
-                      Exclusive
-                      <span className="position-relative">
-                        <span
-                          className="svg-icon"
-                          id="svg-5"
-                          data-svg-icon="assets/img/icons/title_shape.svg"
-                        />
-                        Program Benefits
-                      </span>
-                    </h2>
-                  </div>
-                  <p className="mb-0">
-                    Gain exclusive perks including a NASA tour for top
-                    performers, networking with talented peers, year-round
-                    support with resources and mentorship, and opportunities for
-                    academic scholarships.{" "}
-                  </p>
-                </div>
-              </div>
-              <div className="col-xl-5 col-lg-4 col-md-6"></div>
-            </div>
-            <div className="row justify-content-center row-cols-1 row-cols-sm-2">
-              <div className="col">
-                <div className="categories__item-two tg-svg">
-                  <Link href="/">
-                    <div className="icon">
-                      <FaRocket />
-                    </div>
-                    <div className="space-y-2">
-                      <h3>NASA Tour</h3>
-                      <p className="text-sm text-[#5a7093] ">
-                        Top performers may win an educational trip to NASA.
-                        Experience a unique opportunity to explore space science
-                        firsthand.
+        <>
+          <section className="categories-area py-10 bg-white">
+            <div className="container">
+              <div className="row align-items-center justify-content-center mb-55">
+                <div className="col-xl-7 col-lg-8 col-md-10">
+                  <SlideFromLeftAndFadeIn>
+                    <div className="categories__title-wrap text-center text-lg-start m-0">
+                      <div className="section__title mb-0">
+                        <span className="sub-title">Benefits</span>
+                        <h2 className="title tg-svg">
+                          Exclusive
+                          <span className="position-relative">
+                            <span
+                              className="svg-icon"
+                              id="svg-5"
+                              data-svg-icon="assets/img/icons/title_shape.svg"
+                            />
+                            Program Benefits
+                          </span>
+                        </h2>
+                      </div>
+                      <p className="mb-0">
+                        Gain exclusive perks including a NASA tour for top
+                        performers, networking with talented peers, year-round
+                        support with resources and mentorship, and opportunities
+                        for academic scholarships.{" "}
                       </p>
                     </div>
-                  </Link>
+                  </SlideFromLeftAndFadeIn>
                 </div>
+                <div className="col-xl-5 col-lg-4 col-md-6"></div>
               </div>
-              <div className="col">
-                <div className="categories__item-two tg-svg">
-                  <Link href="/">
-                    <div className="icon">
-                      <FaUsers />
-                    </div>
-                    <div className="space-y-2">
-                      <h3> Networking</h3>
-                      <p className="text-sm text-[#5a7093] ">
-                        Connect with like-minded talented students. Build
-                        lasting relationships and collaborate on exciting
-                        projects.
-                      </p>
-                    </div>
-                  </Link>
-                </div>
-              </div>
-              <div className="col">
-                <div className="categories__item-two tg-svg">
-                  <Link href="/">
-                    <div className="icon">
-                      <FaCalendarAlt />
-                    </div>
-                    <div className="space-y-2">
-                      <h3>Year-round Support</h3>
-                      <p className="text-sm text-[#5a7093] ">
-                        Access educational resources and mentorship throughout
-                        the year. Receive guidance to help you excel in your
-                        academic journey.
-                      </p>
-                    </div>
-                  </Link>
-                </div>
-              </div>
-              <div className="col">
-                <div className="categories__item-two tg-svg">
-                  <Link href="/">
-                    <div className="icon">
-                      <FaDollarSign />
-                    </div>
-                    <div className="space-y-2">
-                      <h3>Scholarships</h3>
-                      <p className="text-sm text-[#5a7093] ">
-                        Explore opportunities for academic scholarships. Receive
-                        financial support to further your education and achieve
-                        your goals.
-                      </p>
-                    </div>
-                  </Link>
-                </div>
-              </div>
-              <div className="col">
-                <div className="categories__item-two tg-svg">
-                  <Link href="/">
-                    <div className="icon">
-                      <FaHeadphones />
-                    </div>
-                    <div className="space-y-2">
-                      <h3>Dedicated Support</h3>
-                      <p className="text-sm text-[#5a7093] ">
-                        Receive ongoing support from our team of academic
-                        counselors and technical experts throughout your
-                        learning journey.
-                      </p>
-                    </div>
-                  </Link>
-                </div>
-              </div>
-              <div className="col">
-                <div className="categories__item-two tg-svg">
-                  <Link href="/">
-                    <div className="icon">
-                      <FaBookOpen />
-                    </div>
-                    <div className="space-y-2">
-                      <h3>Learning Path</h3>
-                      <p className="text-sm text-[#5a7093] ">
-                        Follow a well-designed curriculum that ensures
-                        systematic coverage of all important topics and
-                        concepts.
-                      </p>
-                    </div>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="categories__shapes-two">
-            <div className="categories__shapes-item-two rotateme">
-              <img
-                src="/assets/img/objects/categories_shape05.png"
-                alt="shape"
-              />
-            </div>
-            <div className="categories__shapes-item-two" data-aos="fade-up">
-              <img
-                src="/assets/img/objects/categories_shape02.png"
-                alt="shape"
-              />
-            </div>
-          </div>
-        </section>
-
-        <section className="quick__action-area  py-10 bg-gray-100">
-          <div className="container">
-            <div className="row justify-content-center">
-              <div className="col-lg-6 col-md-10 col-sm-11">
-                <div className="quick__action-item action-bg-1">
-                  <div className="">
-                    <FaChartLine className="text-white text-5xl mb-0.5" />
-                    <h4 className="title text-white mb-2.5">
-                      Performance Analytics
-                    </h4>
-                    <p className="text-gray-200">
-                      Track your progress with detailed analytics. Understand
-                      your strengths and weaknesses to strategize better.
-                    </p>
-
-                    <div className="tg-button-wrap">
-                      <Link href="/contact" className="btn white-btn tg-svg">
-                        <span className="text">Register Now</span>{" "}
-                        <span
-                          className="svg-icon"
-                          id="reg-btn"
-                          data-svg-icon=""
-                        />
+              <div className="row justify-content-center row-cols-1 row-cols-sm-2">
+                <SlideFromLeftAndFadeIn>
+                  <div className="col">
+                    <div className="categories__item-two tg-svg">
+                      <Link href="/">
+                        <div className="icon">
+                          <FaRocket />
+                        </div>
+                        <div className="space-y-2">
+                          <h3>NASA Tour</h3>
+                          <p className="text-sm text-[#5a7093] ">
+                            Top performers may win an educational trip to NASA.
+                            Experience a unique opportunity to explore space
+                            science firsthand.
+                          </p>
+                        </div>
                       </Link>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div className="col-lg-6 col-md-10 col-sm-11">
-                <div
-                  className="quick__action-item action-bg-2"
-                  data-background="/quick_action02.jpg"
-                >
-                  <div className="">
-                    <FaChalkboardTeacher className="text-white text-5xl mb-0.5" />
-                    <h4 className="title text-white mb-2.5">Expert Guidance</h4>
-                    <p className="text-gray-200">
-                      Learn from top educators and industry experts through live
-                      classes, doubt-clearing sessions, and personalized
-                      mentoring.
-                    </p>
-                    <div className="tg-button-wrap">
-                      <Link href="/about-us" className="btn white-btn tg-svg">
-                        <span className="text">Discover Now</span>{" "}
-                        <span
-                          className="svg-icon"
-                          id="discover-btn"
-                          data-svg-icon="/assets/img/icons/btn-arrow.svg"
-                        />
+                </SlideFromLeftAndFadeIn>
+                <SlideFromRightAndFadeIn>
+                  <div className="col">
+                    <div className="categories__item-two tg-svg">
+                      <Link href="/">
+                        <div className="icon">
+                          <FaUsers />
+                        </div>
+                        <div className="space-y-2">
+                          <h3> Networking</h3>
+                          <p className="text-sm text-[#5a7093] ">
+                            Connect with like-minded talented students. Build
+                            lasting relationships and collaborate on exciting
+                            projects.
+                          </p>
+                        </div>
                       </Link>
+                    </div>
+                  </div>
+                </SlideFromRightAndFadeIn>
+
+                <SlideFromLeftAndFadeIn>
+                  <div className="col">
+                    <div className="categories__item-two tg-svg">
+                      <Link href="/">
+                        <div className="icon">
+                          <FaCalendarAlt />
+                        </div>
+                        <div className="space-y-2">
+                          <h3>Year-round Support</h3>
+                          <p className="text-sm text-[#5a7093] ">
+                            Access educational resources and mentorship
+                            throughout the year. Receive guidance to help you
+                            excel in your academic journey.
+                          </p>
+                        </div>
+                      </Link>
+                    </div>
+                  </div>
+                </SlideFromLeftAndFadeIn>
+
+                <SlideFromRightAndFadeIn>
+                  <div className="col">
+                    <div className="categories__item-two tg-svg">
+                      <Link href="/">
+                        <div className="icon">
+                          <FaDollarSign />
+                        </div>
+                        <div className="space-y-2">
+                          <h3>Scholarships</h3>
+                          <p className="text-sm text-[#5a7093] ">
+                            Explore opportunities for academic scholarships.
+                            Receive financial support to further your education
+                            and achieve your goals.
+                          </p>
+                        </div>
+                      </Link>
+                    </div>
+                  </div>
+                </SlideFromRightAndFadeIn>
+                <SlideFromLeftAndFadeIn>
+                  <div className="col">
+                    <div className="categories__item-two tg-svg">
+                      <Link href="/">
+                        <div className="icon">
+                          <FaHeadphones />
+                        </div>
+                        <div className="space-y-2">
+                          <h3>Dedicated Support</h3>
+                          <p className="text-sm text-[#5a7093] ">
+                            Receive ongoing support from our team of academic
+                            counselors and technical experts throughout your
+                            learning journey.
+                          </p>
+                        </div>
+                      </Link>
+                    </div>
+                  </div>
+                </SlideFromLeftAndFadeIn>
+                <SlideFromRightAndFadeIn>
+                  <div className="col">
+                    <div className="categories__item-two tg-svg">
+                      <Link href="/">
+                        <div className="icon">
+                          <FaBookOpen />
+                        </div>
+                        <div className="space-y-2">
+                          <h3>Learning Path</h3>
+                          <p className="text-sm text-[#5a7093] ">
+                            Follow a well-designed curriculum that ensures
+                            systematic coverage of all important topics and
+                            concepts.
+                          </p>
+                        </div>
+                      </Link>
+                    </div>
+                  </div>
+                </SlideFromRightAndFadeIn>
+              </div>
+            </div>
+            {/* <div className="categories__shapes-two">
+              <div className="categories__shapes-item-two rotateme">
+                <img
+                  src="/assets/img/objects/categories_shape05.png"
+                  alt="shape"
+                />
+              </div>
+              <div className="categories__shapes-item-two" data-aos="fade-up">
+                <img
+                  src="/assets/img/objects/categories_shape02.png"
+                  alt="shape"
+                />
+              </div>
+            </div> */}
+          </section>
+        </>
+        <SlideFromRightAndFadeIn>
+          <section className="quick__action-area  py-10 bg-gray-100">
+            <div className="container">
+              <div className="row justify-content-center">
+                <div className="col-lg-6 col-md-10 col-sm-11">
+                  <div className="quick__action-item action-bg-1">
+                    <div className="">
+                      <FaChartLine className="text-white text-5xl mb-0.5" />
+                      <h4 className="title text-white mb-2.5">
+                        Performance Analytics
+                      </h4>
+                      <p className="text-gray-200">
+                        Track your progress with detailed analytics. Understand
+                        your strengths and weaknesses to strategize better.
+                      </p>
+
+                      <div className="tg-button-wrap">
+                        <Link href="/contact" className="btn white-btn tg-svg">
+                          <span className="text">Register Now</span>{" "}
+                          <span
+                            className="svg-icon"
+                            id="reg-btn"
+                            data-svg-icon=""
+                          />
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-6 col-md-10 col-sm-11">
+                  <div
+                    className="quick__action-item action-bg-2"
+                    data-background="/quick_action02.jpg"
+                  >
+                    <div className="">
+                      <FaChalkboardTeacher className="text-white text-5xl mb-0.5" />
+                      <h4 className="title text-white mb-2.5">
+                        Expert Guidance
+                      </h4>
+                      <p className="text-gray-200">
+                        Learn from top educators and industry experts through
+                        live classes, doubt-clearing sessions, and personalized
+                        mentoring.
+                      </p>
+                      <div className="tg-button-wrap">
+                        <Link href="/about-us" className="btn white-btn tg-svg">
+                          <span className="text">Discover Now</span>{" "}
+                          <span
+                            className="svg-icon"
+                            id="discover-btn"
+                            data-svg-icon="/assets/img/icons/btn-arrow.svg"
+                          />
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </SlideFromRightAndFadeIn>
         {/* Testimonials Section */}
-        <Testimonial3 />
+        <SlideFromBottomAndFadeIn delay={0.25}>
+          <Testimonial3 />
+        </SlideFromBottomAndFadeIn>
 
         {/* contact section */}
         <Cta1

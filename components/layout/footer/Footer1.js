@@ -15,11 +15,12 @@ export default function Footer1() {
                   <div className="footer__about">
                     <div className="footer__logo logo">
                       <Link href="/">
-                        <img src="/assets/img/custom/logo.png" alt="img" />
+                        <img src="/assets/img/custom/logo.png" alt="Logo" />
                       </Link>
                     </div>
                     <p>
-                      Supporting students in achieving their goals and beyond.
+                      Helping students achieve their academic and personal
+                      goals.
                     </p>
                     <ul className="list-wrap m-0 p-0">
                       <li className="address">
@@ -31,84 +32,79 @@ export default function Footer1() {
                       <li className="number">
                         greymatteredusolutions@gmail.com
                       </li>
-                      {/* <li className="socials">
-                                                <Link href="#"><i className="fab fa-facebook-f" /></Link>
-                                                <Link href="#"><i className="fab fa-twitter" /></Link>
-                                                <Link href="#"><i className="fab fa-whatsapp" /></Link>
-                                                <Link href="#"><i className="fab fa-linkedin-in" /></Link>
-                                                <Link href="#"><i className="fab fa-youtube" /></Link>
-                                            </li> */}
                     </ul>
                   </div>
                 </div>
               </div>
-              {/* <div className="col-xl-3 col-lg-4 col-sm-6">
-                                <div className="footer-widget widget_nav_menu">
-                                    <h4 className="fw-title">Resources</h4>
-                                    <ul className="list-wrap">
-                                        <li><Link href="/about-us">About</Link></li>
-                                        <li><Link href="/contact">Contact</Link></li>
-                                        <li><Link href="/contact">Help Center</Link></li>
-                                        <li><Link href="#">Refund</Link></li>
-                                        <li><Link href="#">Conditions</Link></li>
-                                        <li><Link href="#">Privacy Policy</Link></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className="col-xl-3 col-lg-4 col-sm-6">
-                                <div className="footer-widget widget_nav_menu">
-                                    <h4 className="fw-title">Courses</h4>
-                                    <ul className="list-wrap">
-                                        <li><Link href="/courses">Life Coach</Link></li>
-                                        <li><Link href="/courses">Business Coach</Link></li>
-                                        <li><Link href="/courses">Health Coach</Link></li>
-                                        <li><Link href="/courses">Development</Link></li>
-                                        <li><Link href="/courses">Web Design</Link></li>
-                                        <li><Link href="/courses">SEO Optimize</Link></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className="col-xl-3 col-lg-4 col-sm-6">
-                                <div className="footer-widget">
-                                    <h4 className="fw-title">Working Hours</h4>
-                                    <div className="footer__working-list">
-                                        <div className="footer__working-item">
-                                            <span className="day">Mon - Fri</span>
-                                            <span className="time">8:00 AM - 5:00 PM</span>
-                                        </div>
-                                        <div className="footer__working-item">
-                                            <span className="day">Mon - Fri</span>
-                                            <span className="time">9:00 AM - 6:00 PM</span>
-                                        </div>
-                                        <div className="footer__working-item">
-                                            <span className="day">Mon - Fri</span>
-                                            <span className="time">10:00 AM - 8:00 PM</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> */}
+              {/* Uncomment and update sections as needed */}
+              <div className="col-xl-3 col-lg-4 col-sm-6">
+                <div className="footer-widget widget_nav_menu">
+                  <h4 className="fw-title">Resources</h4>
+                  <ul className="list-wrap">
+                    <li>
+                      <Link href="/about-us">About</Link>
+                    </li>
+                    <li>
+                      <Link href="/contact">Contact</Link>
+                    </li>
+                    <li>
+                      <Link href="/contact">Help Center</Link>
+                    </li>
+                    <li>
+                      <Link href="#">Privacy Policy</Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="col-xl-3 col-lg-4 col-sm-6">
+                <div className="footer-widget widget_nav_menu">
+                  <h4 className="fw-title">Service</h4>
+                  <ul className="list-wrap">
+                    <li>
+                      <Link href="/spell-bee">Spell Bee</Link>
+                    </li>
+                    <li>
+                      <Link href="/mbbs">Overseas MBBS</Link>
+                    </li>
+                    <li>
+                      <Link href="/talent-exam">Talent Exam</Link>
+                    </li>
+                    <li>
+                      <Link href="/farm-guru">Field Trip</Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        {/* <div className="copyright__wrapper">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-8">
-                                <div className="copyright__text">
-                                    <p>Copyright © {new Date().getFullYear()} eduvalt. All rights reserved.</p>
-                                </div>
-                            </div>
-                            <div className="col-lg-4">
-                                <div className="copyright__menu">
-                                    <ul className="list-wrap d-flex flex-wrap justify-content-center justify-content-lg-end">
-                                        <li><Link href="#">Privacy Policy</Link></li>
-                                        <li><Link href="#">Terms  Conditions</Link></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
+        {/* Uncomment and update copyright section as needed */}
+        <div className="copyright__wrapper">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-8">
+                <div className="copyright__text">
+                  <p>
+                    Copyright © {new Date().getFullYear()} eduvalt. All rights
+                    reserved.
+                  </p>
+                </div>
+              </div>
+              <div className="col-lg-4">
+                <div className="copyright__menu">
+                  <ul className="list-wrap d-flex flex-wrap justify-content-center justify-content-lg-end">
+                    <li>
+                      <Link href="#">Privacy Policy</Link>
+                    </li>
+                    <li>
+                      <Link href="#">Terms & Conditions</Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </footer>
     </>
   );

@@ -36,12 +36,12 @@ export default function TestimonalSlider2() {
             <i className="fas fa-star" />
           </div>
           <p>
-            “ This platform made my JEE preparation so much easier and
-            structured. “
+            “ FKTT highlighted my child's strengths and opened up great
+            opportunities. The experience was invaluable. “
           </p>
           <div className="testimonial__avatar">
-            <h4 className="name">Priya Sharma</h4>
-            <span className="designation">JEE Main Aspirant</span>
+            <h4 className="name">Sarah M</h4>
+            <span className="designation">Parent</span>
           </div>
         </div>
         <div className="testimonial__item">
@@ -56,12 +56,12 @@ export default function TestimonalSlider2() {
             <i className="fas fa-star" />
           </div>
           <p>
-            “ The mock tests here are incredibly close to the actual NEET exam
-            pattern. “
+            “ The FKTT boosted my son's confidence and enthusiasm for learning.
+            A fantastic program for any eager student. “
           </p>
           <div className="testimonial__avatar">
-            <h4 className="name">Rahul Verma</h4>
-            <span className="designation">NEET Aspirant</span>
+            <h4 className="name">John D </h4>
+            <span className="designation">Parent</span>
           </div>
         </div>
         <div className="testimonial__item">
@@ -76,12 +76,12 @@ export default function TestimonalSlider2() {
             <i className="fas fa-star" />
           </div>
           <p>
-            “ Thanks to the expert guidance, I was able to crack CAT with a 99.5
-            percentile! “
+            “ FKTT was amazing! It made learning fun and encouraged me to
+            explore new subjects.“
           </p>
           <div className="testimonial__avatar">
-            <h4 className="name">Rahul Verma</h4>
-            <span className="designation">CAT Aspirant</span>
+            <h4 className="name">Alex A</h4>
+            <span className="designation">Student</span>
           </div>
         </div>
       </Slider>

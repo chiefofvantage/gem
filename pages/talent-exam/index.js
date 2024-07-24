@@ -1,38 +1,32 @@
-import React from "react";
-import {
-  FaGraduationCap,
-  FaClipboardCheck,
-  FaCalendarAlt,
-  FaBook,
-  FaUsers,
-  FaTrophy,
-  FaChalkboardTeacher,
-  FaCheck,
-  FaLaptop,
-  FaChartLine,
-  FaClock,
-  FaQuestionCircle,
-} from "react-icons/fa";
-import {
-  RiNumber1,
-  RiNumber2,
-  RiNumber3,
-  RiNumber4,
-  RiNumber5,
-  RiNumber6,
-} from "react-icons/ri";
+import Footer1 from "@/components/layout/footer/Footer1";
+import Header1 from "@/components/layout/header/Header1";
+import Cta1 from "@/components/sections/Cta1";
+import Testimonial3 from "@/components/sections/Testimonial3";
 import img1 from "@/public/farm-guru-1.png";
 import img2 from "@/public/farm-guru-2.png";
 import img3 from "@/public/farm-guru-3.png";
 import Link from "next/link";
-import Footer1 from "@/components/layout/footer/Footer1";
-import Cta1 from "@/components/sections/Cta1";
-import Header1 from "@/components/layout/header/Header1";
-import TestimonialSlider1 from "@/components/slider/TestimonialSlider1";
-import Testimonial1 from "@/components/sections/Testimonial1";
-import Testimonial2 from "@/components/sections/Testimonial2";
-import Testimonial3 from "@/components/sections/Testimonial3";
-import QuickAction1 from "@/components/sections/QuickAction1";
+import {
+  FaBook,
+  FaCalendarAlt,
+  FaChalkboardTeacher,
+  FaChartLine,
+  FaClipboardCheck,
+  FaClock,
+  FaDollarSign,
+  FaGraduationCap,
+  FaLaptop,
+  FaQuestionCircle,
+  FaRocket,
+  FaTrophy,
+  FaUsers,
+  FaBookOpen,
+  FaHeadphonesAlt,
+  FaHeadphones,
+  FaGlobe,
+  FaAward,
+  FaBrain,
+} from "react-icons/fa";
 
 const ExamCard = ({ title, date, registrationDeadline }) => (
   <div className="bg-white shadow-lg rounded-lg p-6 mb-4">
@@ -48,11 +42,11 @@ const ExamCard = ({ title, date, registrationDeadline }) => (
   </div>
 );
 
-const FeatureCard = ({ icon: Icon, title, description }) => (
-  <div className="bg-white shadow-lg rounded-lg p-6">
-    <Icon className="text-4xl text-blue-500 mb-4" />
-    <h3 className="text-xl font-bold mb-2">{title}</h3>
-    <p className="text-gray-600">{description}</p>
+const FeatureCard = ({ icon, title, description }) => (
+  <div className="bg-white p-6 rounded-lg shadow-md text-center">
+    <div className="text-blue-500 mb-4 flex justify-center">{icon}</div>
+    <h4 className="text-xl font-semibold mb-2">{title}</h4>
+    <p className="text-left mx-auto">{description}</p>
   </div>
 );
 
@@ -186,49 +180,35 @@ const TalentExamWebpage = () => {
                     data-delay-in=".2"
                     data-duration-in="1.5"
                   >
-                    Experience the Joy of Learning with Exam Guru
+                    Empowering young minds, shaping future innovators
                   </span>
                   <h2
-                    className="text-[2.8rem] tg-svg mb-11"
+                    className="text-[2.8rem] tg-svg mb-2"
                     data-delay-in=".4"
                     data-duration-in="1.5"
                   >
-                    Connecting Students With <br />
+                    A chance for your child <br />
                     <span className="position-relative text-[#1363df]">
                       <span
                         className="svg-icon"
                         id="slider-svg02"
                         data-svg-icon="assets/img/icons/title_shape.svg"
                       />
-                      Knowledge And Success{" "}
+                      to explore NASA!
                     </span>
                   </h2>
-                  <ul
-                    className="list-wrap"
-                    data-delay-in=".6"
-                    data-duration-in="1.5"
-                  >
-                    <li>
-                      <i className="fas fa-check-circle" />
-                      Comprehensive Study Materials
-                    </li>
-                    <li>
-                      <i className="fas fa-check-circle" />
-                      Expert-Led Mock Tests and Evaluations
-                    </li>
-                  </ul>
+                  <p className="max-w-md mt-4 leading-6">
+                    Unlock amazing opportunities with the Future Kids Talent
+                    Test, which recognizes excellence and rewards with an
+                    educational tour to NASA.
+                  </p>
                   <div
                     className="tg-button-wrap"
                     data-delay-in=".8"
                     data-duration-in="1.5"
                   >
                     <Link href="/courses" className="btn tg-svg">
-                      <span className="text">Book Your Trail Today</span>{" "}
-                      <span
-                        className="svg-icon"
-                        id="slider-btn01"
-                        data-svg-icon="assets/img/icons/btn-arrow.svg"
-                      />
+                      <span className="text">Register Today</span>
                     </Link>
                   </div>
                 </div>
@@ -252,17 +232,150 @@ const TalentExamWebpage = () => {
           />
         </div>
 
+        <section className="py-16 overflow-hidden">
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-xl-5 col-lg-6">
+                <div className="about__title-wrap">
+                  <div className="section__title">
+                    <span className="sub-title">About FKTT</span>
+                    <h2 className="title tg-svg text-xl">
+                      About the
+                      <span className="position-relative">
+                        <span
+                          className="svg-icon"
+                          id="about-svg"
+                          data-svg-icon="assets/img/icons/title_shape.svg"
+                        />
+                        Future Kids Talent Test
+                      </span>{" "}
+                    </h2>
+                  </div>
+                  <p className="">
+                    The Future Kids Talent Test (FKTT) is a state-level program
+                    designed to identify and nurture exceptional academic talent
+                    among students. It offers a comprehensive assessment of
+                    skills, recognizing high-potential students and their
+                    achievements.
+                  </p>
+                  <p>
+                    FKTT provides students the chance to compete at a state
+                    level, gaining valuable exposure and motivation. The program
+                    supports academic growth, helping students reach their
+                    fullest potential and preparing them for future success.
+                  </p>
+                </div>
+              </div>
+              <div className="col-xl-7 col-lg-6 col-md-11">
+                <div className="about__images-wrap">
+                  <div className="column">
+                    <img
+                      src="/exam/1.jpg"
+                      alt="img"
+                      className="h-[25rem] object-cover object-center"
+                    />
+                  </div>
+                  {/* <div className="column">
+                    <img
+                      src="/about-2.png"
+                      alt="img"
+                      className="h-[12.5rem] object-cover object-center"
+                    />
+                    <img
+                      src="/about-1.png"
+                      alt="img"
+                      className="h-[12.5rem] object-cover object-center"
+                    />
+                  </div>
+                  <div className="about__shapes">
+                    <img
+                      src="/assets/img/objects/about_shape01.png"
+                      alt="img"
+                      className="about-shape-01"
+                      data-aos="fade-down-left"
+                    />
+                    <img
+                      src="/assets/img/objects/about_shape02.png"
+                      alt="img"
+                      className="about-shape-02"
+                      data-aos="fade-up-right"
+                    />
+                    <img
+                      src="/assets/img/objects/about_shape03.png"
+                      alt="img"
+                      className="about-shape-03 rotateme"
+                    />
+                  </div> */}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Exams Section */}
         <section className="py-16">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">
-              <FaGraduationCap className="inline mr-2" />
-              Upcoming Exams
-            </h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              {exams.map((exam, index) => (
-                <ExamCard key={index} {...exam} />
-              ))}
+          <div className="container mx-auto">
+            <div className="container">
+              <div className="row align-items-center justify-content-center mb-55">
+                <div className="col-xl-7 col-lg-8 col-md-10">
+                  <div className="categories__title-wrap text-center text-lg-start m-0">
+                    <div className="section__title mb-0">
+                      <span className="sub-title">Test Subjects</span>
+                      <h2 className="title tg-svg">
+                        Explore the
+                        <span className="position-relative">
+                          <span
+                            className="svg-icon"
+                            id="svg-5"
+                            data-svg-icon="assets/img/icons/title_shape.svg"
+                          />
+                          Test Subjects
+                        </span>
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-xl-5 col-lg-4 col-md-6">
+                  <div className="tg-button-wrap mt-4 mt-lg-0 justify-content-center justify-content-lg-end"></div>
+                </div>
+              </div>
+              <div className="row justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-3"></div>
+            </div>
+            <div className="categories__shapes-two">
+              <div className="categories__shapes-item-two rotateme">
+                <img
+                  src="/assets/img/objects/categories_shape05.png"
+                  alt="shape"
+                />
+              </div>
+              <div className="categories__shapes-item-two" data-aos="fade-up">
+                <img
+                  src="/assets/img/objects/categories_shape02.png"
+                  alt="shape"
+                />
+              </div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <FeatureCard
+                icon={<FaBookOpen size={40} />}
+                title="Mathematics"
+                description="Enhance problem-solving and analytical skills through various mathematical concepts and challenges."
+              />
+              <FeatureCard
+                icon={<FaGlobe size={40} />}
+                title="Science"
+                description="Deepen understanding of scientific principles, theories, and their practical applications."
+              />
+              <FeatureCard
+                icon={<FaAward size={40} />}
+                title="General Knowledge"
+                description="Expand awareness of current affairs, history, geography, and cultural knowledge."
+              />
+              <FeatureCard
+                icon={<FaBrain size={40} />}
+                title="Mental Ability"
+                description="Develop logical reasoning, cognitive skills, and critical thinking through diverse mental challenges."
+              />
             </div>
           </div>
         </section>
@@ -274,39 +387,42 @@ const TalentExamWebpage = () => {
               <div className="col-xl-7 col-lg-8 col-md-10">
                 <div className="categories__title-wrap text-center text-lg-start m-0">
                   <div className="section__title mb-0">
-                    <span className="sub-title">Why Us?</span>
+                    <span className="sub-title">Benefits</span>
                     <h2 className="title tg-svg">
-                      Why Study Talent Exam in{" "}
+                      Exclusive
                       <span className="position-relative">
                         <span
                           className="svg-icon"
                           id="svg-5"
                           data-svg-icon="assets/img/icons/title_shape.svg"
                         />
-                        Philippines?
+                        Program Benefits
                       </span>
                     </h2>
                   </div>
-                  <p className="mb-0 max-w-md">
-                    Why we have to study MBBS in Philippines, what is the
-                    difference between studing in india and Philippines.
+                  <p className="mb-0">
+                    Gain exclusive perks including a NASA tour for top
+                    performers, networking with talented peers, year-round
+                    support with resources and mentorship, and opportunities for
+                    academic scholarships.{" "}
                   </p>
                 </div>
               </div>
               <div className="col-xl-5 col-lg-4 col-md-6"></div>
             </div>
-            <div className="row justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-3">
+            <div className="row justify-content-center row-cols-1 row-cols-sm-2">
               <div className="col">
                 <div className="categories__item-two tg-svg">
-                  <Link href="/courses">
+                  <Link href="/">
                     <div className="icon">
-                      <RiNumber1 />
+                      <FaRocket />
                     </div>
                     <div className="space-y-2">
-                      <h3>Study Material</h3>
-                      <p className="text-xs text-[#5a7093] ">
-                        Curated resources including video lectures, e-books, and
-                        practice papers.
+                      <h3>NASA Tour</h3>
+                      <p className="text-sm text-[#5a7093] ">
+                        Top performers may win an educational trip to NASA.
+                        Experience a unique opportunity to explore space science
+                        firsthand.
                       </p>
                     </div>
                   </Link>
@@ -314,15 +430,16 @@ const TalentExamWebpage = () => {
               </div>
               <div className="col">
                 <div className="categories__item-two tg-svg">
-                  <Link href="/courses">
+                  <Link href="/">
                     <div className="icon">
-                      <RiNumber2 />
+                      <FaUsers />
                     </div>
                     <div className="space-y-2">
-                      <h3> Community</h3>
-                      <p className="text-xs text-[#5a7093] ">
-                        Collaborate and grow with fellow aspirants through
-                        forums and study groups.{" "}
+                      <h3> Networking</h3>
+                      <p className="text-sm text-[#5a7093] ">
+                        Connect with like-minded talented students. Build
+                        lasting relationships and collaborate on exciting
+                        projects.
                       </p>
                     </div>
                   </Link>
@@ -330,15 +447,67 @@ const TalentExamWebpage = () => {
               </div>
               <div className="col">
                 <div className="categories__item-two tg-svg">
-                  <Link href="/courses">
+                  <Link href="/">
                     <div className="icon">
-                      <RiNumber3 />
+                      <FaCalendarAlt />
                     </div>
                     <div className="space-y-2">
-                      <h3>Mock Tests</h3>
-                      <p className="text-xs text-[#5a7093] ">
-                        AI-powered tests that adapt to your performance for
-                        targeted improvement.{" "}
+                      <h3>Year-round Support</h3>
+                      <p className="text-sm text-[#5a7093] ">
+                        Access educational resources and mentorship throughout
+                        the year. Receive guidance to help you excel in your
+                        academic journey.
+                      </p>
+                    </div>
+                  </Link>
+                </div>
+              </div>
+              <div className="col">
+                <div className="categories__item-two tg-svg">
+                  <Link href="/">
+                    <div className="icon">
+                      <FaDollarSign />
+                    </div>
+                    <div className="space-y-2">
+                      <h3>Scholarships</h3>
+                      <p className="text-sm text-[#5a7093] ">
+                        Explore opportunities for academic scholarships. Receive
+                        financial support to further your education and achieve
+                        your goals.
+                      </p>
+                    </div>
+                  </Link>
+                </div>
+              </div>
+              <div className="col">
+                <div className="categories__item-two tg-svg">
+                  <Link href="/">
+                    <div className="icon">
+                      <FaHeadphones />
+                    </div>
+                    <div className="space-y-2">
+                      <h3>Dedicated Support</h3>
+                      <p className="text-sm text-[#5a7093] ">
+                        Receive ongoing support from our team of academic
+                        counselors and technical experts throughout your
+                        learning journey.
+                      </p>
+                    </div>
+                  </Link>
+                </div>
+              </div>
+              <div className="col">
+                <div className="categories__item-two tg-svg">
+                  <Link href="/">
+                    <div className="icon">
+                      <FaBookOpen />
+                    </div>
+                    <div className="space-y-2">
+                      <h3>Structured Learning Path</h3>
+                      <p className="text-sm text-[#5a7093] ">
+                        Follow a well-designed curriculum that ensures
+                        systematic coverage of all important topics and
+                        concepts.
                       </p>
                     </div>
                   </Link>
@@ -423,7 +592,11 @@ const TalentExamWebpage = () => {
         <Testimonial3 />
 
         {/* contact section */}
-        <Cta1 />
+        <Cta1
+          primaryHeading="Join the Future Kids Talent Test"
+          description="Unlock their potential and set them on the path to success with the Future Kids Talent Test. Don't miss this chance to discover and nurture their unique talents."
+          buttonText="Register Now"
+        />
 
         <div className="bg-[#061e43]">
           <Footer1 />

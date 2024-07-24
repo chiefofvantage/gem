@@ -25,7 +25,10 @@ export default function Cta1({
                     href="https://api.whatsapp.com/send?phone=919500498547&text=Hello%2C%20I%20was%20exploring%20your%20website%20and%20am%20interested%20in%20learning%20more%20about%20your%20services."
                     className="btn white-btn tg-svg"
                   >
-                    <span className="text">Connect with us</span>{" "}
+                    <span className="text">
+                      {" "}
+                      {buttonText || "Connect with us"}{" "}
+                    </span>{" "}
                     <span
                       className="svg-icon"
                       id="cta-btn"

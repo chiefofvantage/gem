@@ -19,6 +19,9 @@ import {
   FaMoneyBillWave,
   FaBriefcaseMedical,
   FaLanguage,
+  FaBook,
+  FaAward,
+  FaBrain,
 } from "react-icons/fa";
 import {
   RiNumber1,
@@ -111,7 +114,7 @@ const DavaoMedicalSchoolHomepage = () => {
                   <div className="banner__images-col">
                     <img
                       src="/mbbs/1.jpeg"
-                      className="rounded-md h-1/2 w-full"
+                      className="rounded-md h-1/2 "
                       alt="img"
                       data-aos="fade-left"
                       data-aos-delay={300}

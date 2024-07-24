@@ -37,6 +37,7 @@ import {
   FadeIn,
   SlideFromBottomAndFadeIn,
 } from "@/components/animation/animation";
+import Head from "next/head";
 
 const sliderImageArr = [img1, img2, img3];
 const brandImg = [
@@ -55,6 +56,12 @@ const FarmGuru = () => {
   return (
     <>
       <Header1 />
+
+      <Head>
+        <title>Farm Guru | Grey Matter solutions</title>
+        <meta property="og:title" content="Farm Guru" key="title" />
+      </Head>
+
       <main className="">
         {/* hero section */}
 

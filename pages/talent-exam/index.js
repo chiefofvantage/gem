@@ -32,6 +32,7 @@ import {
   FadeIn,
   SlideFromBottomAndFadeIn,
 } from "@/components/animation/animation";
+import Head from "next/head";
 
 const FeatureCard = ({ icon, title, description }) => (
   <div className="bg-white p-6 rounded-lg shadow-md text-center">
@@ -48,6 +49,10 @@ const TalentExamWebpage = () => {
   return (
     <>
       <Header1 />
+      <Head>
+        <title>Talent Exam | Grey Matter solutions</title>
+        <meta property="og:title" content="Talent Exam" key="title" />
+      </Head>
       <main className="min-h-screen overflow-hidden">
         {/* hero section */}
         <div

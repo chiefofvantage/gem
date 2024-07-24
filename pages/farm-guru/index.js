@@ -50,83 +50,79 @@ const FarmGuru = () => {
       <Header1 />
       <main className="">
         {/* hero section */}
+
         <div
-          className="slider__item d-flex mt-16 relative"
+          className="slider__item d-flex mt-12 relative "
           data-background={sliderImageArr[0]}
         >
-          <div className="container ">
-            <div className="row">
-              <div className="col-xl-6 col-lg-8">
-                <div className="slider__content">
-                  <span
-                    className="sub-title"
-                    data-delay-in=".2"
-                    data-duration-in="1.5"
-                  >
-                    Experience the Joy of Farming with Farm Guru
+          <div className="flex flex-col lg:flex-row container justify-between gap-5 items-center overflow-hidden">
+            <div className="">
+              <div className="slider__content ">
+                <span
+                  className="sub-title text-sm sm:text-base"
+                  data-delay-in=".2"
+                  data-duration-in="1.5"
+                >
+                  Experience the Joy of Farming with Farm Guru
+                </span>
+                <h2
+                  className="text-2xl sm:text-[2.8rem] leading-tight tg-svg mb-2"
+                  data-delay-in=".4"
+                  data-duration-in="1.5"
+                >
+                  Connecting{" "}
+                  <span className="position-relative">
+                    <span
+                      className="svg-icon"
+                      id="slider-svg02"
+                      data-svg-icon="assets/img/icons/title_shape.svg"
+                    />
+                    Children{" "}
                   </span>
-                  <h2
-                    className="title tg-svg"
-                    data-delay-in=".4"
-                    data-duration-in="1.5"
+                  with Nature and{" "}
+                  <span className="position-relative">
+                    <span
+                      className="svg-icon"
+                      id="slider-svg02"
+                      data-svg-icon="assets/img/icons/title_shape.svg"
+                    />
+                    Agriculture{" "}
+                  </span>
+                </h2>
+                <ul
+                  className="list-wrap"
+                  data-delay-in=".6"
+                  data-duration-in="1.5"
+                >
+                  <li>
+                    <i className="fas fa-check-circle" />
+                    Hands-On Learning in Nature{" "}
+                  </li>
+                  <li>
+                    <i className="fas fa-check-circle" />
+                    Fun and Educational Field Trips
+                  </li>
+                </ul>
+                <div
+                  className="tg-button-wrap"
+                  data-delay-in=".8"
+                  data-duration-in="1.5"
+                >
+                  <Link
+                    href="/"
+                    className="btn tg-svg w-full lg:max-w-fit justify-center"
                   >
-                    Connecting{" "}
-                    <span className="position-relative">
-                      <span
-                        className="svg-icon"
-                        id="slider-svg02"
-                        data-svg-icon="assets/img/icons/title_shape.svg"
-                      />
-                      Children{" "}
-                    </span>
-                    with Nature and{" "}
-                    <span className="position-relative">
-                      <span
-                        className="svg-icon"
-                        id="slider-svg02"
-                        data-svg-icon="assets/img/icons/title_shape.svg"
-                      />
-                      Agriculture{" "}
-                    </span>
-                  </h2>
-                  <ul
-                    className="list-wrap"
-                    data-delay-in=".6"
-                    data-duration-in="1.5"
-                  >
-                    <li>
-                      <i className="fas fa-check-circle" />
-                      Hands-On Learning in Nature{" "}
-                    </li>
-                    <li>
-                      <i className="fas fa-check-circle" />
-                      Fun and Educational Field Trips
-                    </li>
-                  </ul>
-                  <div
-                    className="tg-button-wrap"
-                    data-delay-in=".8"
-                    data-duration-in="1.5"
-                  >
-                    <Link href="/courses" className="btn tg-svg">
-                      <span className="text">Book Your Visit Today</span>{" "}
-                      <span
-                        className="svg-icon"
-                        id="slider-btn01"
-                        data-svg-icon="assets/img/icons/btn-arrow.svg"
-                      />
-                    </Link>
-                  </div>
+                    <span className="text">Book Your Visit Today</span>{" "}
+                  </Link>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="absolute right-0 top-0 w-1/2 h-full">
             <img
               src="/farm-guru/farm-guru-hero-img.png"
-              className="rounded object-cover object-center -z-40"
+              className="rounded object-cover object-center h-96 animate-fadein"
             />
           </div>
+
           <img
             src="/assets/img/objects/categories_shape02.png"
             alt="shape"

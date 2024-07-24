@@ -26,19 +26,12 @@ import {
   FaUsers,
 } from "react-icons/fa";
 
-const ExamCard = ({ title, date, registrationDeadline }) => (
-  <div className="bg-white shadow-lg rounded-lg p-6 mb-4">
-    <h3 className="text-xl font-bold mb-2">{title}</h3>
-    <p className="text-gray-600 mb-2">
-      <FaCalendarAlt className="inline mr-2" />
-      Exam Date: {date}
-    </p>
-    <p className="text-gray-600">
-      <FaClipboardCheck className="inline mr-2" />
-      Registration Deadline: {registrationDeadline}
-    </p>
-  </div>
-);
+import {
+  SlideFromRightAndFadeIn,
+  SlideFromLeftAndFadeIn,
+  FadeIn,
+  SlideFromBottomAndFadeIn,
+} from "@/components/animation/animation";
 
 const FeatureCard = ({ icon, title, description }) => (
   <div className="bg-white p-6 rounded-lg shadow-md text-center">
@@ -48,178 +41,69 @@ const FeatureCard = ({ icon, title, description }) => (
   </div>
 );
 
-const TestimonialCard = ({ name, exam, quote }) => (
-  <div className="bg-white shadow-lg rounded-lg p-6">
-    <p className="text-gray-600 mb-4">"{quote}"</p>
-    <p className="font-bold">{name}</p>
-    <p className="text-sm text-gray-500">{exam} Aspirant</p>
-  </div>
-);
-
 const TalentExamWebpage = () => {
-  const exams = [
-    {
-      title: "JEE Main",
-      date: "April 10-12, 2025",
-      registrationDeadline: "March 15, 2025",
-    },
-    {
-      title: "NEET",
-      date: "May 5, 2025",
-      registrationDeadline: "April 1, 2025",
-    },
-    {
-      title: "CAT",
-      date: "November 28, 2025",
-      registrationDeadline: "October 15, 2025",
-    },
-  ];
-
-  const features = [
-    {
-      icon: FaBook,
-      title: "Comprehensive Study Material",
-      description:
-        "Access meticulously curated study resources, including video lectures, e-books, and practice papers, tailored for each exam.",
-    },
-    {
-      icon: FaUsers,
-      title: "Peer Learning Community",
-      description:
-        "Join a vibrant community of fellow aspirants. Collaborate, discuss, and grow together through forums and study groups.",
-    },
-    {
-      icon: FaTrophy,
-      title: "Adaptive Mock Tests",
-      description:
-        "Take AI-powered mock tests that adapt to your performance, helping you focus on areas that need improvement.",
-    },
-    {
-      icon: FaChalkboardTeacher,
-      title: "Expert Guidance",
-      description:
-        "Learn from top educators and industry experts through live classes, doubt-clearing sessions, and personalized mentoring.",
-    },
-    {
-      icon: FaLaptop,
-      title: "24/7 Online Access",
-      description:
-        "Study anytime, anywhere with our mobile-friendly platform. Your preparation never stops, even on the go.",
-    },
-    {
-      icon: FaChartLine,
-      title: "Performance Analytics",
-      description:
-        "Track your progress with detailed analytics. Understand your strengths and weaknesses to strategize better.",
-    },
-    {
-      icon: FaClock,
-      title: "Time Management Tools",
-      description:
-        "Master the art of time management with our specialized tools designed to improve your exam-taking speed and efficiency.",
-    },
-    {
-      icon: FaQuestionCircle,
-      title: "Personalized Doubt Resolution",
-      description:
-        "Get your doubts cleared quickly by our panel of subject matter experts, ensuring you never get stuck in your preparation.",
-    },
-  ];
-
-  const testimonials = [
-    {
-      name: "Priya Sharma",
-      exam: "JEE Main",
-      quote:
-        "This platform made my JEE preparation so much easier and structured.",
-    },
-    {
-      name: "Rahul Verma",
-      exam: "NEET",
-      quote:
-        "The mock tests here are incredibly close to the actual NEET exam pattern.",
-    },
-    {
-      name: "Ananya Desai",
-      exam: "CAT",
-      quote:
-        "Thanks to the expert guidance, I was able to crack CAT with a 99.5 percentile!",
-    },
-  ];
-
   const sliderImageArr = [img1, img2, img3];
-  const brandImg = [
-    "/brand-1.png",
-    "/brand-2.png",
-    "/brand-3.png",
-    "/brand-4.png",
-    "/brand-5.png",
-    "/brand-6.png",
-    "/brand-7.png",
-    "/brand-8.png",
-    "/brand-5.png",
-  ];
-
   return (
     <>
       <Header1 />
-      <main className="min-h-screen ">
+      <main className="min-h-screen overflow-hidden">
         {/* hero section */}
         <div
           className="slider__item d-flex mt-16"
           data-background={sliderImageArr[0]}
         >
-          <div className="flex w-full">
-            <div className="container">
-              <div className="row">
-                <div className="col-xl-6 col-lg -8">
-                  <div className="slider__content">
-                    <span
-                      className="sub-title"
-                      data-delay-in=".2"
-                      data-duration-in="1.5"
-                    >
-                      Empowering young minds, shaping future innovators
+          <div className="flex flex-col lg:flex-row container justify-between gap-5 items-center">
+            <SlideFromLeftAndFadeIn>
+              <div className="">
+                <div className="slider__content">
+                  <span
+                    className="sub-title text-sm sm:text-base"
+                    data-delay-in=".2"
+                    data-duration-in="1.5"
+                  >
+                    Empowering young minds, shaping future innovators
+                  </span>
+                  <h2
+                    className="text-2xl sm:text-[2.8rem] leading-tight tg-svg mb-2"
+                    data-delay-in=".4"
+                    data-duration-in="1.5"
+                  >
+                    A chance for your child <br />
+                    <span className="position-relative text-[#1363df]">
+                      <span
+                        className="svg-icon"
+                        id="slider-svg02"
+                        data-svg-icon="assets/img/icons/title_shape.svg"
+                      />
+                      to explore NASA!
                     </span>
-                    <h2
-                      className="text-[2.8rem] tg-svg mb-2"
-                      data-delay-in=".4"
-                      data-duration-in="1.5"
+                  </h2>
+                  <p className="max-w-md mt-4 leading-6">
+                    Unlock amazing opportunities with the Future Kids Talent
+                    Test, which recognizes excellence and rewards with an
+                    educational tour to NASA.
+                  </p>
+                  <div
+                    className="tg-button-wrap"
+                    data-delay-in=".8"
+                    data-duration-in="1.5"
+                  >
+                    <Link
+                      href="/courses"
+                      className="btn tg-svg w-full lg:max-w-fit justify-center"
                     >
-                      A chance for your child <br />
-                      <span className="position-relative text-[#1363df]">
-                        <span
-                          className="svg-icon"
-                          id="slider-svg02"
-                          data-svg-icon="assets/img/icons/title_shape.svg"
-                        />
-                        to explore NASA!
-                      </span>
-                    </h2>
-                    <p className="max-w-md mt-4 leading-6">
-                      Unlock amazing opportunities with the Future Kids Talent
-                      Test, which recognizes excellence and rewards with an
-                      educational tour to NASA.
-                    </p>
-                    <div
-                      className="tg-button-wrap"
-                      data-delay-in=".8"
-                      data-duration-in="1.5"
-                    >
-                      <Link href="/courses" className="btn tg-svg">
-                        <span className="text">Register Today</span>
-                      </Link>
-                    </div>
+                      <span className="text">Register Today</span>
+                    </Link>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="absolute right-0 top-20 w-1/2 h-full">
+            </SlideFromLeftAndFadeIn>
+            <SlideFromRightAndFadeIn>
               <img
                 src="/exam/hero-img.jpg"
-                className="rounded object-cover object-center -z-40"
+                className="rounded object-cover object-center h-80"
               />
-            </div>
+            </SlideFromRightAndFadeIn>
           </div>
           <img
             src="/assets/img/objects/categories_shape02.png"
@@ -242,49 +126,56 @@ const TalentExamWebpage = () => {
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-xl-5 col-lg-6">
-                <div className="about__title-wrap">
-                  <div className="section__title">
-                    <span className="sub-title">About FKTT</span>
-                    <h2 className="title tg-svg text-xl">
-                      About the
-                      <span className="position-relative">
-                        <span
-                          className="svg-icon"
-                          id="about-svg"
-                          data-svg-icon="assets/img/icons/title_shape.svg"
-                        />
-                        Future Kids Talent Test
-                      </span>{" "}
-                    </h2>
+                <SlideFromLeftAndFadeIn>
+                  <div className="about__title-wrap">
+                    <div className="section__title">
+                      <span className="sub-title">About FKTT</span>
+                      <h2 className="title tg-svg text-xl">
+                        About the
+                        <span className="position-relative">
+                          <span
+                            className="svg-icon"
+                            id="about-svg"
+                            data-svg-icon="assets/img/icons/title_shape.svg"
+                          />
+                          Future Kids Talent Test
+                        </span>{" "}
+                      </h2>
+                    </div>
+                    <p className="">
+                      The Future Kids Talent Test (FKTT) is a state-level
+                      program designed to identify and nurture exceptional
+                      academic talent among students. It offers a comprehensive
+                      assessment of skills, recognizing high-potential students
+                      and their achievements.
+                    </p>
+                    <p>
+                      FKTT provides students the chance to compete at a state
+                      level, gaining valuable exposure and motivation. The
+                      program supports academic growth, helping students reach
+                      their fullest potential and preparing them for future
+                      success.
+                    </p>
                   </div>
-                  <p className="">
-                    The Future Kids Talent Test (FKTT) is a state-level program
-                    designed to identify and nurture exceptional academic talent
-                    among students. It offers a comprehensive assessment of
-                    skills, recognizing high-potential students and their
-                    achievements.
-                  </p>
-                  <p>
-                    FKTT provides students the chance to compete at a state
-                    level, gaining valuable exposure and motivation. The program
-                    supports academic growth, helping students reach their
-                    fullest potential and preparing them for future success.
-                  </p>
-                </div>
+                </SlideFromLeftAndFadeIn>
               </div>
               <div className="col-xl-7 col-lg-6 col-md-11">
                 <div className="about__images-wrap">
                   <div className="flex flex-col sm:flex-row gap-5">
-                    <img
-                      src="/exam/2.jpeg"
-                      alt="img"
-                      className="h-[25rem] object-cover object-center rounded-md"
-                    />
-                    <img
-                      src="/exam/3.jpeg"
-                      alt="img"
-                      className="h-[25rem] object-cover object-center rounded-md"
-                    />
+                    <SlideFromRightAndFadeIn>
+                      <img
+                        src="/exam/2.jpeg"
+                        alt="img"
+                        className="h-[25rem] object-cover object-center rounded-md"
+                      />
+                    </SlideFromRightAndFadeIn>
+                    <SlideFromRightAndFadeIn delay={0.25}>
+                      <img
+                        src="/exam/3.jpeg"
+                        alt="img"
+                        className="h-[25rem] object-cover object-center rounded-md"
+                      />
+                    </SlideFromRightAndFadeIn>
                   </div>
                   {/* <div className="column">
                     <img
@@ -514,7 +405,7 @@ const TalentExamWebpage = () => {
                       <FaBookOpen />
                     </div>
                     <div className="space-y-2">
-                      <h3>Structured Learning Path</h3>
+                      <h3>Learning Path</h3>
                       <p className="text-sm text-[#5a7093] ">
                         Follow a well-designed curriculum that ensures
                         systematic coverage of all important topics and

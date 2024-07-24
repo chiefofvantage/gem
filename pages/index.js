@@ -106,7 +106,11 @@ export default function Home1() {
         {/* <Instructor1 /> */}
         {/* <Blog1 /> */}
 
-        <Cta1 />
+        <Cta1
+          primaryHeading="Unlock Your Potential with GREY MATTER"
+          description="Elevate your academic journey with GREY MATTER. From spell bee success to MBBS abroad and enriching field trips, we’re here to guide you. Start today!"
+          buttonText="Get Started Now"
+        />
         <div className="m-12" style={{ height: "120px" }}></div>
         {/* <Newsletter1 /> */}
       </Layout>

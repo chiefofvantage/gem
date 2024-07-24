@@ -1,7 +1,12 @@
 import Link from "next/link";
 import MobileMenu from "../MobileMenu";
 
-export default function Header1({ scroll, isMobileMenu, handleMobileMenu }) {
+export default function Header1({
+  scroll,
+  isMobileMenu,
+  handleMobileMenu,
+  isbgBlue = false,
+}) {
   return (
     <>
       <header>
@@ -20,99 +25,59 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu }) {
                         <img src="/assets/img/custom/logo.png" alt="Logo" />
                       </Link>
                     </div>
-                    <div className="tgmenu__navbar-wrap tgmenu__main-menu d-none d-xl-flex">
-                      {/* <ul className="navigation">
-                        <li className="active menu-item-has-children">
-                          <Link href="#">Home</Link>
-                          <ul className="sub-menu">
-                            <li className="active">
-                              <Link href="/">Home One</Link>
-                            </li>
-                            <li>
-                              <Link href="/index-2">Home Two</Link>
-                            </li>
-                            <li>
-                              <Link href="/index-3">Home Three</Link>
-                            </li>
-                          </ul>
+                    <div className="tgmenu__action ml-auto d-none d-xl-flex mr-5">
+                      <ul className="navigation flex gap-2">
+                        <li className="menu-item">
+                          <Link
+                            href="/spell-bee"
+                            className={`px-3  py-2 rounded  ${
+                              isbgBlue
+                                ? "text-white hover:bg-[#1363df] hover:text-white"
+                                : "hover:bg-[#1363df] hover:text-white"
+                            } `}
+                          >
+                            Spell Bee
+                          </Link>
                         </li>
-                        <li className="menu-item-has-children">
-                          <Link href="#">Programs</Link>
-                          <ul className="sub-menu">
-                            <li>
-                              <Link href="/spell-bee">Spell Bee</Link>
-                            </li>
-                            <li>
-                              <Link href="/mbbs">Overseas MBBS</Link>
-                            </li>
-                            <li>
-                              <Link href="/talent-exam">Talent Exam</Link>
-                            </li>
-                            <li>
-                              <Link href="/farm-guru">Field Trip</Link>
-                            </li>
-                          </ul>
+                        <li>
+                          <Link
+                            className={`px-3  py-2 rounded  ${
+                              isbgBlue
+                                ? "text-white hover:bg-[#1363df] hover:text-white"
+                                : "hover:bg-[#1363df] hover:text-white"
+                            } `}
+                            href="/mbbs"
+                          >
+                            Overseas MBBS
+                          </Link>
                         </li>
-                        <li className="menu-item-has-children">
-                          <Link href="#">Pages</Link>
-                          <ul className="sub-menu">
-                            <li>
-                              <Link href="/about-us">About Us</Link>
-                            </li>
-                            <li>
-                              <Link href="/instructors">Our Instructors</Link>
-                            </li>
-                            <li>
-                              <Link href="/instructor-details">
-                                Instructor Details
-                              </Link>
-                            </li>
-                            <li>
-                              <Link href="/mentors">Our Mentors</Link>
-                            </li>
-                            <li>
-                              <Link href="/events">Our Events</Link>
-                            </li>
-                            <li>
-                              <Link href="/events-details">Event Details</Link>
-                            </li>
-                            <li>
-                              <Link href="/faq">Asked Question</Link>
-                            </li>
-                            <li>
-                              <Link href="/404">404 Page</Link>
-                            </li>
-                            <li>
-                              <Link href="/contact">Contact</Link>
-                            </li>
-                          </ul>
+                        <li>
+                          <Link
+                            className={`px-3  py-2 rounded  ${
+                              isbgBlue
+                                ? "text-white hover:bg-[#1363df] hover:text-white"
+                                : "hover:bg-[#1363df] hover:text-white"
+                            } `}
+                            href="/talent-exam"
+                          >
+                            Talent Exam
+                          </Link>
                         </li>
-                        <li className="menu-item-has-children">
-                          <Link href="#">Shop</Link>
-                          <ul className="sub-menu">
-                            <li>
-                              <Link href="/shop">Shop Page</Link>
-                            </li>
-                            <li>
-                              <Link href="/shop-details">Shop Details</Link>
-                            </li>
-                          </ul>
+                        <li>
+                          <Link
+                            className={`px-3  py-2 rounded  ${
+                              isbgBlue
+                                ? "text-white hover:bg-[#1363df] hover:text-white"
+                                : "hover:bg-[#1363df] hover:text-white"
+                            } `}
+                            href="/farm-guru"
+                          >
+                            Field Trip
+                          </Link>
                         </li>
-                        <li className="menu-item-has-children">
-                          <Link href="#">Blog</Link>
-                          <ul className="sub-menu">
-                            <li>
-                              <Link href="/blog-grid">Blog Grid</Link>
-                            </li>
-                            <li>
-                              <Link href="/blog">Blog Standard</Link>
-                            </li>
-                            <li>
-                              <Link href="/blog-details">Blog Details</Link>
-                            </li>
-                          </ul>
-                        </li>
-                      </ul> */}
+                      </ul>
+                    </div>
+                    {/* <div className="tgmenu__navbar-wrap tgmenu__main-menu d-none d-xl-flex">
                       <ul className="navigation">
                         <li className="menu-item">
                           <Link href="/spell-bee">Spell Bee</Link>
@@ -127,7 +92,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu }) {
                           <Link href="/farm-guru">Field Trip</Link>
                         </li>
                       </ul>
-                    </div>
+                    </div> */}
                     {/* Uncomment and fix the search form as needed */}
                     {/* <div className="tgmenu__search d-none d-md-block">
                       <form action="#" className="tgmenu__search-form">
@@ -172,14 +137,11 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu }) {
                     {/* Uncomment and fix the action buttons as needed */}
                     {/* <div className="tgmenu__action">
                       <ul className="list-wrap">
-                        <li className="mini-cart-icon">
-                          <Link href="/shop" className="cart-count">
-                            <img src="/assets/img/icons/cart.svg" alt="cart" />
-                            <span className="mini-cart-count">0</span>
+                        <li className="header-btn login-btn">
+                          <Link href="/contact" className="btn">
+                            Log in
                           </Link>
                         </li>
-                        <li className="header-btn login-btn"><Link href="/contact" className="btn">Log in</Link></li>
-                        <li className="header-btn free-btn"><Link href="/contact" className="btn">Try For Free</Link></li>
                       </ul>
                     </div> */}
                   </nav>

@@ -6,6 +6,7 @@ import {
 import Breadcrumb from "@/components/layout/Breadcrumb";
 import Footer1 from "@/components/layout/footer/Footer1";
 import Header1 from "@/components/layout/header/Header1";
+import Layout from "@/components/layout/Layout";
 import Head from "next/head";
 import Link from "next/link";
 import {
@@ -127,8 +128,7 @@ const data = [
 
 export default function AboutUs() {
   return (
-    <>
-      <Header1 />
+    <Layout headerStyle={1} footerStyle={1} isbgBlue>
       <Head>
         <title>About Us | Grey Matter solutions</title>
         <meta property="og:title" content="About Us" key="title" />
@@ -523,9 +523,6 @@ export default function AboutUs() {
           </div>
         </section> */}
       </div>
-      <div className="bg-[#061e43] overflow-hidden">
-        <Footer1 />
-      </div>
-    </>
+    </Layout>
   );
 }

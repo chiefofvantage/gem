@@ -1,12 +1,13 @@
 import Breadcrumb from "@/components/layout/Breadcrumb";
 import Footer1 from "@/components/layout/footer/Footer1";
 import Header1 from "@/components/layout/header/Header1";
+import Layout from "@/components/layout/Layout";
 import Head from "next/head";
 import Link from "next/link";
 
 export default function Contact() {
   return (
-    <>
+    <Layout headerStyle={1} footerStyle={1} isbgBlue>
       <Header1 />
       <Head>
         <title>Contact Us | Grey Matter solutions</title>
@@ -137,9 +138,6 @@ export default function Contact() {
           />
         </div>
       </div>
-      <div className="bg-[#061e43]">
-        <Footer1 />
-      </div>
-    </>
+    </Layout>
   );
 }

@@ -169,7 +169,7 @@ const TalentExamWebpage = () => {
           className="slider__item d-flex mt-16"
           data-background={sliderImageArr[0]}
         >
-          <div className="flex">
+          <div className="flex w-full">
             <div className="container">
               <div className="row">
                 <div className="col-xl-6 col-lg -8">

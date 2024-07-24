@@ -7,25 +7,23 @@ import img2 from "@/public/farm-guru-2.png";
 import img3 from "@/public/farm-guru-3.png";
 import Link from "next/link";
 import {
+  FaAward,
   FaBook,
+  FaBookOpen,
+  FaBrain,
   FaCalendarAlt,
   FaChalkboardTeacher,
   FaChartLine,
   FaClipboardCheck,
   FaClock,
   FaDollarSign,
-  FaGraduationCap,
+  FaGlobe,
+  FaHeadphones,
   FaLaptop,
   FaQuestionCircle,
   FaRocket,
   FaTrophy,
   FaUsers,
-  FaBookOpen,
-  FaHeadphonesAlt,
-  FaHeadphones,
-  FaGlobe,
-  FaAward,
-  FaBrain,
 } from "react-icons/fa";
 
 const ExamCard = ({ title, date, registrationDeadline }) => (
@@ -171,48 +169,56 @@ const TalentExamWebpage = () => {
           className="slider__item d-flex mt-16"
           data-background={sliderImageArr[0]}
         >
-          <div className="container">
-            <div className="row">
-              <div className="col-xl-6 col-lg -8">
-                <div className="slider__content">
-                  <span
-                    className="sub-title"
-                    data-delay-in=".2"
-                    data-duration-in="1.5"
-                  >
-                    Empowering young minds, shaping future innovators
-                  </span>
-                  <h2
-                    className="text-[2.8rem] tg-svg mb-2"
-                    data-delay-in=".4"
-                    data-duration-in="1.5"
-                  >
-                    A chance for your child <br />
-                    <span className="position-relative text-[#1363df]">
-                      <span
-                        className="svg-icon"
-                        id="slider-svg02"
-                        data-svg-icon="assets/img/icons/title_shape.svg"
-                      />
-                      to explore NASA!
+          <div className="flex">
+            <div className="container">
+              <div className="row">
+                <div className="col-xl-6 col-lg -8">
+                  <div className="slider__content">
+                    <span
+                      className="sub-title"
+                      data-delay-in=".2"
+                      data-duration-in="1.5"
+                    >
+                      Empowering young minds, shaping future innovators
                     </span>
-                  </h2>
-                  <p className="max-w-md mt-4 leading-6">
-                    Unlock amazing opportunities with the Future Kids Talent
-                    Test, which recognizes excellence and rewards with an
-                    educational tour to NASA.
-                  </p>
-                  <div
-                    className="tg-button-wrap"
-                    data-delay-in=".8"
-                    data-duration-in="1.5"
-                  >
-                    <Link href="/courses" className="btn tg-svg">
-                      <span className="text">Register Today</span>
-                    </Link>
+                    <h2
+                      className="text-[2.8rem] tg-svg mb-2"
+                      data-delay-in=".4"
+                      data-duration-in="1.5"
+                    >
+                      A chance for your child <br />
+                      <span className="position-relative text-[#1363df]">
+                        <span
+                          className="svg-icon"
+                          id="slider-svg02"
+                          data-svg-icon="assets/img/icons/title_shape.svg"
+                        />
+                        to explore NASA!
+                      </span>
+                    </h2>
+                    <p className="max-w-md mt-4 leading-6">
+                      Unlock amazing opportunities with the Future Kids Talent
+                      Test, which recognizes excellence and rewards with an
+                      educational tour to NASA.
+                    </p>
+                    <div
+                      className="tg-button-wrap"
+                      data-delay-in=".8"
+                      data-duration-in="1.5"
+                    >
+                      <Link href="/courses" className="btn tg-svg">
+                        <span className="text">Register Today</span>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
+            </div>
+            <div className="absolute right-0 top-20 w-1/2 h-full">
+              <img
+                src="/exam/hero-img.jpg"
+                className="rounded object-cover object-center -z-40"
+              />
             </div>
           </div>
           <img
@@ -268,11 +274,16 @@ const TalentExamWebpage = () => {
               </div>
               <div className="col-xl-7 col-lg-6 col-md-11">
                 <div className="about__images-wrap">
-                  <div className="column">
+                  <div className="flex gap-5">
                     <img
-                      src="/exam/1.jpg"
+                      src="/exam/2.jpeg"
                       alt="img"
-                      className="h-[25rem] object-cover object-center"
+                      className="h-[25rem] object-cover object-center rounded-md"
+                    />
+                    <img
+                      src="/exam/3.jpeg"
+                      alt="img"
+                      className="h-[25rem] object-cover object-center rounded-md"
                     />
                   </div>
                   {/* <div className="column">

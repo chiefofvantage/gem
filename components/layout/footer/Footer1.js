@@ -47,12 +47,6 @@ export default function Footer1() {
                     <li>
                       <Link href="/contact">Contact</Link>
                     </li>
-                    <li>
-                      <Link href="/contact">Help Center</Link>
-                    </li>
-                    <li>
-                      <Link href="#">Privacy Policy</Link>
-                    </li>
                   </ul>
                 </div>
               </div>

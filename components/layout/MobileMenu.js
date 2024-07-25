@@ -27,7 +27,7 @@ export default function MobileMenu({ isbgBlue }) {
             href="/spell-bee"
             className={`px-3  py-2 rounded  ${
               isbgBlue
-                ? "text-white hover:bg-[#1363df] hover:text-white"
+                ? "text-[#1363df] md:text-white hover:bg-transparent md:hover:bg-[#1363df] md:hover:text-white "
                 : "hover:bg-[#1363df] hover:text-white"
             } `}
           >
@@ -38,7 +38,7 @@ export default function MobileMenu({ isbgBlue }) {
           <Link
             className={`px-3  py-2 rounded  ${
               isbgBlue
-                ? "text-white hover:bg-[#1363df] hover:text-white"
+                ? "text-[#1363df] md:text-white hover:bg-transparent md:hover:bg-[#1363df] md:hover:text-white "
                 : "hover:bg-[#1363df] hover:text-white"
             } `}
             href="/mbbs"
@@ -50,7 +50,7 @@ export default function MobileMenu({ isbgBlue }) {
           <Link
             className={`px-3  py-2 rounded  ${
               isbgBlue
-                ? "text-white hover:bg-[#1363df] hover:text-white"
+                ? "text-[#1363df] md:text-white hover:bg-transparent md:hover:bg-[#1363df] md:hover:text-white "
                 : "hover:bg-[#1363df] hover:text-white"
             } `}
             href="/talent-exam"
@@ -62,7 +62,7 @@ export default function MobileMenu({ isbgBlue }) {
           <Link
             className={`px-3  py-2 rounded  ${
               isbgBlue
-                ? "text-white hover:bg-[#1363df] hover:text-white"
+                ? "text-[#1363df] md:text-white hover:bg-transparent md:hover:bg-[#1363df] md:hover:text-white "
                 : "hover:bg-[#1363df] hover:text-white"
             } `}
             href="/farm-guru"

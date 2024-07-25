@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Contact() {
   return (
-    <Layout headerStyle={1} footerStyle={1} isbgBlue>
+    <Layout headerStyle={1} footerStyle={1}>
       <Header1 />
       <Head>
         <title>Contact Us | Grey Matter solutions</title>

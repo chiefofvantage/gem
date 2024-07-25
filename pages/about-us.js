@@ -128,7 +128,7 @@ const data = [
 
 export default function AboutUs() {
   return (
-    <Layout headerStyle={1} footerStyle={1} isbgBlue>
+    <Layout headerStyle={1} footerStyle={1}>
       <Head>
         <title>About Us | Grey Matter solutions</title>
         <meta property="og:title" content="About Us" key="title" />

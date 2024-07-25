@@ -89,16 +89,16 @@ const SpellBee = () => {
                     data-aos="zoom-in-left"
                     data-aos-delay={1200}
                   />
-                  <div className="flex gap-6">
+                  <div className="flex gap-6 justify-center w-full">
                     <div
-                      className="banner__images-col"
+                      className="banner__images-col w-full sm:w-60"
                       data-aos="fade-up"
                       data-aos-delay={200}
                     >
                       <img
                         src="/spell-bee/blog_thumb04.jpeg"
                         alt="img"
-                        className="rounded-md h-96 w-full sm:w-60 object-cover object-top"
+                        className="rounded-md h-96 w-full sm:w-60 object-cover object-center"
                       />
                     </div>
                     <div className=" hidden sm:flex flex-col gap-6">

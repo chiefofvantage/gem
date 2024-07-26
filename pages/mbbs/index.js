@@ -111,16 +111,17 @@ const DavaoMedicalSchoolHomepage = () => {
                         className="rounded-md h-96 w-full sm:w-60 object-cover object-top"
                       />
                     </div>
-                    <div className="banner__images-col">
+                    <div className="hidden sm:flex flex-col gap-6 h-96 justify-center">
                       <img
-                        src="/mbbs/1.jpeg"
-                        className="rounded-md h-1/2 "
+                        src="/mbbs/3.jpeg"
+                        className="rounded-md w-full h-1/2 object-cover object-center "
                         alt="img"
                         data-aos="fade-left"
                         data-aos-delay={300}
                       />
+
                       <img
-                        src="/mbbs/3.jpeg"
+                        src="/mbbs/1.jpeg"
                         className="rounded-md w-full h-1/2 object-cover object-center"
                         alt="img"
                         data-aos="fade-left"

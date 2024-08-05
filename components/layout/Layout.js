@@ -15,6 +15,7 @@ export default function Layout({
   breadcrumbTitle,
   children,
   isbgBlue = false,
+  isSpellBee = false,
 }) {
   const [scroll, setScroll] = useState(0);
   // Moblile Menu
@@ -65,14 +66,6 @@ export default function Layout({
       >
         Chat on Whatsapp
       </div>
-      {!headerStyle && (
-        <Header1
-          scroll={scroll}
-          isMobileMenu={isMobileMenu}
-          handleMobileMenu={handleMobileMenu}
-          isbgBlue={isbgBlue}
-        />
-      )}
       {headerStyle == 1 ? (
         <Header1
           scroll={scroll}
@@ -86,6 +79,7 @@ export default function Layout({
           scroll={scroll}
           isMobileMenu={isMobileMenu}
           handleMobileMenu={handleMobileMenu}
+          isSpellBee={isSpellBee}
         />
       ) : null}
       {headerStyle == 3 ? (

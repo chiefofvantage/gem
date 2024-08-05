@@ -55,9 +55,7 @@ const brandImg = [
 
 const FarmGuru = () => {
   return (
-    <Layout headerStyle={1} footerStyle={1}>
-      {/* <Header1 /> */}
-
+    <Layout headerStyle={2} footerStyle={1}>
       <Head>
         <title>Farm Guru | Grey Matter solutions</title>
         <meta property="og:title" content="Farm Guru" key="title" />

@@ -4,16 +4,14 @@ import {
   SlideFromRightAndFadeIn,
 } from "@/components/animation/animation";
 import Breadcrumb from "@/components/layout/Breadcrumb";
-import Footer1 from "@/components/layout/footer/Footer1";
-import Header1 from "@/components/layout/header/Header1";
 import Layout from "@/components/layout/Layout";
 import Head from "next/head";
 import Link from "next/link";
 import {
-  FaGraduationCap,
-  FaUser,
   FaBuilding,
+  FaGraduationCap,
   FaRegClipboard,
+  FaUser,
 } from "react-icons/fa";
 
 const About = ({ image, name, job, aboutHim, tags }) => {
@@ -41,16 +39,6 @@ const About = ({ image, name, job, aboutHim, tags }) => {
                       </li>
                       <li>
                         <Link href="#">
-                          <i className="fab fa-twitter" />
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="#">
-                          <i className="fab fa-whatsapp" />
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="#">
                           <i className="fab fa-linkedin-in" />
                         </Link>
                       </li>
@@ -70,8 +58,8 @@ const About = ({ image, name, job, aboutHim, tags }) => {
                     </p>
                   ))}
                 </div>
-                <hr />
-                <div className="bio-content">
+                <hr className="my-2" />
+                <div className="bio-content ">
                   <h4 className="title">Short Bio:</h4>
                   <p>{aboutHim}</p>
                 </div>
@@ -86,11 +74,12 @@ const About = ({ image, name, job, aboutHim, tags }) => {
 
 const data = [
   {
-    image: "/about-us/1.jpeg",
+    image: "/about-us/3.jpeg",
     name: "Mr. Veeraraghavan",
     job: "Sales and Marketing Expert",
-    aboutHim:
-      "A Science Graduate with a PG Diploma in Global Strategic Management, Mr. Veeraraghavan brings over 20 years of experience in Sales and Marketing across various industries including Pharma, FMCG, Education, and Training & Testing.",
+    aboutHim: `Mr.VeeraRaghavan  is a Science Graduate and a PG Diploma in Global Strategic Management .He has  over 20 years of experience in Sales and Marketing  with varied industries like Pharma, FMCG , Education and Training & Testing. He has handled Branches, Territories and States across south of India.
+He has worked with leading corporates like Wockhardt, United Breweries, ICFAI Business School and STUD WORLD.
+His ability of Multi-tasking and making sound Business decisions are his forte. His Business development ability with a positive frame of mind and target oriented approach makes him an enterprising person.`,
     tags: [
       "Multi-tasking",
       "Business",
@@ -100,11 +89,12 @@ const data = [
     ],
   },
   {
-    image: "/about-us/2.jpeg",
+    image: "/about-us/1.jpeg",
     name: "Mr. Rufus",
     job: "Team Building and Training Specialist",
-    aboutHim:
-      "With a Science degree and an MBA specializing in Marketing and HR, Mr. Rufus has 22 years of experience in Sales and Marketing. He has worked with leading Educational Institutions, Software Corporations, and Training Firms.",
+    aboutHim: `Mr.RUFUS is a Science Graduate and has a Masters in Business Administration with Marketing and HR as his specialization. He has an overall experience of 22 years in Sales and Marketing in various designations and handling various territories across Tamil Nadu. 
+He has worked with Leading Educational Institutions , Software Corporations and Training Firms like ICFAI University, ICFAI Business School, EAGLE Software ltd and EXCELLENTRA.
+His area of expertise is Team Building, Training and Event Management. He is well versed in handling Government Projects and Customers.`,
     tags: [
       "Team Building",
       "Training",
@@ -113,11 +103,12 @@ const data = [
     ],
   },
   {
-    image: "/about-us/3.jpeg",
+    image: "/about-us/2.jpeg",
     name: "Mr. Prakash",
     job: "Multi-industry Professional",
-    aboutHim:
-      "A Science graduate with a Post Graduate degree in Computer Applications, Mr. Prakash has 15 years of experience in Sales and Marketing across Education, Insurance, and Training & Testing industries.",
+    aboutHim: `Mr. Prakash is a Science graduate and Post Graduate in Computer Applications. He has 15 years of experience in Sales and Marketing in  industries like  Education, Insurance, Training & Testing. He has managed branches and Territories.
+His contribution to companies like ICFAI PRESS, ICFAI DISTANCE LEARNING, HDFC, SBI LIFE  and ACCEL are exemplary. 
+He IS  in the construction industry for over a decade and is promoting apartments at affordable price to clients. His business decisions are customer centric and the idea of entering the education industry is a boon for the student community.`,
     tags: [
       "Customer-centric Approach",
       "Real Estate Development",
@@ -128,12 +119,12 @@ const data = [
 
 export default function AboutUs() {
   return (
-    <Layout headerStyle={1} footerStyle={1}>
+    <Layout headerStyle={2} footerStyle={1}>
       <Head>
         <title>About Us | Grey Matter solutions</title>
         <meta property="og:title" content="About Us" key="title" />
       </Head>
-      <div className="mt-24 overflow-hidden">
+      <div className="overflow-hidden">
         <Breadcrumb breadcrumbTitle={"About Us"} />
 
         <div>

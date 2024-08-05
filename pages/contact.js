@@ -7,14 +7,13 @@ import Link from "next/link";
 
 export default function Contact() {
   return (
-    <Layout headerStyle={1} footerStyle={1}>
-      <Header1 />
+    <Layout headerStyle={2} footerStyle={1}>
       <Head>
         <title>Contact Us | Grey Matter solutions</title>
         <meta property="og:title" content="Contact Us" key="title" />
       </Head>
 
-      <div className="mt-24">
+      <div className="overflow-hidden">
         <Breadcrumb breadcrumbTitle={"Contact"} />
         <section className="contact-area py-12">
           <div className="container">
@@ -32,9 +31,9 @@ export default function Contact() {
                         <i className="flaticon-pin-1" />
                       </div>
                       <div className="content">
-                        <p>
-                          15, 22ND STREET, NANGANALLUR, <br /> CHENNAI - 600
-                          061.
+                        <p className="uppercase">
+                          15, 22ND STREET, Macmillan Colony, <br /> NANGANALLUR,
+                          CHENNAI - 600 061.
                         </p>
                       </div>
                     </li>

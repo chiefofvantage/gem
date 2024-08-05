@@ -6,9 +6,8 @@ import {
   SlideFromLeftAndFadeIn,
   SlideFromRightAndFadeIn,
 } from "@/components/animation/animation";
-import Footer1 from "@/components/layout/footer/Footer1";
-import Header1 from "@/components/layout/header/Header1";
 import Layout from "@/components/layout/Layout";
+import Testimonial3 from "@/components/sections/Testimonial3";
 import Head from "next/head";
 import Link from "next/link";
 import {
@@ -31,7 +30,7 @@ import { MdAttachMoney, MdLocalHospital, MdMoneyOff } from "react-icons/md";
 
 const DavaoMedicalSchoolHomepage = () => {
   return (
-    <Layout headerStyle={1} footerStyle={1} isbgBlue>
+    <Layout headerStyle={2} footerStyle={1} isbgBlue>
       <div className="min-h-screen bg-gray-100">
         <Head>
           <title> | Grey Matter solutions</title>
@@ -141,7 +140,7 @@ const DavaoMedicalSchoolHomepage = () => {
         </section>
 
         {/* Why DMSF */}
-        <section className="py-16">
+        <section className="py-16" id="why-dmsf">
           <div className="container mx-auto">
             <SlideFromLeftAndFadeIn>
               <div className="container">
@@ -213,7 +212,10 @@ const DavaoMedicalSchoolHomepage = () => {
         </section>
 
         {/* Why Philippines Section */}
-        <section className="categories-area py-10 bg-white overflow-hidden">
+        <section
+          id="mbbs-in-philippines"
+          className="categories-area py-10 bg-white overflow-hidden"
+        >
           <div className="container">
             <div className="row align-items-center justify-content-center mb-55">
               <div className="col-xl-7 col-lg-8 col-md-10">
@@ -385,7 +387,7 @@ const DavaoMedicalSchoolHomepage = () => {
         </section>
 
         {/* Top Class Features Section */}
-        <section className="py-16 bg-gray-100">
+        <section id="features" className="py-16 bg-gray-100">
           <div className="container mx-auto">
             <h3 className="text-3xl font-bold text-center mb-12">
               Top Class Features
@@ -421,7 +423,7 @@ const DavaoMedicalSchoolHomepage = () => {
         </section>
 
         {/* Additional Features Section */}
-        <section className="bg-blue-50 py-16">
+        <section id="additional-features" className="bg-blue-50 py-16">
           <div className="container mx-auto">
             <h3 className="text-3xl font-bold text-center mb-12">
               Additional Features
@@ -450,6 +452,13 @@ const DavaoMedicalSchoolHomepage = () => {
             </div>
           </div>
         </section>
+
+        {/* Testimonials Section */}
+        <SlideFromBottomAndFadeIn delay={0.25}>
+          <div id="testimonials">
+            <Testimonial3 />
+          </div>
+        </SlideFromBottomAndFadeIn>
       </div>
     </Layout>
   );
@@ -465,7 +474,7 @@ const FeatureCard = ({ icon, title, description }) => (
 
 const FacilityCard = ({ icon, title, imageSrc, description }) => (
   <SlideFromBottomAndFadeIn>
-    <div className="bg-white p-6 rounded-lg shadow-md text-center">
+    <div className="bg-white p-6 rounded-lg shadow-md text-center h-full">
       <div className="text-blue-500 mb-4 flex justify-center">{icon}</div>
       <h4 className="text-xl font-semibold mb-2">{title}</h4>
       <p className="text-left">{description}</p>
@@ -476,7 +485,7 @@ const FacilityCard = ({ icon, title, imageSrc, description }) => (
 
 const FeatureListItem = ({ icon, title, description }) => (
   <SlideFromBottomAndFadeIn>
-    <div className="flex flex-col bg-white p-4 rounded-lg shadow-md gap-3">
+    <div className="flex flex-col bg-white p-4 rounded-lg shadow-md gap-3 h-full">
       <div className="bg-blue-500 text-white p-2 rounded-full mr-4 max-w-fit">
         {icon}
       </div>

@@ -24,7 +24,8 @@ export default function Footer1() {
                     </p>
                     <ul className="list-wrap m-0 p-0">
                       <li className="address">
-                        15, 22nd Street, Nanganallur, Chennai - 600 061.
+                        15, 22nd Street, Macmillan Colony, Nanganallur, <br />{" "}
+                        Chennai - 600 061.
                       </li>
                       <li className="number">
                         +91 98404-57400 | +91 90875-57766

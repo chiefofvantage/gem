@@ -15,7 +15,7 @@ import { Navigation, Pagination } from "swiper/modules";
 export default function Home1() {
   return (
     <>
-      <Layout headerStyle={1} footerStyle={1}>
+      <Layout headerStyle={2} footerStyle={1}>
         <Banner1 />
         {/* <Brand1 /> */}
         <About1 />

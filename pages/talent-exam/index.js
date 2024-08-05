@@ -1,39 +1,29 @@
-import Footer1 from "@/components/layout/footer/Footer1";
-import Header1 from "@/components/layout/header/Header1";
 import Cta1 from "@/components/sections/Cta1";
-import Testimonial3 from "@/components/sections/Testimonial3";
 import img1 from "@/public/farm-guru-1.png";
 import img2 from "@/public/farm-guru-2.png";
 import img3 from "@/public/farm-guru-3.png";
 import Link from "next/link";
 import {
   FaAward,
-  FaBook,
   FaBookOpen,
   FaBrain,
   FaCalendarAlt,
   FaChalkboardTeacher,
   FaChartLine,
-  FaClipboardCheck,
-  FaClock,
   FaDollarSign,
   FaGlobe,
   FaHeadphones,
-  FaLaptop,
-  FaQuestionCircle,
   FaRocket,
-  FaTrophy,
   FaUsers,
 } from "react-icons/fa";
 
 import {
-  SlideFromRightAndFadeIn,
-  SlideFromLeftAndFadeIn,
-  FadeIn,
   SlideFromBottomAndFadeIn,
+  SlideFromLeftAndFadeIn,
+  SlideFromRightAndFadeIn,
 } from "@/components/animation/animation";
-import Head from "next/head";
 import Layout from "@/components/layout/Layout";
+import Head from "next/head";
 
 const FeatureCard = ({ icon, title, description }) => (
   <div className="bg-white p-6 rounded-lg shadow-md text-center">
@@ -48,8 +38,7 @@ const FeatureCard = ({ icon, title, description }) => (
 const TalentExamWebpage = () => {
   const sliderImageArr = [img1, img2, img3];
   return (
-    <Layout headerStyle={1} footerStyle={1}>
-      {/* <Header1 /> */}
+    <Layout headerStyle={2} footerStyle={1}>
       <Head>
         <title>Talent Exam | Grey Matter solutions</title>
         <meta property="og:title" content="Talent Exam" key="title" />
@@ -519,10 +508,6 @@ const TalentExamWebpage = () => {
             </div>
           </section>
         </SlideFromRightAndFadeIn>
-        {/* Testimonials Section */}
-        <SlideFromBottomAndFadeIn delay={0.25}>
-          <Testimonial3 />
-        </SlideFromBottomAndFadeIn>
 
         {/* contact section */}
         <Cta1

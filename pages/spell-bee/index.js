@@ -20,12 +20,11 @@ import {
   RiNumber3,
   RiNumber4,
   RiNumber5,
-  RiNumber6,
 } from "react-icons/ri";
 
 const SpellBee = () => {
   return (
-    <Layout headerStyle={1} footerStyle={1} isbgBlue>
+    <Layout headerStyle={2} footerStyle={1} isSpellBee={true}>
       <Head>
         <title>Spell Bee | Grey Matter solutions</title>
         <meta property="og:title" content="Spell Bee" key="title" />
@@ -130,7 +129,7 @@ const SpellBee = () => {
         </section>
         {/* What is spell bee */}
 
-        <section className=" bg-slate-100 p-5 py-10">
+        <section id="spell-bee" className=" bg-slate-100 p-5 py-10">
           <div className="flex flex-col gap-5 relative max-w-7xl mx-auto">
             {/* section heading */}
             <h2 className="text-2xl sm:text-4xl font-semibold">
@@ -200,7 +199,10 @@ const SpellBee = () => {
         </section>
 
         {/* Benifits of spell bee */}
-        <section className="flex flex-col gap-5 px-2 py-10 relative items-center  max-w-7xl mx-auto">
+        <section
+          id="benifits"
+          className="flex flex-col gap-5 px-2 py-10 relative items-center  max-w-7xl mx-auto"
+        >
           {/* section heading */}
 
           <h2 className="text-4xl font-semibold">
@@ -284,7 +286,7 @@ const SpellBee = () => {
         </section>
 
         {/* Categories */}
-        <section className="categories-area mb-60">
+        <section className="categories-area mb-60" id="categories">
           <div className="container">
             <div className="row align-items-center justify-content-center mb-55">
               <div className="col-xl-7 col-lg-8 col-md-10">
@@ -325,7 +327,7 @@ const SpellBee = () => {
                       </div>
                       <div className="info">
                         <span className="name">CATEGORY 1</span>
-                        <span className="courses">Class 1</span>
+                        <span className="courses">Class 1 & 2</span>
                       </div>
                     </Link>
                   </div>
@@ -338,7 +340,7 @@ const SpellBee = () => {
                       </div>
                       <div className="info">
                         <span className="name">CATEGORY 2</span>
-                        <span className="courses">Class 2</span>
+                        <span className="courses">Class 3 & 4</span>
                       </div>
                     </Link>
                   </div>
@@ -351,7 +353,7 @@ const SpellBee = () => {
                       </div>
                       <div className="info">
                         <span className="name">CATEGORY 3</span>
-                        <span className="courses">Class 3 & 4</span>
+                        <span className="courses">Class 5 & 6</span>
                       </div>
                     </Link>
                   </div>
@@ -364,7 +366,7 @@ const SpellBee = () => {
                       </div>
                       <div className="info">
                         <span className="name">CATEGORY 4</span>
-                        <span className="courses">Class 5 & 6</span>
+                        <span className="courses">Class 7 & 8</span>
                       </div>
                     </Link>
                   </div>
@@ -377,19 +379,6 @@ const SpellBee = () => {
                       </div>
                       <div className="info">
                         <span className="name">CATEGORY 5</span>
-                        <span className="courses">Class 7 & 8</span>
-                      </div>
-                    </Link>
-                  </div>
-                </div>
-                <div className="col">
-                  <div className="categories__item-two tg-svg">
-                    <Link href="/courses">
-                      <div className="icon">
-                        <RiNumber6 />
-                      </div>
-                      <div className="info">
-                        <span className="name">CATEGORY 6</span>
                         <span className="courses">Class 9 & 10</span>
                       </div>
                     </Link>
@@ -406,7 +395,7 @@ const SpellBee = () => {
             className="mb-60"
             data-background="/assets/img/bg/fact_bg.jpg"
           >
-            <div className="container">
+            <div className="container py-5" id="exam-schedule">
               <div className="row justify-content-center">
                 <div className="col-xl-5 col-lg-7 col-md-9">
                   <div className="section__title text-center mb-50">
@@ -427,57 +416,99 @@ const SpellBee = () => {
                   </div>
                 </div>
               </div>
-              <div className="row justify-content-center">
-                <div className="col-lg-3 col-md-4 col-sm-6">
-                  <div className="fact__item-two text-center">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-5">
+                <div className="">
+                  <div className="fact__item-two">
                     <div className="fact__icon-two">
                       <i className="flaticon-webinar" />
                     </div>
                     <div className="fact__content-two">
                       <h3>School level</h3>
-                      <p className="text-xs">Location: Held at your school</p>
-                      <p className="text-xs">Schedule: Aug to Oct</p>
                     </div>
+                    <p className="mt-2">
+                      School level competition would be conducted in your school
+                      between first week of August and last week of October, as
+                      per the date allotted to the competition organizer by the
+                      school authority
+                    </p>
+
+                    <p className="m-0">Awards:</p>
+                    <ul className="list-disc pl-6">
+                      <li className="">Top 3: Winner Certificates</li>
+                      <li>Above 50%: Commendation Certificates </li>
+                      <li>Below 50%: Participation Certificates </li>
+                    </ul>
                   </div>
                 </div>
-                <div className="col-lg-3 col-md-4 col-sm-6">
-                  <div className="fact__item-two text-center">
+                <div className="">
+                  <div className="fact__item-two">
                     <div className="fact__icon-two">
                       <i className="flaticon-graduates" />
                     </div>
                     <div className="fact__content-two">
                       <h3>District level</h3>
-                      <p className="text-xs">Location: Held at your school</p>
-                      <p className="text-xs">Schedule: Nov to Dec</p>
                     </div>
+                    <p className="mt-2">
+                      District level competition also would be conducted in your
+                      school between first week of November and last week of
+                      December, as per the date allotted to the competition
+                      organizer by the school authority
+                    </p>
+
+                    <p className="m-0">Awards:</p>
+                    <ul className="list-disc pl-6">
+                      <li>Top 3: Winner Certificates & Medals</li>
+                      <li>Above 60%: Commendation Certificates & Medals </li>
+                      <li>Below 60%: Participation Certificates</li>
+                    </ul>
                   </div>
                 </div>
-                <div className="col-lg-3 col-md-4 col-sm-6">
-                  <div className="fact__item-two text-center">
+                <div className="h-full">
+                  <div className="fact__item-two h-full">
                     <div className="fact__icon-two">
                       <i className="flaticon-countries" />
                     </div>
                     <div className="fact__content-two">
                       <h3>State Level</h3>
-                      <p className="text-xs">
-                        Venue and date provided in advance
-                      </p>
-                      <p className="text-xs">Schedule: Jan/Feb</p>
                     </div>
+                    <p className="mt-2">
+                      State level would be conducted in the month of January /
+                      February, the venue and date allocated would be intimated
+                      to the participant through a notice well in advance
+                      through their own school or by mail or message.
+                    </p>
+
+                    <p className="m-0">Awards:</p>
+                    <ul className="list-disc pl-6">
+                      <li>Top 3: Winner Certificates & Trophies</li>
+                      <li>Above 60%: Commendation Certificates & Medals</li>
+                      <li>Below 60%: Participation Certificates</li>
+                    </ul>
                   </div>
                 </div>
-                <div className="col-lg-3 col-md-4 col-sm-6">
-                  <div className="fact__item-two text-center">
+                <div className="h-full">
+                  <div className="fact__item-two h-full">
                     <div className="fact__icon-two">
                       <i className="flaticon-trophy" />
                     </div>
                     <div className="fact__content-two">
                       <h3>National Level</h3>
-                      <p className="text-xs">
-                        Venue and date provided in advance{" "}
-                      </p>
-                      <p className="text-xs">Schedule: April/May</p>
                     </div>
+                    <p className="mt-2">
+                      National level would be conducted in the month of
+                      April/May (After the Academic exams); the venue and date
+                      allocated would be intimated to the participant through a
+                      notice well in advance through their own school or by mail
+                      or message
+                    </p>
+
+                    <p className="m-0">Awards:</p>
+                    <ul className="list-disc pl-6">
+                      <li>Top 2: Certificates, Trophies & Cash Prize</li>
+                      <li>Top 3-15: Certificates, Trophies & Gift Hampers</li>
+                      <li>Top 16-50: Certificates, Medals & Gifts</li>
+                      <li>Others: Participation Certificates</li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -490,6 +521,7 @@ const SpellBee = () => {
           description={
             "Don't miss this chance to boost your language skills, build confidence, and engage in self-motivated learning. Register for the Spell Bee and become a spelling champion!"
           }
+          buttonText={"Join Open Compensation"}
         />
       </main>
     </Layout>

@@ -447,7 +447,7 @@ const TalentExamWebpage = () => {
             </div> */}
           </section>
         </>
-        <SlideFromRightAndFadeIn>
+        {/* <SlideFromRightAndFadeIn>
           <section className="quick__action-area  py-10 bg-gray-100">
             <div className="container">
               <div className="row justify-content-center">
@@ -507,7 +507,7 @@ const TalentExamWebpage = () => {
               </div>
             </div>
           </section>
-        </SlideFromRightAndFadeIn>
+        </SlideFromRightAndFadeIn> */}
 
         {/* contact section */}
         <Cta1

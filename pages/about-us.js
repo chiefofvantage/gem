@@ -61,7 +61,7 @@ const About = ({ image, name, job, aboutHim, tags }) => {
                 <hr className="my-2" />
                 <div className="bio-content ">
                   <h4 className="title">Short Bio:</h4>
-                  <p>{aboutHim}</p>
+                  <p className="text-justify">{aboutHim}</p>
                 </div>
               </div>
             </div>
@@ -77,11 +77,9 @@ const data = [
     image: "/about-us/3.jpeg",
     name: "Mr. Veeraraghavan",
     job: "Sales and Marketing Expert",
-    aboutHim: `Mr.VeeraRaghavan  is a Science Graduate and a PG Diploma in Global Strategic Management .He has  over 20 years of experience in Sales and Marketing  with varied industries like Pharma, FMCG , Education and Training & Testing. He has handled Branches, Territories and States across south of India.
-He has worked with leading corporates like Wockhardt, United Breweries, ICFAI Business School and STUD WORLD.
-His ability of Multi-tasking and making sound Business decisions are his forte. His Business development ability with a positive frame of mind and target oriented approach makes him an enterprising person.`,
+    aboutHim: `Mr. Veera Raghavan is a Science graduate with a Postgraduate Diploma in Global Strategic Management. He has over 20 years of experience in Sales and Marketing across various industries such as Pharma, FMCG, Education, and Training & Testing. He has managed branches, territories, and states across South India. He has worked with leading corporations like Wockhardt, United Breweries, ICFAI Business School, and STUD WORLD. His ability to multitask and make sound business decisions are his forte. His business development skills, combined with a positive mindset and a target-oriented approach, make him an enterprising individual.`,
     tags: [
-      "Multi-tasking",
+      "Multitasking",
       "Business",
       "Development",
       "Target-oriented",
@@ -92,9 +90,7 @@ His ability of Multi-tasking and making sound Business decisions are his forte. 
     image: "/about-us/1.jpeg",
     name: "Mr. Rufus",
     job: "Team Building and Training Specialist",
-    aboutHim: `Mr.RUFUS is a Science Graduate and has a Masters in Business Administration with Marketing and HR as his specialization. He has an overall experience of 22 years in Sales and Marketing in various designations and handling various territories across Tamil Nadu. 
-He has worked with Leading Educational Institutions , Software Corporations and Training Firms like ICFAI University, ICFAI Business School, EAGLE Software ltd and EXCELLENTRA.
-His area of expertise is Team Building, Training and Event Management. He is well versed in handling Government Projects and Customers.`,
+    aboutHim: `Mr. Rufus is a Science graduate and holds a Master's degree in Business Administration with a specialization in Marketing and HR. He has 22 years of experience in Sales and Marketing, having held various designations and managed different territories across Tamil Nadu. He has worked with leading educational institutions, software corporations, and training firms such as ICFAI University, ICFAI Business School, EAGLE Software Ltd, and EXCELLENTRA. His areas of expertise include team building, training, and event management. He is also well-versed in handling government projects and customers.`,
     tags: [
       "Team Building",
       "Training",
@@ -106,9 +102,7 @@ His area of expertise is Team Building, Training and Event Management. He is wel
     image: "/about-us/2.jpeg",
     name: "Mr. Prakash",
     job: "Multi-industry Professional",
-    aboutHim: `Mr. Prakash is a Science graduate and Post Graduate in Computer Applications. He has 15 years of experience in Sales and Marketing in  industries like  Education, Insurance, Training & Testing. He has managed branches and Territories.
-His contribution to companies like ICFAI PRESS, ICFAI DISTANCE LEARNING, HDFC, SBI LIFE  and ACCEL are exemplary. 
-He IS  in the construction industry for over a decade and is promoting apartments at affordable price to clients. His business decisions are customer centric and the idea of entering the education industry is a boon for the student community.`,
+    aboutHim: `Mr. Prakash is a Science graduate and holds a Postgraduate degree in Computer Applications. He has 15 years of experience in Sales and Marketing across industries such as Education, Insurance, and Training & Testing. He has managed branches and territories and made exemplary contributions to companies like ICFAI Press, ICFAI Distance Learning, HDFC, SBI Life, and ACCEL. He has been in the construction industry for over a decade, promoting affordable apartments to clients. His business decisions are customer-centric, and his decision to enter the education industry is a boon for the student community.`,
     tags: [
       "Customer-centric Approach",
       "Real Estate Development",

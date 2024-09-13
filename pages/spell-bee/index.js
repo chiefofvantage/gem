@@ -11,9 +11,16 @@ import {
 import Footer1 from "@/components/layout/footer/Footer1";
 import Header1 from "@/components/layout/header/Header1";
 import Layout from "@/components/layout/Layout";
+import { FaRegEdit } from "react-icons/fa";
+import { FaBook } from "react-icons/fa";
+import { FaPenFancy } from "react-icons/fa";
+import { FaClipboardCheck } from "react-icons/fa";
+
 import Cta1 from "@/components/sections/Cta1";
 import Head from "next/head";
 import Link from "next/link";
+import { FaGlobe, FaLanguage, FaMoneyBillWave } from "react-icons/fa";
+import { MdAttachMoney } from "react-icons/md";
 import {
   RiNumber1,
   RiNumber2,
@@ -198,15 +205,14 @@ const SpellBee = () => {
           </div>
         </section>
 
-        {/* Benifits of spell bee */}
+        {/* Benefits of spell bee */}
         <section
-          id="benifits"
+          id="benefits"
           className="flex flex-col gap-5 px-2 py-10 relative items-center  max-w-7xl mx-auto"
         >
           {/* section heading */}
-
           <h2 className="text-4xl font-semibold">
-            <span className="text-[#1363df]">Benifits of</span> Spell bee
+            <span className="text-[#1363df]">Benefits of</span> Spell bee
             <img
               src="/spell-bee-1.png"
               height={45}
@@ -389,6 +395,145 @@ const SpellBee = () => {
           </div>
         </section>
 
+        {/* Process of the Spell Bee */}
+        <section
+          id="process-of-the-spell-bee"
+          className="categories-area py-10 bg-white overflow-hidden"
+        >
+          <div className="container">
+            <div className="row align-items-center justify-content-center mb-55">
+              <div className="col-xl-7 col-lg-8 col-md-10">
+                <SlideFromLeftAndFadeIn>
+                  <div className="categories__title-wrap text-center text-lg-start m-0">
+                    <div className="section__title mb-0">
+                      <span className="sub-title">Spell Bee Process</span>
+                      <h2 className="title tg-svg">
+                        Process of the{" "}
+                        <span className="position-relative">
+                          <span
+                            className="svg-icon"
+                            id="svg-5"
+                            data-svg-icon="assets/img/icons/title_shape.svg"
+                          />
+                          Spell Bee
+                        </span>
+                      </h2>
+                    </div>
+                    <p className="mb-0">
+                      The Spell Bee competition begins with registration,
+                      followed by the provision of study materials to aid in
+                      preparation. After the exam, results are announced within
+                      two weeks, offering a structured and rewarding experience
+                      for participants.
+                    </p>
+                  </div>
+                </SlideFromLeftAndFadeIn>
+              </div>
+              <div className="col-xl-5 col-lg-4 col-md-6"></div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8">
+              <SlideFromLeftAndFadeIn>
+                <div className="col h-full">
+                  <div className="categories__item-two tg-svg h-full">
+                    <Link href="/" className="h-full">
+                      <div className="icon">
+                        <FaRegEdit />
+                      </div>
+                      <div className="flex flex-col gap-2.5">
+                        <h3 className="text-xl">1. Registration</h3>
+                        <span className="sm:text-sm text-xs text-[#5a7093]">
+                          Participants can register for the competition through
+                          their schools or online platforms. Registration
+                          ensures the participants details are recorded for the
+                          upcoming event.
+                        </span>
+                      </div>
+                    </Link>
+                  </div>
+                </div>
+              </SlideFromLeftAndFadeIn>
+              <SlideFromRightAndFadeIn>
+                <div className="col h-full">
+                  <div className="categories__item-two tg-svg h-full">
+                    <Link href="/" className="h-full ">
+                      <div className="icon">
+                        <FaBook />
+                      </div>
+                      <div className="flex flex-col gap-2.5">
+                        <h3 className=" text-lg sm:text-xl">
+                          2. Providing Books
+                        </h3>
+                        <span className="text-xs sm:sm:text-sm  text-[#5a7093]">
+                          After registration, study materials and guides are
+                          provided to participants to help them prepare for the
+                          competition. These resources cover essential
+                          vocabulary, spelling patterns, and language rules.
+                        </span>
+                      </div>
+                    </Link>
+                  </div>
+                </div>
+              </SlideFromRightAndFadeIn>
+              <SlideFromLeftAndFadeIn>
+                <div className="col h-full">
+                  <div className="categories__item-two tg-svg h-full">
+                    <Link href="/" className="h-full">
+                      <div className="icon">
+                        <FaPenFancy />
+                      </div>
+                      <div className="flex flex-col gap-2.5">
+                        <h3 className="sm:text-xl  text-lg">3. Exam</h3>
+                        <span className="sm:text-sm text-xs text-[#5a7093]">
+                          The competition is conducted in multiple levels,
+                          starting with the school-level exam. Participants
+                          spell words on stage or in written format, testing
+                          their language proficiency.
+                        </span>
+                      </div>
+                    </Link>
+                  </div>
+                </div>
+              </SlideFromLeftAndFadeIn>
+              <SlideFromRightAndFadeIn>
+                <div className="col h-full">
+                  <div className="categories__item-two tg-svg h-full">
+                    <Link href="/" className="h-full">
+                      <div className="icon">
+                        <FaClipboardCheck />
+                      </div>
+                      <div className="flex flex-col gap-2.5">
+                        <h3 className="sm:text-xl  text-lg">
+                          4. Exam Results{" "}
+                        </h3>
+                        <span className="sm:text-sm text-xs text-[#5a7093]">
+                          Results are announced two weeks after the exam,
+                          allowing time for evaluation. Participants receive
+                          feedback, and those with high scores are awarded
+                          certificates and progress to the next level.
+                        </span>
+                      </div>
+                    </Link>
+                  </div>
+                </div>
+              </SlideFromRightAndFadeIn>
+            </div>
+          </div>
+          <div className="categories__shapes-two">
+            <div className="categories__shapes-item-two rotateme">
+              <img
+                src="/assets/img/objects/categories_shape05.png"
+                alt="shape"
+              />
+            </div>
+            <div className="categories__shapes-item-two" data-aos="fade-up">
+              <img
+                src="/assets/img/objects/categories_shape02.png"
+                alt="shape"
+              />
+            </div>
+          </div>
+        </section>
+
         {/* Location */}
         <SlideFromBottomAndFadeIn delay={0.2}>
           <section
@@ -411,7 +556,7 @@ const SpellBee = () => {
                         &
                       </span>{" "}
                       <br />
-                      It's Schedule
+                      Its Schedule{" "}
                     </h2>
                   </div>
                 </div>
@@ -495,7 +640,7 @@ const SpellBee = () => {
                       <h3>National Level</h3>
                     </div>
                     <p className="mt-2">
-                      National level would be conducted in the month of
+                      The national level would be conducted in the month of
                       April/May (After the Academic exams); the venue and date
                       allocated would be intimated to the participant through a
                       notice well in advance through their own school or by mail

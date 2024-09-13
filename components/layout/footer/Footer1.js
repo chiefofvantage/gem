@@ -53,7 +53,7 @@ export default function Footer1() {
               </div>
               <div className="col-xl-3 col-lg-4 col-sm-6">
                 <div className="footer-widget widget_nav_menu">
-                  <h4 className="fw-title">Service</h4>
+                  <h4 className="fw-title">Services</h4>
                   <ul className="list-wrap">
                     <li>
                       <Link href="/spell-bee">Spell Bee</Link>
@@ -68,6 +68,57 @@ export default function Footer1() {
                       <Link href="/farm-guru">Field Trip</Link>
                     </li>
                   </ul>
+                </div>
+              </div>
+              <div className="col-xl-3 col-lg-4 col-sm-6">
+                <div className="footer-widget widget_nav_menu">
+                  <h4 className="fw-title">Social Accounts</h4>
+                  {/* <ul className="list-wrap">
+                    <li>
+                      <Link href="/spell-bee">Spell Bee</Link>
+                    </li>
+                    <li>
+                      <Link href="/mbbs">Overseas MBBS</Link>
+                    </li>
+                    <li>
+                      <Link href="/talent-exam">Talent Exam</Link>
+                    </li>
+                    <li>
+                      <Link href="/farm-guru">Field Trip</Link>
+                    </li>
+                  </ul> */}
+
+                  <nav className="">
+                    <div className="social-links">
+                      <ul className="list-wrap flex gap-4 text-xl">
+                        <li>
+                          <Link href="#">
+                            <i className="fab fa-facebook-f" />
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href="#">
+                            <i className="fab fa-twitter" />
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href="#">
+                            <i className="fab fa-instagram" />
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href="#">
+                            <i className="fab fa-linkedin-in" />
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href="#">
+                            <i className="fab fa-youtube" />
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
                 </div>
               </div>
             </div>

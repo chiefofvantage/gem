@@ -188,7 +188,7 @@ const DavaoMedicalSchoolHomepage = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <FeatureCard
                   icon={<FaGraduationCap size={40} />}
-                  title="No. 1 in MCI Screening Test"
+                  title="No. 1 in MCI Screening Tests"
                   description="DMSF is top performing in the MCI screening test."
                 />
                 <FeatureCard
@@ -431,12 +431,12 @@ const DavaoMedicalSchoolHomepage = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <FeatureListItem
                 icon={<MdMoneyOff size={45} />}
-                title="No Donation or Capitation Fee"
+                title="No Donation or Capitation Fees"
                 description="Our transparent and affordable fee structure ensures that there are no hidden charges or extra payments, making quality education accessible to all."
               />
               <FeatureListItem
                 icon={<FaRegCheckCircle size={45} />}
-                title="Accredited by NMC & WHO"
+                title="Accredited by the NMC & WHO"
                 description="Our institution is recognized by both the National Medical Commission (NMC) and the World Health Organization (WHO), guaranteeing the global acceptance and credibility of your medical degree."
               />
               <FeatureListItem

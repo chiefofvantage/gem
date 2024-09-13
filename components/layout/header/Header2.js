@@ -49,8 +49,8 @@ export default function Header2({
                               <Link href="#spell-bee">What is Spell Bee</Link>
                             </li>
                             <li className="active">
-                              <Link href="#benifits">
-                                Benifits of Spell bee
+                              <Link href="#Benefits">
+                                Benefits of Spell bee
                               </Link>
                             </li>
                             <li>
@@ -169,7 +169,7 @@ export default function Header2({
                     <div className="tgmobile__menu-outer">
                       <MobileMenu />
                     </div>
-                    <div className="tgmenu__action">
+                    {/* <div className="tgmenu__action">
                       <ul className="list-wrap">
                         <li className="header-btn login-btn">
                           <Link href="#" className="btn">
@@ -182,7 +182,7 @@ export default function Header2({
                           </Link>
                         </li>
                       </ul>
-                    </div>
+                    </div> */}
                     <div className="social-links">
                       <ul className="list-wrap">
                         <li>

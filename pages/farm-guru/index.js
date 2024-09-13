@@ -272,9 +272,8 @@ const FarmGuru = () => {
                       </h2>
                     </div>
                     <p className="mb-0 max-w-md">
-                      The day starts early at the farm.The best time to reach
-                      here is before the sun clears the tree line to come out
-                      into the open.{" "}
+                      The day starts early at the farm. The best time to arrive
+                      is before the sun clears the tree line.
                     </p>
                   </div>
                 </SlideFromLeftAndFadeIn>
@@ -285,7 +284,7 @@ const FarmGuru = () => {
               <SlideFromBottomAndFadeIn>
                 <div className="col">
                   <div className="categories__item-two tg-svg">
-                    <Link href="/courses">
+                    <Link href="">
                       <div className="icon">
                         <RiNumber1 />
                       </div>
@@ -304,7 +303,7 @@ const FarmGuru = () => {
               <div className="col">
                 <SlideFromBottomAndFadeIn>
                   <div className="categories__item-two tg-svg">
-                    <Link href="/courses">
+                    <Link href="">
                       <div className="icon">
                         <RiNumber2 />
                       </div>
@@ -323,7 +322,7 @@ const FarmGuru = () => {
               <div className="col">
                 <SlideFromBottomAndFadeIn>
                   <div className="categories__item-two tg-svg">
-                    <Link href="/courses">
+                    <Link href="">
                       <div className="icon">
                         <RiNumber3 />
                       </div>
@@ -342,7 +341,7 @@ const FarmGuru = () => {
               <div className="col">
                 <SlideFromBottomAndFadeIn>
                   <div className="categories__item-two tg-svg">
-                    <Link href="/courses">
+                    <Link href="">
                       <div className="icon">
                         <RiNumber4 />
                       </div>
@@ -361,7 +360,7 @@ const FarmGuru = () => {
               <div className="col">
                 <SlideFromBottomAndFadeIn>
                   <div className="categories__item-two tg-svg">
-                    <Link href="/courses">
+                    <Link href="">
                       <div className="icon">
                         <RiNumber5 />
                       </div>
@@ -380,7 +379,7 @@ const FarmGuru = () => {
               <div className="col">
                 <SlideFromBottomAndFadeIn>
                   <div className="categories__item-two tg-svg">
-                    <Link href="/courses">
+                    <Link href="">
                       <div className="icon">
                         <RiNumber6 />
                       </div>

@@ -163,7 +163,7 @@ const FarmGuru = () => {
         </div>
 
         {/* About us */}
-        <section className="about-area-two overflow-hidden">
+        <section id="about-us" className="about-area-two overflow-hidden">
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-xl-5 col-lg-6">
@@ -251,7 +251,7 @@ const FarmGuru = () => {
         </section>
 
         {/* Categories */}
-        <section className="categories-area mb-60">
+        <section id="what-we-do" className="categories-area mb-60">
           <div className="container">
             <div className="row align-items-center justify-content-center mb-55">
               <div className="col-xl-7 col-lg-8 col-md-10">
@@ -413,7 +413,7 @@ const FarmGuru = () => {
           </div>
         </section>
 
-        <section>
+        <section id="gallery">
           <div className="container">
             <div className="row align-items-center justify-content-center mb-10">
               <div className="col-xl-7 col-lg-8 col-md-10">

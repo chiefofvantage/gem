@@ -119,7 +119,7 @@ const TalentExamWebpage = () => {
           />
         </div>
 
-        <section className="py-16 overflow-hidden">
+        <section className="py-16 overflow-hidden" id="about-fktt">
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-xl-5 col-lg-6">
@@ -212,7 +212,7 @@ const TalentExamWebpage = () => {
         </section>
 
         {/* Exams Section */}
-        <section className="py-16">
+        <section id="subjects" className="py-16">
           <div className="container mx-auto">
             <div className="container">
               <div className="row align-items-center justify-content-center mb-55">

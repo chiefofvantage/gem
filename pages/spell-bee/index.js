@@ -136,7 +136,7 @@ const SpellBee = () => {
         </section>
         {/* What is spell bee */}
 
-        <section id="spell-bee" className=" bg-slate-100 p-5 py-10">
+        <section id="what-is-spell-bee" className=" bg-slate-100 p-5 py-10">
           <div className="flex flex-col gap-5 relative max-w-7xl mx-auto">
             {/* section heading */}
             <h2 className="text-2xl sm:text-4xl font-semibold">

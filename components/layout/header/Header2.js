@@ -46,18 +46,24 @@ export default function Header2({
                           <Link href="/spell-bee">Spell Bee</Link>
                           <ul className="sub-menu">
                             <li>
-                              <Link href="#spell-bee">What is Spell Bee</Link>
+                              <Link href="/spell-bee#what-is-spell-bee">
+                                What is Spell Bee
+                              </Link>
                             </li>
-                            <li className="active">
-                              <Link href="#Benefits">
+                            <li className="">
+                              <Link href="/spell-bee#benefits">
                                 Benefits of Spell bee
                               </Link>
                             </li>
                             <li>
-                              <Link href="#categories">Categories</Link>
+                              <Link href="/spell-bee#categories">
+                                Categories
+                              </Link>
                             </li>
                             <li>
-                              <Link href="#exam-schedule">Exam Schedule</Link>
+                              <Link href="/spell-bee#exam-schedule">
+                                Exam Schedule
+                              </Link>
                             </li>
                           </ul>
                         </li>
@@ -65,23 +71,25 @@ export default function Header2({
                           <Link href="/mbbs">Overseas MBBS</Link>
                           <ul className="sub-menu">
                             <li>
-                              <Link href="#why-dmsf">Why Choose DMSF</Link>
+                              <Link href="/mbbs#why-dmsf">Why Choose DMSF</Link>
                             </li>
                             <li>
-                              <Link href="#mbbs-in-philippines">
+                              <Link href="/mbbs#mbbs-in-philippines">
                                 MBBS in Philippines
                               </Link>
                             </li>
                             <li>
-                              <Link href="#features">Features</Link>
+                              <Link href="/mbbs#features">Features</Link>
                             </li>
                             <li>
-                              <Link href="#additional-features">
+                              <Link href="/mbbs#additional-features">
                                 Additional Features
                               </Link>
                             </li>
                             <li>
-                              <Link href="#testimonials">Testimonials</Link>
+                              <Link href="/mbbs#testimonials">
+                                Testimonials
+                              </Link>
                             </li>
                           </ul>
                         </li>
@@ -89,10 +97,14 @@ export default function Header2({
                           <Link href="/talent-exam">Talent Exam</Link>
                           <ul className="sub-menu">
                             <li>
-                              <Link href="#about-fktt">About FKTT</Link>
+                              <Link href="/talent-exam#about-fktt">
+                                About FKTT
+                              </Link>
                             </li>
                             <li>
-                              <Link href="#subjects">Test Subjects</Link>
+                              <Link href="/talent-exam#subjects">
+                                Test Subjects
+                              </Link>
                             </li>
                           </ul>
                         </li>
@@ -100,13 +112,15 @@ export default function Header2({
                           <Link href="/farm-guru">Farm Guru</Link>
                           <ul className="sub-menu">
                             <li>
-                              <Link href="#about-us">About Us</Link>
+                              <Link href="/farm-guru#about-us">About Us</Link>
                             </li>
                             <li>
-                              <Link href="#what-we-do">What we do</Link>
+                              <Link href="/farm-guru#what-we-do">
+                                What we do
+                              </Link>
                             </li>
                             <li>
-                              <Link href="#gallery">Gallery</Link>
+                              <Link href="/farm-guru#gallery">Gallery</Link>
                             </li>
                           </ul>
                         </li>

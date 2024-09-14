@@ -169,7 +169,7 @@ export default function Header2({
                     </div>
                     <div className="nav-logo">
                       <Link href="/">
-                        <img src="/assets/img/logo/logo.png" alt="Logo" />
+                        <img src="/assets/img/custom/logo.png" alt="Logo" />
                       </Link>
                     </div>
                     <div className="tgmobile__search">

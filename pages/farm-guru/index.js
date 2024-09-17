@@ -117,7 +117,7 @@ const FarmGuru = () => {
                       Fun and Educational Field Trips
                     </li>
                   </ul>
-                  <div
+                  {/* <div
                     className="tg-button-wrap"
                     data-delay-in=".8"
                     data-duration-in="1.5"
@@ -128,6 +128,17 @@ const FarmGuru = () => {
                     >
                       <span className="text">Book Your Visit Today</span>{" "}
                     </Link>
+                  </div> */}
+
+                  <div className="flex  gap-4 w-full">
+                    <button className="btn btn-primary w-full max-w-sm">
+                      Book Your Visit Today
+                    </button>
+                    <a href="/fg-brochure.pdf" download className="w-full">
+                      <button className="btn btn-primary h-full rounded-md font-bold  w-full max-w-sm">
+                        Download Brochure
+                      </button>
+                    </a>
                   </div>
                 </div>
               </div>

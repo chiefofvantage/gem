@@ -73,9 +73,16 @@ const SpellBee = () => {
                       confidence, and promotes self-motivated learning.
                     </p>
 
-                    <button className="btn btn-primary w-full max-w-sm">
-                      Register Now
-                    </button>
+                    <div className="flex  gap-4 w-full">
+                      <button className="btn btn-primary w-full max-w-sm">
+                        Register Now
+                      </button>
+                      <a href="#" className="w-full">
+                        <button className="bg-white h-full rounded-md font-bold  w-full max-w-sm">
+                          Download Brochure
+                        </button>
+                      </a>
+                    </div>
                   </div>
                 </SlideFromLeftAndFadeIn>
               </div>
@@ -577,6 +584,8 @@ const SpellBee = () => {
                       school authority
                     </p>
 
+                    <p className="m-0 font-bold">Fees: &#8377;200 </p>
+
                     <p className="m-0">Awards:</p>
                     <ul className="list-disc pl-6">
                       <li className="">Top 3: Winner Certificates</li>
@@ -599,6 +608,7 @@ const SpellBee = () => {
                       December, as per the date allotted to the competition
                       organizer by the school authority
                     </p>
+                    <p className="m-0 font-bold">Fees: &#8377;300 </p>
 
                     <p className="m-0">Awards:</p>
                     <ul className="list-disc pl-6">
@@ -622,6 +632,7 @@ const SpellBee = () => {
                       to the participant through a notice well in advance
                       through their own school or by mail or message.
                     </p>
+                    <p className="m-0 font-bold">Fees: &#8377;400 </p>
 
                     <p className="m-0">Awards:</p>
                     <ul className="list-disc pl-6">
@@ -646,6 +657,7 @@ const SpellBee = () => {
                       notice well in advance through their own school or by mail
                       or message
                     </p>
+                    <p className="m-0 font-bold">Fees: &#8377;600 </p>
 
                     <p className="m-0">Awards:</p>
                     <ul className="list-disc pl-6">

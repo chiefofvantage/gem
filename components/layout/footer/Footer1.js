@@ -92,18 +92,18 @@ export default function Footer1() {
                     <div className="social-links">
                       <ul className="list-wrap flex gap-4 text-xl">
                         <li>
-                          <Link href="#">
+                          <Link href="https://www.facebook.com/GreyMatter.Educational.Solutions">
                             <i className="fab fa-facebook-f" />
                           </Link>
                         </li>
                         <li>
-                          <Link href="#">
-                            <i className="fab fa-twitter" />
+                          <Link href="https://www.instagram.com/gmes_24/">
+                            <i className="fab fa-instagram" />
                           </Link>
                         </li>
-                        <li>
+                        {/* <li>
                           <Link href="#">
-                            <i className="fab fa-instagram" />
+                            <i className="fab fa-twitter" />
                           </Link>
                         </li>
                         <li>
@@ -115,7 +115,7 @@ export default function Footer1() {
                           <Link href="#">
                             <i className="fab fa-youtube" />
                           </Link>
-                        </li>
+                        </li> */}
                       </ul>
                     </div>
                   </nav>

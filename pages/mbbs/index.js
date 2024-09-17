@@ -67,7 +67,7 @@ const DavaoMedicalSchoolHomepage = () => {
                       Excellence Abroad!{" "}
                     </h3>
 
-                    <div
+                    {/* <div
                       className="tg-button-wrap flex justify-center lg:justify-start"
                       data-delay-in=".8"
                       data-duration-in="1.5"
@@ -78,6 +78,17 @@ const DavaoMedicalSchoolHomepage = () => {
                       >
                         Apply Now
                       </Link>
+                    </div> */}
+
+                    <div className="flex flex-col  gap-4 w-full">
+                      <button className="btn btn-primary w-full max-w-sm">
+                        Apply Now
+                      </button>
+                      <a href="/mbbs-brochure.pdf" download className="w-full">
+                        <button className="bg-white h-12 rounded font-bold  w-full max-w-sm">
+                          Download Brochure
+                        </button>
+                      </a>
                     </div>
                   </div>
                 </SlideFromLeftAndFadeIn>
@@ -453,12 +464,12 @@ const DavaoMedicalSchoolHomepage = () => {
           </div>
         </section>
 
-        {/* Testimonials Section */}
+        {/* Testimonials Section
         <SlideFromBottomAndFadeIn delay={0.25}>
           <div id="testimonials">
             <Testimonial3 />
           </div>
-        </SlideFromBottomAndFadeIn>
+        </SlideFromBottomAndFadeIn> */}
       </div>
     </Layout>
   );

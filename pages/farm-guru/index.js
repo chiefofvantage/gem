@@ -21,6 +21,8 @@ import {
   RiNumber4,
   RiNumber5,
   RiNumber6,
+  RiNumber7,
+  RiNumber8,
 } from "react-icons/ri";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -291,7 +293,7 @@ const FarmGuru = () => {
               </div>
               <div className="col-xl-5 col-lg-4 col-md-6"></div>
             </div>
-            <div className="row justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-3">
+            <div className="row justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-2">
               <SlideFromBottomAndFadeIn>
                 <div className="col">
                   <div className="categories__item-two tg-svg">
@@ -301,10 +303,11 @@ const FarmGuru = () => {
                       </div>
                       <div className="">
                         <div className="text-[#082a5e] text-xl hover:text-[]">
-                          Welcome Drink
+                          Start and Report{" "}
                         </div>
                         <span className="text-sm text-[#5a7093]">
-                          Refreshing fresh coconut water
+                          Begin your adventure with an introduction and report
+                          to Farm Guru.{" "}
                         </span>
                       </div>
                     </Link>
@@ -320,10 +323,10 @@ const FarmGuru = () => {
                       </div>
                       <div className="">
                         <div className="text-[#082a5e] text-xl hover:text-[]">
-                          Learning Tour
+                          Intro to Farm Guru{" "}
                         </div>
                         <span className="text-sm text-[#5a7093]">
-                          Discover transplanting and crop rotation.{" "}
+                          Get familiar with sustainable farming techniques.{" "}
                         </span>
                       </div>
                     </Link>
@@ -339,10 +342,10 @@ const FarmGuru = () => {
                       </div>
                       <div className="">
                         <div className="text-[#082a5e] text-xl hover:text-[]">
-                          Farm to Fork
+                          Snack Break{" "}
                         </div>
                         <span className="text-sm text-[#5a7093]">
-                          Enjoy farm-fresh, healthy meals.
+                          Enjoy farm-fresh and healthy snack.
                         </span>
                       </div>
                     </Link>
@@ -358,10 +361,11 @@ const FarmGuru = () => {
                       </div>
                       <div className="">
                         <div className="text-[#082a5e] text-xl hover:text-[]">
-                          Digging Knowledge
+                          Bullockcart Session
                         </div>
                         <span className="text-sm text-[#5a7093] leading-none">
-                          Stories and yoga under the mango tree.{" "}
+                          Learn the basics of bulk purchasing and farm card
+                          systems.{" "}
                         </span>
                       </div>
                     </Link>
@@ -377,10 +381,11 @@ const FarmGuru = () => {
                       </div>
                       <div className="">
                         <div className="text-[#082a5e] text-xl hover:text-[]">
-                          Time to Leave
+                          Organic Farming and Food Security{" "}
                         </div>
                         <span className="text-sm text-[#5a7093]">
-                          Take home memories and awareness.
+                          Explore the importance of organic farming for a secure
+                          food future.{" "}
                         </span>
                       </div>
                     </Link>
@@ -396,10 +401,48 @@ const FarmGuru = () => {
                       </div>
                       <div className="">
                         <div className="text-[#082a5e] text-xl hover:text-[]">
-                          Sowing and Reaping
+                          Fun at Chill Waterfall
                         </div>
                         <span className="text-sm text-[#5a7093]">
-                          Understand the true cost of farming.
+                          Enjoy a refreshing experience at the waterfall.{" "}
+                        </span>
+                      </div>
+                    </Link>
+                  </div>
+                </SlideFromBottomAndFadeIn>
+              </div>
+              <div className="col">
+                <SlideFromBottomAndFadeIn>
+                  <div className="categories__item-two tg-svg">
+                    <Link href="">
+                      <div className="icon">
+                        <RiNumber7 />
+                      </div>
+                      <div className="">
+                        <div className="text-[#082a5e] text-xl hover:text-[]">
+                          Snack Break{" "}
+                        </div>
+                        <span className="text-sm text-[#5a7093]">
+                          Take a quick snack before departure.{" "}
+                        </span>
+                      </div>
+                    </Link>
+                  </div>
+                </SlideFromBottomAndFadeIn>
+              </div>
+              <div className="col">
+                <SlideFromBottomAndFadeIn>
+                  <div className="categories__item-two tg-svg">
+                    <Link href="">
+                      <div className="icon">
+                        <RiNumber8 />
+                      </div>
+                      <div className="">
+                        <div className="text-[#082a5e] text-xl hover:text-[]">
+                          Depart Farm Guru{" "}
+                        </div>
+                        <span className="text-sm text-[#5a7093]">
+                          End your visit and depart from Farm Guru.{" "}
                         </span>
                       </div>
                     </Link>

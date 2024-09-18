@@ -77,7 +77,11 @@ const SpellBee = () => {
                       <button className="btn btn-primary w-full max-w-sm">
                         Register Now
                       </button>
-                      <a href="#" className="w-full">
+                      <a
+                        href="/spell-bee-brochure.pdf"
+                        download
+                        className="w-full"
+                      >
                         <button className="bg-white h-full rounded-md font-bold  w-full max-w-sm">
                           Download Brochure
                         </button>

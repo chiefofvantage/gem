@@ -20,13 +20,19 @@ import {
   FaGraduationCap,
   FaHome,
   FaLanguage,
+  FaMedal,
   FaMoneyBillWave,
   FaRegCheckCircle,
   FaTrophy,
   FaUserGraduate,
   FaUtensils,
 } from "react-icons/fa";
-import { MdAttachMoney, MdLocalHospital, MdMoneyOff } from "react-icons/md";
+import {
+  MdAttachMoney,
+  MdLocalHospital,
+  MdMoneyOff,
+  MdVerified,
+} from "react-icons/md";
 
 const DavaoMedicalSchoolHomepage = () => {
   return (
@@ -155,7 +161,7 @@ const DavaoMedicalSchoolHomepage = () => {
           <div className="container mx-auto">
             <SlideFromLeftAndFadeIn>
               <div className="container">
-                <div className="row align-items-center justify-content-center mb-55">
+                <div className="row align-items-center justify-content-center">
                   <div className="col-xl-7 col-lg-8 col-md-10">
                     <div className="categories__title-wrap text-center text-lg-start m-0">
                       <div className="section__title mb-0">
@@ -171,6 +177,11 @@ const DavaoMedicalSchoolHomepage = () => {
                             DMSF?
                           </span>
                         </h2>
+                        <p className="max-w-md">
+                          Join our trusted consultancy to make your MBBS abroad
+                          a reality with expert guidance and a personalized
+                          approach.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -198,7 +209,27 @@ const DavaoMedicalSchoolHomepage = () => {
             <SlideFromBottomAndFadeIn delay={0.25}>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <FeatureCard
+                  icon={<MdVerified size={40} />}
+                  title="Authorized Partner"
+                  description="We are authorized consultants for top medical universities abroad, ensuring a smooth, reliable journey."
+                />
+                <FeatureCard
+                  icon={<FaChalkboardTeacher size={40} />}
+                  title="Expert Guidance"
+                  description="Our seasoned consultants offer tailored advice and support at every step, from application to enrollment."
+                />
+                <FeatureCard
+                  icon={<FaGlobe size={40} />}
+                  title="Global Opportunities"
+                  description="Explore diverse cultures and cutting-edge medical education programs across the globe."
+                />
+                <FeatureCard
                   icon={<FaGraduationCap size={40} />}
+                  title="Career Advancement"
+                  description="Gain a competitive edge with an internationally recognized medical degree, opening doors to global career opportunities."
+                />
+                <FeatureCard
+                  icon={<FaMedal size={40} />}
                   title="No. 1 in MCI Screening Tests"
                   description="DMSF is top performing in the MCI screening test."
                 />

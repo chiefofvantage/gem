@@ -65,6 +65,15 @@ export default function Header2({
                                 Exam Schedule
                               </Link>
                             </li>
+                            <li>
+                              <a
+                                href="/spell-bee-brochure.pdf"
+                                download
+                                className="w-full"
+                              >
+                                Download Brochure
+                              </a>
+                            </li>
                           </ul>
                         </li>
                         <li className="menu-item-has-children">
@@ -85,6 +94,15 @@ export default function Header2({
                               <Link href="/mbbs#additional-features">
                                 Additional Features
                               </Link>
+                            </li>
+                            <li>
+                              <a
+                                href="/mbbs-brochure.pdf"
+                                download
+                                className="w-full"
+                              >
+                                Download Brochure
+                              </a>
                             </li>
                           </ul>
                         </li>
@@ -124,6 +142,15 @@ export default function Header2({
                         </li>
                         <li>
                           <Link href="/contact">Contact</Link>
+                        </li>
+                        <li>
+                          <a
+                            href="/fg-brochure.pdf"
+                            download
+                            className="w-full"
+                          >
+                            Download Brochure
+                          </a>
                         </li>
                       </ul>
                     </div>

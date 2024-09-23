@@ -90,11 +90,6 @@ const DavaoMedicalSchoolHomepage = () => {
                       <button className="btn btn-primary w-full max-w-sm">
                         Apply Now
                       </button>
-                      <a href="/mbbs-brochure.pdf" download className="w-full">
-                        <button className="bg-white h-12 rounded font-bold  w-full max-w-sm">
-                          Download Brochure
-                        </button>
-                      </a>
                     </div>
                   </div>
                 </SlideFromLeftAndFadeIn>

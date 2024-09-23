@@ -136,11 +136,6 @@ const FarmGuru = () => {
                     <button className="btn btn-primary w-full max-w-sm">
                       Book Your Visit Today
                     </button>
-                    <a href="/fg-brochure.pdf" download className="w-full">
-                      <button className="btn btn-primary h-full rounded-md font-bold  w-full max-w-sm">
-                        Download Brochure
-                      </button>
-                    </a>
                   </div>
                 </div>
               </div>
@@ -361,11 +356,10 @@ const FarmGuru = () => {
                       </div>
                       <div className="">
                         <div className="text-[#082a5e] text-xl hover:text-[]">
-                          Bullockcart Session
+                          Bullockcart Ride
                         </div>
                         <span className="text-sm text-[#5a7093] leading-none">
-                          Learn the basics of bulk purchasing and farm card
-                          systems.{" "}
+                          Enjoy the Bullock Cart ride{" "}
                         </span>
                       </div>
                     </Link>

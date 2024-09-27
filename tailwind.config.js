@@ -34,6 +34,12 @@ module.exports = {
         fadein: "fade-in 1s ease-in-out 0.25s 1",
         fadeinright: "fade-in-right 1s ease-in-out 0.25s 1",
       },
+      colors: {
+        "blue-light": "#4FACFE",
+        "blue-bright": "#00F2FE",
+        "input-bg": "#F4F7FB",
+        "button-color": "#1362DF",
+      },
     },
   },
   plugins: [],

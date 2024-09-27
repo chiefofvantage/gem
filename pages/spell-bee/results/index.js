@@ -1,4 +1,4 @@
-const index = () => {
+const results = () => {
   return (
     <main className="bg-gradient-to-br from-blue-light to-blue-bright h-screen  w-full flex justify-center items-start relative">
       <div className="bg-[url(/spell-bee-2.png)] h-[290px] w-[363px] absolute left-5 bottom-2"></div>
@@ -181,4 +181,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default results;

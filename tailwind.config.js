@@ -39,6 +39,7 @@ module.exports = {
         "blue-bright": "#00F2FE",
         "input-bg": "#F4F7FB",
         "button-color": "#1362DF",
+        customGray: "#767676",
       },
     },
   },

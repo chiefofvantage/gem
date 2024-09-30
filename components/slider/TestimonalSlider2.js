@@ -36,7 +36,7 @@ export default function TestimonalSlider2() {
             <i className="fas fa-star" />
           </div>
           <p>
-            “ FKTT highlighted my child's strengths and opened up great
+            “ FKTT highlighted my child&#39;s strengths and opened up great
             opportunities. The experience was invaluable. “
           </p>
           <div className="testimonial__avatar">
@@ -56,9 +56,10 @@ export default function TestimonalSlider2() {
             <i className="fas fa-star" />
           </div>
           <p>
-            “ The FKTT boosted my son's confidence and enthusiasm for learning.
-            A fantastic program for any eager student. “
+            &ldquo; The FKTT boosted my son&#39;s confidence and enthusiasm for
+            learning. A fantastic program for any eager student. &rdquo;
           </p>
+
           <div className="testimonial__avatar">
             <h4 className="name">John D </h4>
             <span className="designation">Parent</span>

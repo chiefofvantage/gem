@@ -1,6 +1,4 @@
 import Breadcrumb from "@/components/layout/Breadcrumb";
-import Footer1 from "@/components/layout/footer/Footer1";
-import Header1 from "@/components/layout/header/Header1";
 import Layout from "@/components/layout/Layout";
 import Head from "next/head";
 import Link from "next/link";
@@ -23,8 +21,9 @@ export default function Contact() {
                   <h2 className="title">Keep In Touch With Us</h2>
                   <p>
                     Alternatively, you can use the form below to send us a
-                    message directly. We'll get back to you as soon as possible.
+                    message directly. Well get back to you as soon as possible.
                   </p>
+
                   <ul className="list-wrap">
                     <li>
                       <div className="icon">

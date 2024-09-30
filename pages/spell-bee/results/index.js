@@ -14,7 +14,7 @@ const Results = () => {
         <div className="flex flex-row justify-around w-[700px] mt-4 ">
           <input
             placeholder="Enter the registeration number "
-            className="bg-input-bg w-[512px] py-2 pl-4 rounded-xl"
+            className="bg-input-bg w-[512px] py-2 pl-4 rounded"
           ></input>
           <button className="bg-button-color text-white px-4 py-1 text-sm rounded">
             View Results
@@ -23,154 +23,156 @@ const Results = () => {
         <div className="flex flex-row w-full px-6 mt-4 h-full justify-around">
           <div className="w-1/2 flex flex-col h-10  mr-6">
             <h6 className="font-semibold">Student Details</h6>
-            <div className="w-full h-64 bg-input-bg flex flex-col p-4 rounded-xl ">
+            <div className="w-full h-64 bg-input-bg flex flex-col p-4 rounded-xl space-y-2">
               <div className="flex flex-row justify-between">
-                <div className=" w-1/2 font-semibold">
-                  <h6>Register Number</h6>
+                <div className=" w-1/2 ">
+                  <h6 className="text-sm">Register Number</h6>
                 </div>
                 <div className="text-left  w-1/2">
-                  <h6>S2TN24C2-1077</h6>
+                  <h6 className="text-sm text-customGray">S2TN24C2-1077</h6>
                 </div>
               </div>
               <div className="flex flex-row justify-between">
                 <div className=" w-1/2 font-semibold">
-                  <h6>Name</h6>
+                  <h6 className="text-sm">Name</h6>
                 </div>
                 <div className="text-left  w-1/2">
-                  <h6>Ramya</h6>
+                  <h6 className="text-sm text-customGray">Ramya</h6>
                 </div>
               </div>
               <div className="flex flex-row justify-between">
                 <div className=" w-1/2 font-semibold">
-                  <h6>Gender</h6>
+                  <h6 className="text-sm">Gender</h6>
                 </div>
                 <div className="text-left  w-1/2">
-                  <h6>Girl</h6>
+                  <h6 className="text-sm text-customGray">Girl</h6>
                 </div>
               </div>
               <div className="flex flex-row justify-between">
                 <div className=" w-1/2 font-semibold">
-                  <h6>Contact Number</h6>
+                  <h6 className="text-sm">Contact Number</h6>
                 </div>
                 <div className="text-left  w-1/2">
-                  <h6>9884402149</h6>
+                  <h6 className="text-sm text-customGray">9884402149</h6>
                 </div>
               </div>
               <div className="flex flex-row justify-between">
                 <div className=" w-1/2 font-semibold">
-                  <h6>Class</h6>
+                  <h6 className="text-sm ">Class</h6>
                 </div>
                 <div className="text-left  w-1/2">
-                  <h6>2</h6>
+                  <h6 className="text-sm text-customGray">2</h6>
                 </div>
               </div>
               <div className="flex flex-row justify-between">
                 <div className=" w-1/2 font-semibold">
-                  <h6>Category</h6>
+                  <h6 className="text-sm">Category</h6>
                 </div>
                 <div className="text-left  w-1/2">
-                  <h6>2</h6>
+                  <h6 className="text-sm text-customGray">2</h6>
                 </div>
               </div>
               <div className="flex flex-row justify-between">
                 <div className=" w-1/2 font-semibold">
-                  <h6>School Name</h6>
+                  <h6 className="text-sm">School Name</h6>
                 </div>
                 <div className="text-left  w-1/2">
-                  <h6>Godsan Mat.hr.Sec.School</h6>
+                  <h6 className="text-sm text-customGray">
+                    Godsan Mat.hr.Sec.School
+                  </h6>
                 </div>
               </div>
             </div>
           </div>
           <div className="w-1/2 flex flex-col h-full ">
             <h6 className="font-semibold">Mark List</h6>
-            <div className="w-full h-[350px] bg-input-bg flex flex-col mb-3 p-4 rounded-xl">
+            <div className="w-full h-[350px] bg-input-bg flex flex-col mb-3 p-4 rounded-xl space-y-2">
               <div className="flex flex-row  ">
                 <div className=" w-2/3 font-semibold">
-                  <h6>Dictation</h6>
+                  <h1 className="text-sm">Dictation</h1>
                 </div>
                 <div className="text-left  w-1/3">
-                  <h6>9/15</h6>
+                  <h6 className="text-sm text-customGray">9/15</h6>
                 </div>
               </div>
               <div className="flex flex-row ">
                 <div className=" w-2/3 font-semibold">
-                  <h6>Misssing Letter</h6>
+                  <h6 className="text-sm ">Misssing Letter</h6>
                 </div>
                 <div className="text-left  w-1/3">
-                  <h6>6/10</h6>
+                  <h6 className="text-sm text-customGray">6/10</h6>
                 </div>
               </div>
               <div className="flex flex-row justify-between">
                 <div className=" w-2/3 font-semibold">
-                  <h6>Fill ups</h6>
+                  <h6 className="text-sm">Fill ups</h6>
                 </div>
                 <div className="text-left  w-1/3">
-                  <h6>7/10</h6>
+                  <h6 className="text-sm text-customGray">7/10</h6>
                 </div>
               </div>
               <div className="flex flex-row justify-between">
                 <div className=" w-2/3 font-semibold">
-                  <h6>Jumbled Sentences</h6>
+                  <h6 className="text-sm">Jumbled Sentences</h6>
                 </div>
                 <div className="text-left  w-1/3">
-                  <h6>5/10</h6>
+                  <h6 className="text-sm text-customGray">5/10</h6>
                 </div>
               </div>
               <div className="flex flex-row justify-between">
                 <div className=" w-2/3 font-semibold">
-                  <h6>Correct Spelling</h6>
+                  <h6 className="text-sm">Correct Spelling</h6>
                 </div>
                 <div className="text-left  w-1/3">
-                  <h6>4/5</h6>
+                  <h6 className="text-sm text-customGray">4/5</h6>
                 </div>
               </div>
               <div className="flex flex-row justify-between">
                 <div className=" w-2/3 font-semibold">
-                  <h6>Rhyming Words</h6>
+                  <h6 className="text-sm">Rhyming Words</h6>
                 </div>
                 <div className="text-left  w-1/3">
-                  <h6>2/5</h6>
+                  <h6 className="text-sm text-customGray">2/5</h6>
                 </div>
               </div>
               <div className="flex flex-row justify-between">
                 <div className=" w-2/3 font-semibold">
-                  <h6>Picture Identification</h6>
+                  <h6 className="text-sm">Picture Identification</h6>
                 </div>
                 <div className="text-left  w-1/3">
-                  <h6>7/10</h6>
+                  <h6 className="text-sm text-customGray">7/10</h6>
                 </div>
               </div>
               <div className="flex flex-row justify-between">
                 <div className=" w-2/3 font-semibold">
-                  <h6>Identify the correct spelling</h6>
+                  <h6 className="text-sm">Identify the correct spelling</h6>
                 </div>
                 <div className="text-left  w-1/3">
-                  <h6>8/10</h6>
+                  <h6 className="text-sm text-customGray">8/10</h6>
                 </div>
               </div>
               <div className="flex flex-row justify-between">
                 <div className=" w-2/3 font-semibold">
-                  <h6>Total</h6>
+                  <h6 className="text-sm">Total</h6>
                 </div>
                 <div className="text-left  w-1/3">
-                  <h6>48/75</h6>
+                  <h6 className="text-sm text-customGray">48/75</h6>
                 </div>
               </div>
               <div className="flex flex-row justify-between">
                 <div className=" w-2/3 font-semibold">
-                  <h6>Percentage</h6>
+                  <h6 className="text-sm">Percentage</h6>
                 </div>
                 <div className="text-left  w-1/3">
-                  <h6>64/100</h6>
+                  <h6 className="text-sm text-customGray">64/100</h6>
                 </div>
               </div>
               <div className="flex flex-row justify-between">
                 <div className=" w-2/3 font-semibold">
-                  <h6>Status</h6>
+                  <h6 className="text-sm">Status</h6>
                 </div>
                 <div className="text-left  w-1/3">
-                  <h6>Qualified</h6>
+                  <h6 className="text-sm">Qualified</h6>
                 </div>
               </div>
             </div>

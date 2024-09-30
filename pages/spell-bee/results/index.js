@@ -180,5 +180,4 @@ const Results = () => {
     </main>
   );
 };
-
 export default Results;

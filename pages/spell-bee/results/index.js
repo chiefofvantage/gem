@@ -10,7 +10,7 @@ const Results = () => {
       </div> */}
       <div className="bg-white w-[780px] h-[600px] rounded-xl mt-[48px] flex flex-col justify-start items-center">
         <div className="bg-[url(/grey-spell.png)] h-[58px] w-[178px] bg-cover mt-20"></div>
-        <h9 className="font-semibold text-base mt-20">Spell Bee Results</h9>
+        <h6 className="font-semibold text-base mt-20">Spell Bee Results</h6>
         <div className="flex flex-row justify-around w-[700px] mt-4 ">
           <input
             placeholder="Enter the registeration number "
@@ -22,155 +22,155 @@ const Results = () => {
         </div>
         <div className="flex flex-row w-full px-6 mt-4 h-full justify-around">
           <div className="w-1/2 flex flex-col h-10  mr-6">
-            <h9 className="font-semibold">Student Details</h9>
+            <h6 className="font-semibold">Student Details</h6>
             <div className="w-full h-64 bg-input-bg flex flex-col p-4 rounded-xl ">
               <div className="flex flex-row justify-between">
                 <div className=" w-1/2 font-semibold">
-                  <h9>Register Number</h9>
+                  <h6>Register Number</h6>
                 </div>
                 <div className="text-left  w-1/2">
-                  <h9>S2TN24C2-1077</h9>
+                  <h6>S2TN24C2-1077</h6>
                 </div>
               </div>
               <div className="flex flex-row justify-between">
                 <div className=" w-1/2 font-semibold">
-                  <h9>Name</h9>
+                  <h6>Name</h6>
                 </div>
                 <div className="text-left  w-1/2">
-                  <h9>Ramya</h9>
+                  <h6>Ramya</h6>
                 </div>
               </div>
               <div className="flex flex-row justify-between">
                 <div className=" w-1/2 font-semibold">
-                  <h9>Gender</h9>
+                  <h6>Gender</h6>
                 </div>
                 <div className="text-left  w-1/2">
-                  <h9>Girl</h9>
+                  <h6>Girl</h6>
                 </div>
               </div>
               <div className="flex flex-row justify-between">
                 <div className=" w-1/2 font-semibold">
-                  <h9>Contact Number</h9>
+                  <h6>Contact Number</h6>
                 </div>
                 <div className="text-left  w-1/2">
-                  <h9>9884402149</h9>
+                  <h6>9884402149</h6>
                 </div>
               </div>
               <div className="flex flex-row justify-between">
                 <div className=" w-1/2 font-semibold">
-                  <h9>Class</h9>
+                  <h6>Class</h6>
                 </div>
                 <div className="text-left  w-1/2">
-                  <h9>2</h9>
+                  <h6>2</h6>
                 </div>
               </div>
               <div className="flex flex-row justify-between">
                 <div className=" w-1/2 font-semibold">
-                  <h9>Category</h9>
+                  <h6>Category</h6>
                 </div>
                 <div className="text-left  w-1/2">
-                  <h9>2</h9>
+                  <h6>2</h6>
                 </div>
               </div>
               <div className="flex flex-row justify-between">
                 <div className=" w-1/2 font-semibold">
-                  <h9>School Name</h9>
+                  <h6>School Name</h6>
                 </div>
                 <div className="text-left  w-1/2">
-                  <h9>Godsan Mat.hr.Sec.School</h9>
+                  <h6>Godsan Mat.hr.Sec.School</h6>
                 </div>
               </div>
             </div>
           </div>
           <div className="w-1/2 flex flex-col h-full ">
-            <h9 className="font-semibold">Mark List</h9>
+            <h6 className="font-semibold">Mark List</h6>
             <div className="w-full h-[350px] bg-input-bg flex flex-col mb-3 p-4 rounded-xl">
               <div className="flex flex-row  ">
                 <div className=" w-2/3 font-semibold">
-                  <h9>Dictation</h9>
+                  <h6>Dictation</h6>
                 </div>
                 <div className="text-left  w-1/3">
-                  <h9>9/15</h9>
+                  <h6>9/15</h6>
                 </div>
               </div>
               <div className="flex flex-row ">
                 <div className=" w-2/3 font-semibold">
-                  <h9>Misssing Letter</h9>
+                  <h6>Misssing Letter</h6>
                 </div>
                 <div className="text-left  w-1/3">
-                  <h9>6/10</h9>
+                  <h6>6/10</h6>
                 </div>
               </div>
               <div className="flex flex-row justify-between">
                 <div className=" w-2/3 font-semibold">
-                  <h9>Fill ups</h9>
+                  <h6>Fill ups</h6>
                 </div>
                 <div className="text-left  w-1/3">
-                  <h9>7/10</h9>
+                  <h6>7/10</h6>
                 </div>
               </div>
               <div className="flex flex-row justify-between">
                 <div className=" w-2/3 font-semibold">
-                  <h9>Jumbled Sentences</h9>
+                  <h6>Jumbled Sentences</h6>
                 </div>
                 <div className="text-left  w-1/3">
-                  <h9>5/10</h9>
+                  <h6>5/10</h6>
                 </div>
               </div>
               <div className="flex flex-row justify-between">
                 <div className=" w-2/3 font-semibold">
-                  <h9>Correct Spelling</h9>
+                  <h6>Correct Spelling</h6>
                 </div>
                 <div className="text-left  w-1/3">
-                  <h9>4/5</h9>
+                  <h6>4/5</h6>
                 </div>
               </div>
               <div className="flex flex-row justify-between">
                 <div className=" w-2/3 font-semibold">
-                  <h9>Rhyming Words</h9>
+                  <h6>Rhyming Words</h6>
                 </div>
                 <div className="text-left  w-1/3">
-                  <h9>2/5</h9>
+                  <h6>2/5</h6>
                 </div>
               </div>
               <div className="flex flex-row justify-between">
                 <div className=" w-2/3 font-semibold">
-                  <h9>Picture Identification</h9>
+                  <h6>Picture Identification</h6>
                 </div>
                 <div className="text-left  w-1/3">
-                  <h9>7/10</h9>
+                  <h6>7/10</h6>
                 </div>
               </div>
               <div className="flex flex-row justify-between">
                 <div className=" w-2/3 font-semibold">
-                  <h9>Identify the correct spelling</h9>
+                  <h6>Identify the correct spelling</h6>
                 </div>
                 <div className="text-left  w-1/3">
-                  <h9>8/10</h9>
+                  <h6>8/10</h6>
                 </div>
               </div>
               <div className="flex flex-row justify-between">
                 <div className=" w-2/3 font-semibold">
-                  <h9>Total</h9>
+                  <h6>Total</h6>
                 </div>
                 <div className="text-left  w-1/3">
-                  <h9>48/75</h9>
+                  <h6>48/75</h6>
                 </div>
               </div>
               <div className="flex flex-row justify-between">
                 <div className=" w-2/3 font-semibold">
-                  <h9>Percentage</h9>
+                  <h6>Percentage</h6>
                 </div>
                 <div className="text-left  w-1/3">
-                  <h9>64/100</h9>
+                  <h6>64/100</h6>
                 </div>
               </div>
               <div className="flex flex-row justify-between">
                 <div className=" w-2/3 font-semibold">
-                  <h9>Status</h9>
+                  <h6>Status</h6>
                 </div>
                 <div className="text-left  w-1/3">
-                  <h9>Qualified</h9>
+                  <h6>Qualified</h6>
                 </div>
               </div>
             </div>

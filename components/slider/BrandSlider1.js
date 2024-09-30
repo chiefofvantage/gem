@@ -55,8 +55,8 @@ export default function BrandSlider1({
     "/assets/img/brand/brand07.png",
   ],
 }) {
-  const renderBrand = brandImg.map((img) => (
-    <div className="col">
+  const renderBrand = brandImg.map((img, index) => (
+    <div className="col" key={index}>
       <div className="brand__item">
         <Link href="#">
           <img src={img} alt="brand" />

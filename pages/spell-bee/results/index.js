@@ -166,7 +166,9 @@ const Results = () => {
                     <h6 className="text-sm">Jumbled Sentences</h6>
                   </div>
                   <div className="text-left  w-1/3">
-                    <h6 className="text-sm text-customGray">5/10</h6>
+                    <h6 className="text-sm text-customGray">
+                      {studentData["Section"]}
+                    </h6>
                   </div>
                 </div>
                 <div className="flex flex-row justify-between">

@@ -1,7 +1,5 @@
 import Link from "next/link";
 import MobileMenu from "../MobileMenu";
-import { Menu } from "@headlessui/react";
-import { loadGetInitialProps } from "next/dist/shared/lib/utils";
 export default function Header2({
   scroll,
   isMobileMenu,
@@ -42,6 +40,9 @@ export default function Header2({
                     </div>
                     <div className="tgmenu__navbar-wrap tgmenu__main-menu d-none d-xl-flex">
                       <ul className="navigation">
+                      <li className="menu-item">
+                          <Link href="/about-us">About Us</Link>
+                        </li>
                         <li className="active menu-item-has-children">
                           <Link href="/spell-bee">Spell Bee</Link>
                           <ul className="sub-menu">
@@ -119,6 +120,15 @@ export default function Header2({
                                 Test Subjects
                               </Link>
                             </li>
+                            <li>
+                          <a
+                            href="/fg-brochure.pdf"
+                            download
+                            className="w-full"
+                          >
+                            Download Brochure
+                          </a>
+                        </li>
                           </ul>
                         </li>
                         <li className="menu-item-has-children">
@@ -137,21 +147,11 @@ export default function Header2({
                             </li>
                           </ul>
                         </li>
-                        <li className="menu-item">
-                          <Link href="/about-us">About Us</Link>
-                        </li>
+                        
                         <li>
                           <Link href="/contact">Contact</Link>
                         </li>
-                        <li>
-                          <a
-                            href="/fg-brochure.pdf"
-                            download
-                            className="w-full"
-                          >
-                            Download Brochure
-                          </a>
-                        </li>
+                        
                       </ul>
                     </div>
 

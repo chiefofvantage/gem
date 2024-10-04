@@ -1,6 +1,8 @@
 import { db } from "@/firebase/firebaseinitialization";
 import { doc, getDoc } from "firebase/firestore";
 import { useState } from "react";
+
+
 const Results = () => {
   const [studentData, setStudentData] = useState(null);
   const [registerNumber, setRegisterNumber] = useState("");

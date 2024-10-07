@@ -53,8 +53,8 @@ const About = ({ image, name, job, aboutHim, tags }) => {
                 </div>
 
                 <div className="list-wrapc flex gap-2.5 flex-wrap" >
-                  {tags.map((tag) => (
-                    <p className="bg-[#e7effc] text-[#1363df] px-2 rounded">
+                  {tags.map((tag, index) => (
+                    <p className="bg-[#e7effc] text-[#1363df] px-2 rounded" key={index}>
                       {tag}
                     </p>
                   ))}
@@ -124,7 +124,7 @@ export default function AboutUs() {
 
         <div>
           {data.map(({ aboutHim, image, job, name, tags }, index) => (
-            <SlideFromBottomAndFadeIn delay={0.1 * index}>
+            <SlideFromBottomAndFadeIn delay={0.1 * index} key={index}>
               <About
                 job={job}
                 name={name}

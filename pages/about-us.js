@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import {
   SlideFromBottomAndFadeIn,
   SlideFromLeftAndFadeIn,
@@ -51,7 +52,7 @@ const About = ({ image, name, job, aboutHim, tags }) => {
                   </div>
                 </div>
 
-                <div className="list-wrapc flex gap-2.5 flex-wrap">
+                <div className="list-wrapc flex gap-2.5 flex-wrap" >
                   {tags.map((tag) => (
                     <p className="bg-[#e7effc] text-[#1363df] px-2 rounded">
                       {tag}

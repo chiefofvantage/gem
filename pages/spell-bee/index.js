@@ -3,24 +3,17 @@
 // text: #39557e
 
 import {
-  SlideFromRightAndFadeIn,
-  SlideFromLeftAndFadeIn,
   FadeIn,
   SlideFromBottomAndFadeIn,
+  SlideFromLeftAndFadeIn,
+  SlideFromRightAndFadeIn,
 } from "@/components/animation/animation";
-import Footer1 from "@/components/layout/footer/Footer1";
-import Header1 from "@/components/layout/header/Header1";
 import Layout from "@/components/layout/Layout";
-import { FaRegEdit } from "react-icons/fa";
-import { FaBook } from "react-icons/fa";
-import { FaPenFancy } from "react-icons/fa";
-import { FaClipboardCheck } from "react-icons/fa";
+import { FaBook, FaClipboardCheck, FaPenFancy, FaRegEdit } from "react-icons/fa";
 
 import Cta1 from "@/components/sections/Cta1";
 import Head from "next/head";
 import Link from "next/link";
-import { FaGlobe, FaLanguage, FaMoneyBillWave } from "react-icons/fa";
-import { MdAttachMoney } from "react-icons/md";
 import {
   RiNumber1,
   RiNumber2,
@@ -499,7 +492,7 @@ const SpellBee = () => {
               <SlideFromRightAndFadeIn>
                 <div className="col h-full">
                   <div className="categories__item-two tg-svg h-full">
-                    <Link href="/" className="h-full">
+                    <Link href="/spell-bee/results" className="h-full">
                       <div className="icon">
                         <FaClipboardCheck />
                       </div>

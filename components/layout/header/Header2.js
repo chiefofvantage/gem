@@ -68,11 +68,18 @@ export default function Header2({
                             </li>
                             <li>
                               <a
-                                href="/spell-bee-brochure.pdf"
-                                download
+                                // href="/spell-bee-brochure.pdf"
+                                // download
                                 className="w-full"
                               >
                                 Download Brochure
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="/spell-bee/results"
+                              >
+                                View result
                               </a>
                             </li>
                           </ul>
@@ -144,6 +151,15 @@ export default function Header2({
                             </li>
                             <li>
                               <Link href="/farm-guru#gallery">Gallery</Link>
+                            </li>
+                            <li>
+                              <a
+                                href="/spell-bee-brochure.pdf"
+                                download
+                                className="w-full"
+                              >
+                                Download Brochure
+                              </a>
                             </li>
                           </ul>
                         </li>

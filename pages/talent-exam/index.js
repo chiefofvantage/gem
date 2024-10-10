@@ -8,13 +8,11 @@ import {
   FaBookOpen,
   FaBrain,
   FaCalendarAlt,
-  FaChalkboardTeacher,
-  FaChartLine,
   FaDollarSign,
   FaGlobe,
   FaHeadphones,
   FaRocket,
-  FaUsers,
+  FaUsers
 } from "react-icons/fa";
 
 import {
@@ -161,18 +159,18 @@ const TalentExamWebpage = () => {
                   <div className="flex flex-col sm:flex-row gap-5">
                     <SlideFromRightAndFadeIn>
                       <img
-                        src="/exam/2.jpeg"
+                        src="/exam/coming-soon.jpeg"
                         alt="img"
                         className="h-[25rem] object-cover object-center rounded-md"
                       />
                     </SlideFromRightAndFadeIn>
-                    <SlideFromRightAndFadeIn delay={0.25}>
+                    {/* <SlideFromRightAndFadeIn delay={0.25}>
                       <img
                         src="/exam/3.jpeg"
                         alt="img"
                         className="h-[25rem] object-cover object-center rounded-md"
                       />
-                    </SlideFromRightAndFadeIn>
+                    </SlideFromRightAndFadeIn> */}
                   </div>
                   {/* <div className="column">
                     <img

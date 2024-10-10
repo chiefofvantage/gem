@@ -80,7 +80,7 @@ export default function Header2({
                              View result
                               </Link>
                               
-                            
+                              
                               
                             </li>
                           </ul>

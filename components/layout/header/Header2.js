@@ -76,11 +76,12 @@ export default function Header2({
                               </a>
                             </li>
                             <li>
-                              <a
-                                href="/spell-bee/results"
-                              >
-                                View result
-                              </a>
+                             <Link href="/spell-bee/results">
+                             View result
+                              </Link>
+                              
+                              
+                              
                             </li>
                           </ul>
                         </li>

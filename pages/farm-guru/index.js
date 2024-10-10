@@ -2,17 +2,15 @@
 // sec: #082a5e
 // text: #39557e
 import "swiper/css";
-import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // import required modules
-import { Pagination, Navigation } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 
 import Cta1 from "@/components/sections/Cta1";
-import Footer1 from "@/components/layout/footer/Footer1";
-import Header1 from "@/components/layout/header/Header1";
 import Link from "next/link";
 import {
   RiNumber1,
@@ -34,13 +32,12 @@ import img2 from "@/public/farm-guru-2.png";
 import img3 from "@/public/farm-guru-3.png";
 
 import {
-  SlideFromRightAndFadeIn,
-  SlideFromLeftAndFadeIn,
-  FadeIn,
   SlideFromBottomAndFadeIn,
+  SlideFromLeftAndFadeIn,
+  SlideFromRightAndFadeIn
 } from "@/components/animation/animation";
-import Head from "next/head";
 import Layout from "@/components/layout/Layout";
+import Head from "next/head";
 
 const sliderImageArr = [img1, img2, img3];
 const brandImg = [

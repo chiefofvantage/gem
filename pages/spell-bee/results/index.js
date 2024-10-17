@@ -42,11 +42,7 @@ const Results = () => {
     <main className="bg-gradient-to-br from-blue-light to-blue-bright h-screen  w-full flex justify-center items-start relative">
       <div className="bg-[url(/spell-bee-2.png)] h-[290px] w-[363px] absolute left-5 bottom-2 xl:block hidden"></div>
       <div className="bg-[url(/idea.png)] h-[285px] w-[265px] absolute right-8 bottom-5 xl:block hidden"></div>
-      {/* <div className="absolute">
-        <div className="border-white border-2  rounded-full h-72 w-72 ">
-          <div className="border-white border-2  rounded-full h-56 w-56 "></div>
-        </div>
-      </div> */}
+      
       <div className="bg-white w-[780px] h-[600px] rounded-xl mt-[48px] flex flex-col justify-start items-center  relative z-20">
         <div className="bg-[url(/grey-spell.png)] h-[45px] w-[190px] bg-cover mt-20 z-20"></div>
         <h6 className="font-semibold text-base mt-15">Spell Bee Results</h6>

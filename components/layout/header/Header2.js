@@ -128,14 +128,12 @@ export default function Header2({
                                 Test Subjects
                               </Link>
                             </li>
-                            <li>
-                          <a
-                            href="/fg-brochure.pdf"
-                            download
-                            className="w-full"
-                          >
-                            Download Brochure
+                            <li className="w-full">
+                          <a>
+                          Download Brochure
                           </a>
+                           
+                          
                         </li>
                           </ul>
                         </li>

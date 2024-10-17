@@ -48,7 +48,7 @@ const Results = () => {
         </div>
       </div> */}
       <div className="bg-white w-[780px] h-[600px] rounded-xl mt-[48px] flex flex-col justify-start items-center">
-        <div className="bg-[url(/grey-spell.png)] h-[58px] w-[190px] bg-cover mt-20"></div>
+        <div className="bg-[url(/grey-spell.png)] h-[45px] w-[190px] bg-cover mt-20"></div>
         <h6 className="font-semibold text-base mt-20">Spell Bee Results</h6>
         <div className="flex flex-row justify-around w-[700px] mt-4 ">
           <input

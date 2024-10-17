@@ -356,7 +356,7 @@ const FarmGuru = () => {
                           Bullockcart Ride
                         </div>
                         <span className="text-sm text-[#5a7093] leading-none">
-                          Enjoy the Bullock Cart ride{" "}
+                        Enjoy the slow and rhythmic pace of the bullock cart ride {" "}
                         </span>
                       </div>
                     </Link>

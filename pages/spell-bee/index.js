@@ -662,11 +662,11 @@ const SpellBee = () => {
         </SlideFromBottomAndFadeIn>
         {/* contact section */}
         <Cta1
-          primaryHeading={"Unleash Your Word Power and Excel"}
+          primaryHeading={"Master Your Vocabulary and Achieve Success"}
           description={
             "Don't miss this chance to boost your language skills, build confidence, and engage in self-motivated learning. Register for the Spell Bee and become a spelling champion!"
           }
-          buttonText={"Join Open Compensation"}
+          buttonText={"Join Open Competition"}
         />
       </main>
     </Layout>

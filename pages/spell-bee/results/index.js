@@ -20,7 +20,7 @@ const Results = () => {
     console.log("Fetching data for:", registerNumber);
 
     try {
-      const docRef = doc(db, "student_Data", registerNumber);
+      const docRef = doc(db, "students_data", registerNumber);
       const docSnap = await getDoc(docRef, { source: "server" }); // Fetch data from the server
 
       if (docSnap.exists()) {
@@ -47,18 +47,18 @@ const Results = () => {
           <div className="border-white border-2  rounded-full h-56 w-56 "></div>
         </div>
       </div> */}
-      <div className="bg-white w-[780px] h-[600px] rounded-xl mt-[48px] flex flex-col justify-start items-center">
-        <div className="bg-[url(/grey-spell.png)] h-[45px] w-[190px] bg-cover mt-20"></div>
-        <h6 className="font-semibold text-base mt-20">Spell Bee Results</h6>
-        <div className="flex flex-row justify-around w-[700px] mt-4 ">
+      <div className="bg-white w-[780px] h-[600px] rounded-xl mt-[48px] flex flex-col justify-start items-center  relative z-20">
+        <div className="bg-[url(/grey-spell.png)] h-[45px] w-[190px] bg-cover mt-20 z-20"></div>
+        <h6 className="font-semibold text-base mt-15">Spell Bee Results</h6>
+        <div className="flex flex-row justify-around w-[700px] mt-3 relative ">
           <input
             placeholder="Enter the registeration number "
-            className="bg-input-bg w-[512px] py-2 pl-4 rounded"
+            className="bg-input-bg w-[512px] py-2 pl-4 rounded  z-20"
             value={registerNumber}
             onChange={(e) => setRegisterNumber(e.target.value)}
           ></input>
           <button
-            className="bg-button-color text-white px-4 py-1 text-sm rounded"
+            className="bg-button-color text-white px-4 py-1 text-sm rounded  z-20"
             onClick={fetchStudentData}
             disabled={loading}
           >
@@ -66,7 +66,7 @@ const Results = () => {
           </button>
         </div>
         {studentData && (
-          <div className="flex flex-row w-full px-6 mt-4 h-full justify-around">
+          <div className="flex flex-row w-full px-6 mt-4 h-[50px] justify-around ">
             <div className="w-1/2 flex flex-col h-10 mr-6">
               <h6 className="font-semibold">Student Details</h6>
               <div className="w-full h-64 bg-input-bg flex flex-col p-4 rounded-xl space-y-2">
@@ -76,17 +76,17 @@ const Results = () => {
                   </div>
                   <div className="text-left w-1/2">
                     <h6 className="text-sm text-customGray">
-                      {studentData["Register no"]}
+                      {studentData["id"]}
                     </h6>
                   </div>
                 </div>
                 <div className="flex flex-row justify-between">
                   <div className="w-1/2 font-semibold">
-                    <h6 className="text-sm">Name</h6>
+                    <h6 className="text-sm">Student Name</h6>
                   </div>
                   <div className="text-left w-1/2">
                     <h6 className="text-sm text-customGray">
-                      {studentData["STUDENT NAME"]}
+                      {studentData["studentName"]}
                     </h6>
                   </div>
                 </div>
@@ -96,7 +96,17 @@ const Results = () => {
                   </div>
                   <div className="text-left w-1/2">
                     <h6 className="text-sm text-customGray">
-                      {studentData.GENDER}
+                      {studentData["Gender"]}
+                    </h6>
+                  </div>
+                </div>
+                <div className="flex flex-row justify-between">
+                  <div className="w-1/2 font-semibold">
+                    <h6 className="text-sm">FatherName</h6>
+                  </div>
+                  <div className="text-left w-1/2">
+                    <h6 className="text-sm text-customGray">
+                      {studentData["fatherName"]}
                     </h6>
                   </div>
                 </div>
@@ -106,7 +116,7 @@ const Results = () => {
                   </div>
                   <div className="text-left w-1/2">
                     <h6 className="text-sm text-customGray">
-                      {studentData["CONCACT NO"]}
+                      {studentData["contactNo"]}
                     </h6>
                   </div>
                 </div>
@@ -116,7 +126,17 @@ const Results = () => {
                   </div>
                   <div className="text-left w-1/2">
                     <h6 className="text-sm text-customGray">
-                      {studentData["CLASS"]}
+                      {studentData["Class"]}
+                    </h6>
+                  </div>
+                </div>
+                <div className="flex flex-row justify-between">
+                  <div className="w-1/2 font-semibold">
+                    <h6 className="text-sm">Section</h6>
+                  </div>
+                  <div className="text-left w-1/2">
+                    <h6 className="text-sm text-customGray">
+                      {studentData["Section"]}
                     </h6>
                   </div>
                 </div>
@@ -126,22 +146,22 @@ const Results = () => {
                   </div>
                   <div className="text-left w-1/2">
                     <h6 className="text-sm text-customGray">
-                      {studentData.schoolName}
+                      {studentData['schoolName']}
                     </h6>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="w-1/2 flex flex-col h-full">
+            <div className="w-1/2 flex flex-col h-52">
               <h6 className="font-semibold">Mark List</h6>
-              <div className="w-full h-[350px] bg-input-bg flex flex-col mb-3 p-4 rounded-xl space-y-2">
+              <div className="w-full h-[350px] bg-input-bg flex flex-col  pt-4 pl-6 pr-6 pb-3 rounded-xl space-y-2">
                 <div className="flex flex-row">
                   <div className="w-2/3 font-semibold">
                     <h1 className="text-sm">Dictation</h1>
                   </div>
                   <div className="text-left w-1/3">
                     <h6 className="text-sm text-customGray">
-                      {studentData["DIC/15"]}
+                      {studentData["Dict/15"]}
                     </h6>
                   </div>
                 </div>
@@ -151,16 +171,16 @@ const Results = () => {
                   </div>
                   <div className="text-left w-1/3">
                     <h6 className="text-sm text-customGray">
-                      {studentData["MISS L/10"]}
+                      {studentData["Miss/10"]}
                     </h6>
                   </div>
                 </div>
-                <div className="flex flex-row justify-between">
+                {/* <div className="flex flex-row justify-between">
                   <div className=" w-2/3 font-semibold">
                     <h6 className="text-sm">Fill ups</h6>
                   </div>
                   <div className="text-left  w-1/3">
-                    <h6 className="text-sm text-customGray">{studentData["OPP/5"]}</h6>
+                    <h6 className="text-sm text-customGray">{studentData["OPP/5"] || "-"}</h6>
                   </div>
                 </div>
                 <div className="flex flex-row justify-between">
@@ -169,7 +189,7 @@ const Results = () => {
                   </div>
                   <div className="text-left  w-1/3">
                     <h6 className="text-sm text-customGray">
-                      {studentData["J.SENT/10"]}
+                      {studentData["J.SENT/10"] || "-"}
                     </h6>
                   </div>
                 </div>
@@ -178,16 +198,16 @@ const Results = () => {
                     <h6 className="text-sm">Correct Spelling</h6>
                   </div>
                   <div className="text-left  w-1/3">
-                    <h6 className="text-sm text-customGray">{studentData["COR.SENT/5"]}</h6>
+                    <h6 className="text-sm text-customGray">{studentData["COR.SENT/5"] || "-"}</h6>
                   </div>
-                </div>
+                </div> */}
                 <div className="flex flex-row justify-between">
                   <div className=" w-2/3 font-semibold">
                     <h6 className="text-sm">Rhyming Words</h6>
                   </div>
                   <div className="text-left  w-1/3">
                     <h6 className="text-sm text-customGray">
-                      {studentData["RHY/5"]}
+                      {studentData["Rhy/5"]}
                     </h6>
                   </div>
                 </div>
@@ -197,7 +217,7 @@ const Results = () => {
                   </div>
                   <div className="text-left  w-1/3">
                     <h6 className="text-sm text-customGray">
-                      {studentData["PIC ID/10"]}
+                      {studentData["Pic/10"]}
                     </h6>
                   </div>
                 </div>
@@ -207,7 +227,7 @@ const Results = () => {
                   </div>
                   <div className="text-left  w-1/3">
                     <h6 className="text-sm text-customGray">
-                      {studentData["ID CS/10"]}
+                      {studentData["Ident/10"]}
                     </h6>
                   </div>
                 </div>
@@ -217,7 +237,7 @@ const Results = () => {
                   </div>
                   <div className="text-left w-1/3">
                     <h6 className="text-sm text-customGray">
-                      {studentData["TOTAL"]}
+                      {studentData["Total/50"]}
                     </h6>
                   </div>
                 </div>
@@ -227,7 +247,7 @@ const Results = () => {
                   </div>
                   <div className="text-left w-1/3">
                     <h6 className="text-sm text-customGray">
-                      {studentData.percentage}
+                      {studentData['Percentage']}
                     </h6>
                   </div>
                 </div>
@@ -236,7 +256,7 @@ const Results = () => {
                     <h6 className="text-sm">Status</h6>
                   </div>
                   <div className="text-left w-1/3">
-                    <h6 className="text-sm">{studentData["STATUS"]}</h6>
+                    <h6 className="text-sm">{studentData["Status"]}</h6>
                   </div>
                 </div>
               </div>

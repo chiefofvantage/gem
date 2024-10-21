@@ -6,6 +6,7 @@ export default function Header2({
   handleMobileMenu,
   isSpellBee = false,
 }) {
+
   return (
     <>
       <div id="header-fixed-height" />
@@ -20,8 +21,8 @@ export default function Header2({
                 <div className="mobile-nav-toggler" onClick={handleMobileMenu}>
                   <i className="tg-flaticon-menu-1" />
                 </div>
-                <div className="tgmenu__wrap">
-                  <nav className="tgmenu__nav">
+                <div className="tgmenu__wrap  ">
+                  <nav className="tgmenu__nav ">
                     <div className="logo flex items-center gap-3">
                       <Link href="/">
                         <img
@@ -44,14 +45,14 @@ export default function Header2({
                           <Link href="/about-us">About Us</Link>
                         </li>
                         <li className="active menu-item-has-children">
-                          <Link href="/spell-bee">Spell Bee</Link>
-                          <ul className="sub-menu">
+                          <Link href="/spell-bee" className=" ">Spell Bee</Link>
+                          <ul className="sub-menu ">
                             <li>
                               <Link href="/spell-bee#what-is-spell-bee">
                                 What is Spell Bee
                               </Link>
                             </li>
-                            <li className="">
+                            <li className=" ">
                               <Link href="/spell-bee#benefits">
                                 Benefits of Spell bee
                               </Link>
@@ -209,14 +210,7 @@ export default function Header2({
                         <img src="/assets/img/custom/logo.png" alt="Logo" />
                       </Link>
                     </div>
-                    <div className="tgmobile__search">
-                      <form action="#">
-                        <input type="text" placeholder="Search here..." />
-                        <button>
-                          <i className="fas fa-search" />
-                        </button>
-                      </form>
-                    </div>
+                    
                     <div className="tgmobile__menu-outer">
                       <MobileMenu />
                     </div>

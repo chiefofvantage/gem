@@ -1,6 +1,6 @@
+import { Menu } from "@headlessui/react";
 import Link from "next/link";
 import MobileMenu from "../MobileMenu";
-import { Menu } from "@headlessui/react";
 export default function Header3({ scroll, isMobileMenu, handleMobileMenu }) {
   return (
     <>
@@ -63,6 +63,7 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu }) {
               <div className="col-12">
                 <div className="mobile-nav-toggler" onClick={handleMobileMenu}>
                   <i className="tg-flaticon-menu-1" />
+                  
                 </div>
                 <div className="tgmenu__wrap">
                   <nav className="tgmenu__nav">

@@ -170,7 +170,7 @@ import { RiArrowDropDownLine } from "react-icons/ri";
           <li className= {`relative  ${isfield ? "h-[220px]" :"h-10"}`}>
             <div className="flex flex-row h-10 items-center">
             <Link
-              className="pl-3 pr-3  py-2 rounded "
+              className="px-3   py-2 rounded "
               href="/farm-guru"
             >
               Field Trip
@@ -192,7 +192,7 @@ import { RiArrowDropDownLine } from "react-icons/ri";
                             </li>
                             <li className="">
                               <a
-                                href="/spell-bee-brochure.pdf"
+                                href="/fg-brochure.pdf"
                                 download
                                 className="w-full"
                               >

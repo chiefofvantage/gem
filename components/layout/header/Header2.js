@@ -154,7 +154,7 @@ export default function Header2({
                             </li>
                             <li>
                               <a
-                                href="/spell-bee-brochure.pdf"
+                                href="/fg-brochure.pdf"
                                 download
                                 className="w-full"
                               >

@@ -6,7 +6,6 @@ export default function Header2({
   handleMobileMenu,
   isSpellBee = false,
 }) {
-
   return (
     <>
       <div id="header-fixed-height" />
@@ -41,11 +40,13 @@ export default function Header2({
                     </div>
                     <div className="tgmenu__navbar-wrap tgmenu__main-menu d-none d-xl-flex">
                       <ul className="navigation">
-                      <li className="menu-item">
+                        <li className="menu-item">
                           <Link href="/about-us">About Us</Link>
                         </li>
                         <li className="active menu-item-has-children">
-                          <Link href="/spell-bee" className=" ">Spell Bee</Link>
+                          <Link href="/spell-bee" className=" ">
+                            Spell Bee
+                          </Link>
                           <ul className="sub-menu ">
                             <li>
                               <Link href="/spell-bee#what-is-spell-bee">
@@ -77,12 +78,7 @@ export default function Header2({
                               </a>
                             </li>
                             <li>
-                             <Link href="/spell-bee/results">
-                             View result
-                              </Link>
-                              
-                              
-                              
+                              <Link href="/spell-bee/results">View result</Link>
                             </li>
                           </ul>
                         </li>
@@ -117,11 +113,18 @@ export default function Header2({
                           </ul>
                         </li>
                         <li className="menu-item-has-children">
-                          <Link href="/talent-exam">Talent Exam</Link>
+                          <Link href="/talent-exam">
+                            Students Training program
+                          </Link>
                           <ul className="sub-menu">
                             <li>
                               <Link href="/talent-exam#about-fktt">
-                                About FKTT
+                                About TTP
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href="/talent-exam#about-stp">
+                                About STP
                               </Link>
                             </li>
                             <li>
@@ -130,12 +133,11 @@ export default function Header2({
                               </Link>
                             </li>
                             <li className="w-full">
-                          <a>
-                          Download Brochure
-                          </a>
-                           
-                          
-                        </li>
+                              <a>Download TTP Content</a>
+                            </li>
+                            <li className="w-full">
+                              <a>Download STP Content</a>
+                            </li>
                           </ul>
                         </li>
                         <li className="menu-item-has-children">
@@ -163,11 +165,10 @@ export default function Header2({
                             </li>
                           </ul>
                         </li>
-                        
+
                         <li>
                           <Link href="/contact">Contact</Link>
                         </li>
-                        
                       </ul>
                     </div>
 
@@ -210,7 +211,7 @@ export default function Header2({
                         <img src="/assets/img/custom/logo.png" alt="Logo" />
                       </Link>
                     </div>
-                    
+
                     <div className="tgmobile__menu-outer">
                       <MobileMenu />
                     </div>

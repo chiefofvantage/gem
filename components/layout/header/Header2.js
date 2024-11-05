@@ -129,7 +129,7 @@ export default function Header2({
                             </li>
                             <li>
                               <Link href="/talent-exam#subjects">
-                                Test Subjects
+                                Contents Covered
                               </Link>
                             </li>
                             <li className="w-full">

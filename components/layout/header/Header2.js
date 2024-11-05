@@ -133,10 +133,20 @@ export default function Header2({
                               </Link>
                             </li>
                             <li className="w-full">
-                              <a>Download TTP Content</a>
+                              <a
+                                href="/GMES-Leading With Heart for Teachers.pdf"
+                                download
+                              >
+                                Download TTP Content
+                              </a>
                             </li>
                             <li className="w-full">
-                              <a>Download STP Content</a>
+                              <a
+                                href="/GMES A step In the Right Direction for students.pdf"
+                                download
+                              >
+                                Download STP Content
+                              </a>
                             </li>
                           </ul>
                         </li>

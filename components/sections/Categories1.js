@@ -33,8 +33,8 @@ export default function Categories1() {
                     vocabulary and spelling skills of over 25,000 students. We
                     offer comprehensive guidance for students pursuing MBBS
                     studies abroad and have successfully supported many in their
-                    journey. Our talent exams identify and nurture academic
-                    strengths, benefiting over 5,000 school students.
+                    journey. Our Training Programme identify and nurture
+                    academic strengths, benefiting over 5,000 school students.
                     Additionally, our field trips provide hands-on learning
                     experiences, enriching the education of more than 35,000
                     students.

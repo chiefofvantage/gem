@@ -62,7 +62,7 @@ export default function Footer1() {
                       <Link href="/mbbs">Overseas MBBS</Link>
                     </li>
                     <li>
-                      <Link href="/talent-exam">Talent Exam</Link>
+                      <Link href="/talent-exam">Training Programme</Link>
                     </li>
                     <li>
                       <Link href="/farm-guru">Field Trip</Link>

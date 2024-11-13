@@ -113,7 +113,7 @@ export default function Header2({
                           </ul>
                         </li>
                         <li className="menu-item-has-children">
-                          <Link href="/talent-exam">Trainee Programme</Link>
+                          <Link href="/talent-exam">Training Programme</Link>
                           <ul className="sub-menu">
                             <li>
                               <Link href="/talent-exam#about-fktt">

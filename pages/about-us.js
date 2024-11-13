@@ -52,9 +52,12 @@ const About = ({ image, name, job, aboutHim, tags }) => {
                   </div>
                 </div>
 
-                <div className="list-wrapc flex gap-2.5 flex-wrap" >
+                <div className="list-wrapc flex gap-2.5 flex-wrap">
                   {tags.map((tag, index) => (
-                    <p className="bg-[#e7effc] text-[#1363df] px-2 rounded" key={index}>
+                    <p
+                      className="bg-[#e7effc] text-[#1363df] px-2 rounded"
+                      key={index}
+                    >
                       {tag}
                     </p>
                   ))}
@@ -75,7 +78,7 @@ const About = ({ image, name, job, aboutHim, tags }) => {
 
 const data = [
   {
-    image: "/about-us/3.jpeg",
+    image: "/about-us/veer.jpeg",
     name: "Mr. Veeraraghavan",
     job: "Sales and Marketing Expert",
     aboutHim: `Mr. Veera Raghavan is a Science graduate with a Postgraduate Diploma in Global Strategic Management. He has over 20 years of experience in Sales and Marketing across various industries such as Pharma, FMCG, Education, and Training & Testing. He has managed branches, territories, and states across South India. He has worked with leading corporations like Wockhardt, United Breweries, ICFAI Business School, and STUD WORLD. His ability to multitask and make sound business decisions are his forte. His business development skills, combined with a positive mindset and a target-oriented approach, make him an enterprising individual.`,

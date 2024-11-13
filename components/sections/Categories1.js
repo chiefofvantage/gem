@@ -48,7 +48,7 @@ export default function Categories1() {
             </div>
             <div className="col-xl-7 col-lg-9">
               <SlideFromBottomAndFadeIn>
-                <div className="categories__wrap">
+                <div className="categories__wrap ">
                   <img
                     src="/assets/img/objects/categories_shape03.svg"
                     alt="shape"
@@ -59,7 +59,7 @@ export default function Categories1() {
                     alt="shape"
                     data-aos="fade-left"
                   />
-                  <div className="row justify-content-center row-cols-2 row-cols-md-3">
+                  <div className="row justify-content-center row-cols-2 row-cols-md-3 ">
                     <div className="col">
                       <div className="categories__item">
                         <Link href="/spell-bee">
@@ -97,12 +97,12 @@ export default function Categories1() {
                       </div>
                     </div>
                   </div>
-                  <div className="row justify-content-center row-cols-2 row-cols-sm-3">
+                  <div className="row justify-content-center row-cols-2 row-cols-sm-3 ">
                     <div className="col">
                       <div className="categories__item">
                         <Link href="/talent-exam">
                           <div
-                            className="categories__item_img"
+                            className="categories__item_img bg-slate-500 "
                             style={{ overflow: "hidden" }}
                           >
                             <img
@@ -111,7 +111,7 @@ export default function Categories1() {
                               alt="Talent Exam"
                             />
                           </div>
-                          <span className="name">Talent Exam</span>
+                          <span className="name ">Training Programme</span>
                           {/* <span className="courses">08 Courses</span> */}
                         </Link>
                       </div>

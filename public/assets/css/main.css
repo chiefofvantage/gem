@@ -3714,7 +3714,7 @@ textarea {
 @media (max-width: 991.98px) {
   .about__images-wrap .about__shapes > *:nth-child(1) {
     max-width: 125px;
-    left: -50px;
+
     bottom: 0;
   }
 }
@@ -5410,7 +5410,7 @@ textarea {
   -o-border-radius: 10px;
   -ms-border-radius: 10px;
   border-radius: 10px;
-  padding: 32px 30px 27px;
+  padding: 32px 20px 27px;
 }
 
 @media (max-width: 767.98px) {

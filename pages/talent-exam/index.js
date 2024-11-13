@@ -152,13 +152,13 @@ const TalentExamWebpage = () => {
                 </SlideFromLeftAndFadeIn>
               </div>
               <div className="col-xl-7 col-lg-6 col-md-11">
-                <div className="about__images-wrap">
+                <div className="w-[500px] md:w-[600px]">
                   <div className="flex flex-col sm:flex-row gap-5">
                     <SlideFromRightAndFadeIn>
                       <img
                         src="/exam/philosophy.jpg"
                         alt="img"
-                        className="h-[25rem] object-cover object-center rounded-md"
+                        className="h-[25rem] rounded-md"
                       />
                     </SlideFromRightAndFadeIn>
                     {/* <SlideFromRightAndFadeIn delay={0.25}>
@@ -318,13 +318,13 @@ const TalentExamWebpage = () => {
                 </SlideFromLeftAndFadeIn>
               </div>
               <div className="col-xl-7 col-lg-6 col-md-11">
-                <div className="about__images-wrap">
+                <div className="w-[500px] md:w-[600px]">
                   <div className="flex flex-col sm:flex-row gap-5">
                     <SlideFromRightAndFadeIn>
                       <img
                         src="/exam/philosophy.jpg"
                         alt="img"
-                        className="h-[25rem] object-cover object-center rounded-md"
+                        className="h-[25rem]   rounded-md"
                       />
                     </SlideFromRightAndFadeIn>
                   </div>
